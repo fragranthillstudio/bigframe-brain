@@ -119,12 +119,12 @@ def print_pdfs(html_paths: dict[int, Path], lang: str, png: bool = False) -> dic
     pdfs = {}
     with sync_playwright() as pw:
         browser = pw.chromium.launch(executable_path=CHROMIUM)
-        page = browser.new_page()
+        page = browser.new_page(viewport={"width": 816, "height": 1145})
         for n, hp in html_paths.items():
             page.goto(hp.resolve().as_uri())
             page.wait_for_load_state("networkidle")
             page.evaluate("document.fonts.ready")
-            width = page.evaluate("document.documentElement.scrollWidth")
+            width = page.evaluate("Math.max(document.body.scrollWidth, ...[...document.body.querySelectorAll('*')].map(e => e.getBoundingClientRect().right))")
             if width > 817:
                 print(f"WARNING p{n:02d}: content overflows the page width ({width}px > 816px)")
             out = out_dir / f"p{n:02d}.pdf"
