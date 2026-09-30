@@ -19,7 +19,7 @@
   "kv_interface": "接口",
   "interface": "千兆以太网；24 V DC",
   "kv_mounting": "安装",
-  "through_holes": "mm 通孔，",
+  "through_holes": "mm 通孔,",
   "pattern": "mm 孔距",
   "dims_note": "两个 M12 连接器位于背面。尺寸图与 3D CAD 数据按需提供。",
   "applications": "应用",

@@ -1,0 +1,17 @@
+{
+  "page_title": "封面",
+  "eyebrow": "2026 产品目录",
+  "title": "工业 3D<br>相机",
+  "lede": "五大系列、十八款结构光 3D 相机，视场 9.8 mm 至 3.6 m，覆盖测量、检测与机器人引导。",
+  "fov_prefix": "FOV",
+  "series_trs_head": "微米级测量",
+  "series_trs_sub": "焊球、凸点、焊缝",
+  "series_vrh9_head": "精细测量",
+  "series_vrh9_sub": "连接器、中框、电路板",
+  "series_vr_head": "引导与检测",
+  "series_vr_sub": "料箱、托盘、车身件",
+  "series_vrd_head": "机器人臂载彩色双目",
+  "series_vrd_sub": "周转箱、工具、紧固件",
+  "series_prs_head": "固定横梁，大场景",
+  "series_prs_sub": "托盘、车辆、集装箱"
+}

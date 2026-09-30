@@ -1,0 +1,206 @@
+{
+  "common": {
+    "footer": "BIGFRAME · 产品目录 2026 · ZH 2026-10 · REV. C",
+    "new": "新品",
+    "page": "页码",
+    "sec_overview": "概览",
+    "sec_cameras": "相机",
+    "sec_technical": "技术数据",
+    "prs_series": "PRS 系列",
+    "crumb_data_by_series": "各系列数据",
+    "to": "至",
+    "at": "@",
+    "th_model": "型号",
+    "th_wd_mm": "WD (mm)",
+    "th_fov_mm": "视场 (mm)",
+    "th_spacing_um": "XY 点间距 (µm)",
+    "th_fov_opt_mm": "最佳 WD 处视场 (mm)",
+    "th_wd_nof_mm": "工作距离 近 / 最佳 / 远 (mm)",
+    "th_z2s_um": "Z 向重复性 2σ (µm)",
+    "mounting": "安装",
+    "weight": "重量",
+    "interface": "接口",
+    "email": "info@bigframe.com",
+    "prelim_final": "初步参数；正式数据表随产品发布提供。",
+    "z_method_launch": "测量方法随产品发布公布。",
+    "company": "Bigframe Technology Co., Ltd.",
+    "address1": "江苏省昆山市金街路 9 号",
+    "address2": "京东智能产业园 5 号楼南楼",
+    "website": "www.bigframe.com",
+    "linkedin": "linkedin.com/company/bigframetechnology",
+    "tel": "电话（中国）400-182-8892"
+  },
+  "figures": {
+    "wd": "WD",
+    "near": "近",
+    "opt": "最佳",
+    "far": "远",
+    "opt_short": "最佳",
+    "point_spacing": "µm 点间距",
+    "spacing": "µm 点间距",
+    "fov": "FOV",
+    "at_optimum": "于最佳 WD",
+    "measuring_face": "测量面",
+    "end_view": "端面视图",
+    "fov_width": "视场宽度, mm",
+    "fov_height": "视场高度, mm",
+    "x_axis": "视场宽度（最佳工作距离处）",
+    "y_axis": "Z 向重复性，区域 2σ",
+    "series_trs": "TRS 系列",
+    "series_vrh9": "VRH9 系列",
+    "series_vr": "VR 系列",
+    "series_vrd": "VRD 系列",
+    "series_prs": "PRS 系列（初步参数）",
+    "m": "m",
+    "mm": "mm"
+  },
+  "data": {
+    "series_cards": {
+      "trs": {
+        "name": "TRS 系列",
+        "desc": "微米级测量：焊球、凸点、焊缝",
+        "fov": "FOV 9.8–74 mm",
+        "z": "Z 向重复性 0.06 µm 起"
+      },
+      "vrh9": {
+        "name": "VRH9 系列",
+        "desc": "精细测量：连接器、中框、电路板",
+        "fov": "FOV 24–277 mm",
+        "z": "Z 向重复性 0.15 µm 起"
+      },
+      "vr": {
+        "name": "VR 系列",
+        "desc": "引导与检测：料箱、托盘、车身件",
+        "fov": "FOV 300–1500 mm",
+        "z": "Z 向重复性 2 µm 起"
+      },
+      "vrd": {
+        "name": "VRD 系列",
+        "desc": "机器人臂载彩色双目：周转箱、工具、紧固件",
+        "fov": "FOV 580–1166 mm",
+        "z": "Z 向重复性 6 µm 起"
+      },
+      "prs": {
+        "name": "PRS 系列",
+        "desc": "固定横梁上的大场景：托盘、车辆、集装箱",
+        "fov": "FOV 1.3–3.6 m，WD 1.2–3.5 m",
+        "z": "Z 向重复性 300 µm ¹"
+      }
+    },
+    "series_groups": {
+      "trs": {
+        "label": "TRS 系列 — 四向投影结构光 3D 相机"
+      },
+      "vrh9": {
+        "label": "VRH9 系列 — 面阵结构光 3D 相机，精细测量"
+      },
+      "vr": {
+        "label": "VR 系列 — 面阵结构光 3D 相机，中大场景"
+      },
+      "vrd": {
+        "label": "VRD 系列 — 彩色双目结构光 3D 相机，机器人引导"
+      },
+      "prs": {
+        "label": "PRS 系列 — 长基线双目 3D 相机，大场景 · 初步参数 ³"
+      }
+    },
+    "models": {
+      "TRS-010B": {
+        "points": "2620 万"
+      },
+      "TRS-025B": {
+        "points": "2620 万"
+      },
+      "TRS-050B": {
+        "points": "2620 万",
+        "wd": "按需提供"
+      },
+      "TRS-075B": {
+        "points": "2620 万",
+        "wd": "按需提供"
+      },
+      "VRH9-020B": {
+        "points": "907 万"
+      },
+      "VRH9-040B": {
+        "points": "907 万"
+      },
+      "VRH9-080B": {
+        "points": "907 万"
+      },
+      "VRH9-120B": {
+        "points": "907 万"
+      },
+      "VRH9-160B": {
+        "points": "907 万"
+      },
+      "VRH9-200B": {
+        "points": "907 万"
+      },
+      "VRH9-280B": {
+        "points": "907 万"
+      },
+      "VR-400B": {
+        "points": "320 万"
+      },
+      "VR-600B": {
+        "points": "320 万"
+      },
+      "VR-1300B": {
+        "points": "320 万"
+      },
+      "VR-2300B": {
+        "points": "320 万"
+      },
+      "VRD-600B": {
+        "points": "500 万"
+      },
+      "VRD-1200B": {
+        "points": "500 万"
+      },
+      "PRS-2500B": {
+        "points": "按需提供"
+      }
+    },
+    "large_scene_compare": {
+      "VR-1300B": {
+        "color": "否",
+        "mount": "固定，场景上方"
+      },
+      "VR-2300B": {
+        "color": "否",
+        "mount": "固定，场景上方"
+      },
+      "VRD-1200B": {
+        "color": "是",
+        "mount": "机器人臂"
+      },
+      "PRS-2500B": {
+        "color": "是",
+        "mount": "固定，场景上方"
+      }
+    },
+    "prs": {
+      "status": "初步参数",
+      "baseline_mm": "约 350",
+      "frame_rate": "全分辨率 1 fps",
+      "color": "RGB 图像，与点云配准",
+      "light_source": "红色激光，638 nm",
+      "laser_class": "发布时公布",
+      "interface": "千兆以太网",
+      "power": "24 V DC，最大 4 A",
+      "operating_temp": "0 至 45 °C",
+      "mounting": "支架套件；细节发布时公布",
+      "software": "TridiVision"
+    },
+    "prs_tags": {
+      "near": "近",
+      "opt.": "最佳",
+      "far": "远"
+    },
+    "catalog": {
+      "edition": "ZH 2026-10 · REV. C",
+      "footer": "BIGFRAME · 产品目录 2026 · ZH 2026-10 · REV. C"
+    }
+  }
+}

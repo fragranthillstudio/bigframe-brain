@@ -1,0 +1,19 @@
+{
+  "title": "产品线一览",
+  "crumb": "产品线",
+  "lede": "五大系列、十八款结构光 3D 相机，视场 9.8 mm 至 3.6 m。全系共用一套软件平台 TridiVision。所有参数按同一口径给出：近、最佳、远工作距离处的视场，最佳工作距离处的点间距，Z 向重复性为区域 2σ 值（定义与方法见第 22 页）。",
+  "contents_label": "目录",
+  "toc1_name": "概览",
+  "toc1_desc": "产品线 · 应用",
+  "toc2_name": "相机",
+  "toc2_desc": "TRS · VRH9 · VR · VRD · PRS，每系列两页",
+  "toc3_name": "软件",
+  "toc3_desc": "TridiVision",
+  "toc4_name": "技术数据",
+  "toc4_desc": "全部型号 · 系列表 · 附件 · 定义",
+  "toc5_name": "公司",
+  "toc5_desc": "大帧科技 · 联系方式",
+  "h2_scatter": "视场与 Z 向重复性",
+  "caption_scatter": "全部十八款型号在最佳工作距离处的视场宽度与区域 Z 向重复性（2σ）。相邻系列相互重叠：多数工件都有两款候选型号。",
+  "caption_note": "PRS：初步参数，详见页码"
+}
