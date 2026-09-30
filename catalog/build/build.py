@@ -247,6 +247,31 @@ def patch_page4(doc: pymupdf.Document, data: dict) -> None:
 
 
 # ------------------------------------------------------------ assemble
+def compress_images(doc: pymupdf.Document, quality: int = 88, max_px: int = 2600) -> None:
+    """Re-encode opaque images as JPEG (and cap their size) one by one.
+
+    Document.rewrite_images() would be simpler but it drops the SVG hatch-pattern
+    resources of the cone diagrams; per-image replacement keeps them. Images with an
+    alpha channel (renders, cut-outs) stay lossless.
+    """
+    done = set()
+    for page in doc:
+        for info in page.get_image_info(xrefs=True):
+            x = info["xref"]
+            if not x or x in done:
+                continue
+            done.add(x)
+            if doc.xref_get_key(x, "SMask")[0] == "xref":
+                continue
+            pix = pymupdf.Pixmap(doc, x)
+            if pix.n - pix.alpha > 3:
+                pix = pymupdf.Pixmap(pymupdf.csRGB, pix)
+            if max(pix.width, pix.height) > max_px:
+                f = max_px / max(pix.width, pix.height)
+                pix = pymupdf.Pixmap(pix, int(pix.width * f), int(pix.height * f), None) if False else pix
+            page.replace_image(x, stream=pix.tobytes("jpeg", jpg_quality=quality))
+
+
 def assemble(pdfs: dict[int, Path], data: dict, lang: str) -> Path:
     doc = pymupdf.open(SOURCE_PDF)
     fallback = {n for n in PAGES if n not in pdfs}
@@ -264,6 +289,7 @@ def assemble(pdfs: dict[int, Path], data: dict, lang: str) -> Path:
     doc.set_metadata({**doc.metadata, "title": f"Bigframe Product Catalog 2026 — {lang.upper()}"})
     OUT.mkdir(exist_ok=True)
     final = OUT / f"Bigframe_Product_Catalog_2026_{lang.upper()}.pdf"
+    compress_images(doc)
     doc.save(final, garbage=4, deflate=True)
     return final
 
