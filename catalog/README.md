@@ -10,6 +10,7 @@ figure that quotes them.
 | --- | --- |
 | `data/models.json` | **Single source of truth** for the pages built here: the PRS specification, the 18-model table, the series cards and the large-scene comparison. Change a number here and every table, chart, frustum and caption follows. |
 | `data/PRS_spec_2026-09-30.xlsx` | The engineering sheet the PRS figures were taken from (right-hand column). |
+| `data/sources/` | Source of truth for the other 17 models: the Product Specification Manual (2026-05-25), the TRS-050B / TRS-075B datasheets and the TridiVision manual. `models.json` was audited against them on 30 Sep 2026: 17 models × 9 fields, no mismatches. |
 | `source/…RevC.pdf` | The Rev. C catalog as designed; pages not rebuilt here are carried over unchanged. |
 | `src/catalog.css` | Page stylesheet in pt, measured from the Rev. C pages: 612 × 858.96 pt, 51 pt margins, IBM Plex Sans / Mono, Bodoni Moda titles, Big Frame colour tokens. |
 | `src/templates/` | Jinja2 templates for the rebuilt pages: `p02` range overview, `p13` PRS series page, `p14` PRS field of view and dimensions, `p17` all models, `p20` PRS technical data. |
