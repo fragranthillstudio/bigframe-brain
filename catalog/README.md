@@ -30,6 +30,16 @@ python3 build/build.py          # from catalog/
 `/opt/pw-browsers`). Playwright's `page.pdf` takes inches: 8.5 × 11.93 in is the
 catalog's 612 × 858.96 pt page.
 
+## ZH edition
+
+`python3 build/build.py --lang zh` builds the Simplified Chinese edition from `data/i18n/zh.json`
+and `data/i18n/zh/pNN.json`. CJK glyphs come from Noto Sans SC / Noto Serif SC, which are not
+committed (57 MB): run `python3 build/fetch_fonts.py` once. Latin glyphs still come from IBM Plex
+and Bodoni, so the EN and DE renders are unchanged. Chinese strings use 重复性 (never 精度) for
+Big Frame figures. Page references are assembled as 第 N 页 through the optional `common.page_after`
+suffix, which is empty for EN and DE. To confirm with Lan Wu: the registered Chinese company name
+on pages 23–24 (currently the English legal name), and the Chinese street address on page 23.
+
 ## PRS-2500B — what changed against Rev. C
 
 | Figure | Rev. C (wrong) | Now |

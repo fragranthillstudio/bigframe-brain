@@ -18,7 +18,7 @@
       <th style="width:42pt">{{ c.th_model }}</th><th style="width:52.5pt">{{ c.th_fov_opt_mm }}</th><th style="width:52pt">{{ t.th_wd_range }}</th>
       <th style="width:36.5pt">{{ t.th_opt_wd }}</th><th style="width:40.5pt">{{ t.th_depth }}</th><th style="width:33pt">{{ c.th_spacing_um }}</th>
       <th style="width:48pt">{{ c.th_z2s_um }} <sup>1</sup></th><th style="width:51.5pt">{{ t.th_points }}</th><th style="width:40pt">{{ c.interface }}</th>
-      <th style="width:62.5pt">{{ t.th_dims }}</th><th style="width:29pt">{{ t.th_weight_kg }}</th><th>{{ c.page }}</th>
+      <th style="width:62.5pt">{{ t.th_dims }}</th><th style="width:29pt">{{ t.th_weight_kg }}</th><th>{{ c.th_page|default(c.page) }}</th>
     </tr></thead>
     <tbody>
     {% for g in series_groups %}

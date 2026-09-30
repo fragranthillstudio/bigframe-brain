@@ -31,7 +31,7 @@
   <div style="font-size:8.2pt; font-weight:600; margin-top:2pt; white-space:nowrap;">{{ sc.name }}{% if sc.new %}<span class="badge" style="margin-left:4pt;">{{ c.new }}</span>{% endif %}</div>
   <p style="font-size:6.6pt; line-height:1.36; color:var(--ink-muted); margin-top:2pt;">{{ sc.desc }}</p>
   <p style="font-size:6.6pt; line-height:1.36; font-weight:500; margin-top:4pt;">{{ sc.fov }}<br>{{ sc.z }}</p>
-  <div class="mono abs" style="left:0; right:0; bottom:6pt; font-size:6.3pt; letter-spacing:0.1em; color:var(--ink-muted);">{{ c.page }} {{ sc.page }}</div>
+  <div class="mono abs" style="left:0; right:0; bottom:6pt; font-size:6.3pt; letter-spacing:0.1em; color:var(--ink-muted);">{{ c.page }} {{ sc.page }}{{ c.page_after|default('') }}</div>
 </div>
 {% endfor %}
 
@@ -40,5 +40,5 @@
 <div class="abs card" style="left:51pt; top:461.2pt; width:510pt; height:276.8pt; padding:4pt 0 0;">
   {{ range_scatter_svg|safe }}
 </div>
-<p class="abs caption" style="left:51pt; top:742pt; width:510pt;">{{ t.caption_scatter|safe }} <sup>1</sup> {{ t.caption_note }} {{ prs.page_series }}.</p>
+<p class="abs caption" style="left:51pt; top:742pt; width:510pt;">{{ t.caption_scatter|safe }} <sup>1</sup> {{ t.caption_note }} {{ prs.page_series }}{{ c.page_after|default('') }}.</p>
 {% endblock %}

@@ -51,7 +51,7 @@
   <div class="stat">
     <div class="v">{{ t.from }} {{ z_min|n }} µm</div>
     <div class="l">{{ t.stat3_label }}</div>
-    <div class="d">{{ t.stat3_desc_a }} {{ d.method_page }}. {{ t.stat3_desc_b }} {{ sp_min|n }} µm.</div>
+    <div class="d">{{ t.stat3_desc_a }} {{ d.method_page }}{{ c.page_after|default('') }}. {{ t.stat3_desc_b }} {{ sp_min|n }} µm.</div>
   </div>
 </div>
 <p class="abs body" style="left:51pt; top:325pt; width:435pt;">{{ t.body }}</p>

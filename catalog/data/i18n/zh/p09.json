@@ -18,7 +18,7 @@
   "stat2_desc_c": "像素。",
   "from": "最小",
   "stat3_label": "Z 向重复性，区域 2σ",
-  "stat3_desc_a": "测量方法见页",
+  "stat3_desc_a": "测量方法见第",
   "stat3_desc_b": "XY 点间距最小",
   "body": "一次采集即可定位包裹、铸件或纱锭，并为 TridiVision 提供规划机器人路径的数据；同一系列相机也用于检测轨枕、车身板件和安检托盘。",
   "glance": "型号一览",

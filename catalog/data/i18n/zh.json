@@ -2,7 +2,7 @@
   "common": {
     "footer": "BIGFRAME · 产品目录 2026 · ZH 2026-10 · REV. C",
     "new": "新品",
-    "page": "页码",
+    "page": "第",
     "sec_overview": "概览",
     "sec_cameras": "相机",
     "sec_technical": "技术数据",
@@ -28,7 +28,9 @@
     "address2": "京东智能产业园 5 号楼南楼",
     "website": "www.bigframe.com",
     "linkedin": "linkedin.com/company/bigframetechnology",
-    "tel": "电话（中国）400-182-8892"
+    "tel": "电话（中国）400-182-8892",
+    "page_after": " 页",
+    "th_page": "页"
   },
   "figures": {
     "wd": "WD",
@@ -183,7 +185,7 @@
     "prs": {
       "status": "初步参数",
       "baseline_mm": "约 350",
-      "frame_rate": "全分辨率 1 fps",
+      "frame_rate": "1 fps（全分辨率）",
       "color": "RGB 图像，与点云配准",
       "light_source": "红色激光，638 nm",
       "laser_class": "发布时公布",
