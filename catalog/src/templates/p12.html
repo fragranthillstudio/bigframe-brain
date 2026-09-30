@@ -2,51 +2,53 @@
 {% set page_title = t.title %}
 {% set section_num = t.section_num %}{% set section_name = t.section_name %}{% set crumb = t.crumb %}
 {% block head %}<style>
-  .cones { position: absolute; left: 50.3pt; top: 92pt; display: flex; }
-  .cones .col { width: 129.4pt; }
+  .cones { position: absolute; left: 48.4pt; top: 92pt; display: flex; }
+  .cones .col { width: 258.6pt; }
   .cones .name { font-size: 8.5pt; font-weight: 600; line-height: 1.3; text-align: center; height: 13pt; }
   .cones svg { display: block; }
-  .dims { position: absolute; left: 51pt; top: 341.2pt; width: 510pt; height: 177.8pt; }
+  .dims { position: absolute; left: 51pt; top: 339pt; width: 510pt; height: 174pt; }
   .dims svg { position: absolute; left: 0; top: 0; }
-  .dims .kvbox { position: absolute; left: 255.9pt; top: 7pt; width: 252pt; }
+  .dims .kvbox { position: absolute; left: 238.9pt; top: 7.6pt; width: 262pt; }
   .dims .kvbox h2 { font-size: 8pt; }
   .dims table.kv { margin-top: 3.4pt; }
   .dims table.kv td { font-size: 6.9pt; line-height: 1.32; padding: 0.7pt 0; }
   .dims .caption { margin-top: 4pt; }
   .apps { position: absolute; left: 51pt; width: 510pt; display: flex; gap: 9pt; }
-  .apps .tile { width: 250.5pt; height: 158.3pt; background: var(--deep); overflow: hidden; }
+  .apps .tile { width: 250.5pt; height: 162pt; background: var(--deep); overflow: hidden; }
   .apps .tile img { display: block; width: 100%; height: 100%; object-fit: cover; }
   .apps .cap { margin-top: 3.6pt; font-size: 7pt; line-height: 9.7pt; color: var(--ink-muted); }
 </style>{% endblock %}
 
 {% block content %}
-{% set vr = models|selectattr('series', 'equalto', 'vr')|list %}
+{% set vrd = models|selectattr('series', 'equalto', 'vrd')|list %}
 {% set labels = {'wd': t.wd, 'opt': t.opt, 'far': t.far, 'depth': t.depth, 'mm': t.mm} %}
 {% set hl = {'through': t.through, 'mounting_face': t.mounting_face, 'back': t.back, 'measuring_face': t.measuring_face} %}
-{% set dims = vr[0].dims.split(' × ') %}{% set dec = (0.5|n)[1] %}
+{% set dims = vrd[0].dims.split(' × ') %}{% set dec = (0.5|n)[1] %}
+{% set grams = (vrd[0].weight|float * 1000)|round|int %}
 <h1 class="title">{{ t.title }}</h1>
 
-<!-- four measuring volumes -->
+<!-- two measuring volumes -->
 <div class="cones">
-  {% for m in vr %}{% set wd = m.wd.split('–') %}{% set fov = m.fov.split(' × ') %}{% set far = d.far_fov[m.model] %}
+  {% for m in vrd %}{% set wd = m.wd.split('–') %}{% set fov = m.fov.split(' × ') %}{% set far = d.far_fov[m.model] %}
   <div class="col">
     <div class="name">{{ m.model }}</div>
     {{ figures.fov_cone_vr_svg(wd[0]|int, m.opt|int, wd[1]|int, fov[0]|int, fov[1]|int, far[0], far[1],
-         '../../../assets/pages/' ~ d.camera_img, d.camera_img_w, d.camera_img_h, labels, 'c' ~ loop.index, decimal=dec)|safe }}
+         '../../../assets/pages/' ~ d.camera_img, d.camera_img_w, d.camera_img_h, labels, 'c' ~ loop.index,
+         W=258.6, H=200, apex_y=44, far_y=151.7, far_px=105.5, img_top=2, caption_top=158.9, axis_dx=58.6, decimal=dec)|safe }}
   </div>
   {% endfor %}
 </div>
-<p class="abs caption" style="left:51pt; top:310.5pt; width:510pt; line-height:9.7pt;">{{ t.cone_caption }}</p>
+<p class="abs caption" style="left:51pt; top:309pt; width:510pt; line-height:9.7pt;">{{ t.cone_caption }}</p>
 
 <!-- dimensions and mounting -->
 <div class="card dims">
   {{ figures.housing_views_vr_svg(dims[0]|int, dims[1]|int, dims[2]|int, d.mount.pattern_l, d.mount.pattern_w, d.mount.hole_d,
-       d.mount.connector_spacing, hl, variant='vr', s=0.264, mx=49.0, my=62.0, bx=154.3, fs=1.0, decimal=dec)|safe }}
+       d.mount.connector_spacing, hl, variant='vrd', s=0.3247, mx=46.0, my=58.7, bx=143.6, fs=0.925, decimal=dec)|safe }}
   <div class="kvbox">
     <h2>{{ t.dims_h }}</h2>
     <table class="kv">
-      <tr><td>{{ t.kv_housing }}</td><td>{{ vr[0].dims|n }} mm</td></tr>
-      <tr><td>{{ t.kv_weight }}</td><td>{{ vr[0].weight|n }} kg</td></tr>
+      <tr><td>{{ t.kv_housing }}</td><td>{{ vrd[0].dims|n }} mm</td></tr>
+      <tr><td>{{ t.kv_weight }}</td><td>{{ grams|n }} g</td></tr>
       <tr><td>{{ t.kv_interface }}</td><td>{{ t.interface }}</td></tr>
       <tr><td>{{ t.kv_mounting }}</td><td>3 × Ø {{ d.mount.hole_d|n }} {{ t.through_holes }} {{ d.mount.pattern_l|n }} × {{ d.mount.pattern_w|n }} {{ t.pattern }}</td></tr>
     </table>
@@ -55,8 +57,8 @@
 </div>
 
 <!-- applications -->
-<h2 class="abs" style="left:51pt; top:529.8pt;">{{ t.applications }}</h2>
-<div class="apps" style="top:545.2pt;">
+<h2 class="abs" style="left:51pt; top:523.8pt;">{{ t.applications }}</h2>
+<div class="apps" style="top:538.5pt;">
   {% for a in d.apps %}
   <div>
     <div class="tile"><img src="../../../assets/pages/{{ a.img }}" alt=""></div>
@@ -66,7 +68,7 @@
 </div>
 
 <!-- CTA -->
-<div class="cta" style="top:736.5pt; height:43.5pt;">
+<div class="cta" style="top:732.8pt; height:44.2pt;">
   <div class="t">{{ t.cta_title|safe }}</div>
   <div class="d">{{ t.cta_desc_a }} <b>{{ t.cta_email }}</b> {{ t.cta_desc_b }}</div>
   <div class="qr">{{ qr_svg|safe }}</div>

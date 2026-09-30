@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+{% set page_title = t.title %}
+{% block header %}
+<div class="tab right on-dark">
+  <div class="box"><span class="num">{{ t.tab_num }}</span><span>{{ t.tab_section }}</span></div>
+  <span class="crumb">{{ t.crumb }}</span>
+</div>
+{% endblock %}
+
+{% block head %}
+<style>
+  table.glance { table-layout:fixed; width:510pt; }
+  .stat .l { margin-top:0.5pt; }
+  .stat .d { width:166pt; }
+  .note.wide { letter-spacing:-0.012em; }
+  table.glance th { font-size:6.9pt; font-weight:600; text-align:left; vertical-align:bottom; line-height:1.3;
+                    padding:4.5pt 4pt 4.4pt 4.5pt; border-bottom:0.8pt solid var(--ink); }
+  table.glance td { font-family:var(--mono); font-size:7pt; line-height:1.3; padding:2.5pt 4pt 4.9pt 4.5pt;
+                    border-bottom:0.75pt solid var(--rule-strong); vertical-align:top; white-space:nowrap; }
+  table.glance td.model { font-family:var(--sans); font-weight:500; white-space:nowrap; }
+  .tile { position:absolute; background:var(--deep); overflow:hidden; }
+  .tile img { display:block; width:100%; height:100%; object-fit:cover; object-position:center; }
+  .stats { gap:14.3pt; }
+  .stat .v { white-space:nowrap; }
+</style>
+{% endblock %}
+
+{% block content %}
+{% set ms = models|selectattr('series', 'equalto', d.series)|list %}
+{% set first = ms[0] %}{% set last = ms[-1] %}
+{% set fovs = ms|map(attribute='fov_w')|list %}
+{% set zs = ms|map(attribute='z')|list %}
+{% set spacings = ms|map(attribute='spacing')|map('float')|list %}
+
+<!-- hero -->
+<div class="abs panel-dark glow" style="left:8.2pt; top:8.2pt; width:595.6pt; height:238.6pt;"></div>
+<div class="abs" style="left:51pt; top:81pt; width:250pt;">
+  <div class="eyebrow">{{ t.eyebrow }}</div>
+  <div class="serif" style="font-size:19pt; line-height:1.08; color:#fff; margin-top:5.5pt;">{{ t.hero_title|safe }}</div>
+  <p style="font-size:8.8pt; line-height:1.36; color:var(--on-dark); margin-top:9.7pt; width:230pt;">{{ t.lede_a }} {{ fovs|min|n }} {{ t.to }} {{ fovs|max|n }} {{ t.lede_b }}</p>
+</div>
+<img src="../../../assets/pages/{{ d.hero_img }}" class="abs" style="left:300.8pt; top:22.5pt; width:260.2pt;" alt="">
+
+<!-- stat trio -->
+<div class="stats" style="top:257.3pt;">
+  <div class="stat">
+    <div class="v">{{ t.stat1_v }}</div>
+    <div class="l">{{ t.stat1_l }}</div>
+    <div class="d">{{ t.stat1_d }}</div>
+  </div>
+  <div class="stat">
+    <div class="v">{{ first.points|n }}</div>
+    <div class="l">{{ t.stat2_l }}</div>
+    <div class="d">{{ t.stat2_d }}</div>
+  </div>
+  <div class="stat">
+    <div class="v">{{ t.stat3_from }} {{ zs|min|n }} µm</div>
+    <div class="l">{{ t.stat3_l }}</div>
+    <div class="d">{{ t.stat3_d_a }} {{ figures.fmt_n(spacings|min)|n }} {{ t.stat3_d_b }}</div>
+  </div>
+</div>
+<p class="abs body" style="left:51pt; top:325.5pt; width:458pt;">{{ t.body_a }} {{ fovs|min|n }} {{ t.to }} {{ fovs|max|n }} {{ t.body_b }} {{ figures.fmt_n(spacings|min)|n }} {{ t.to }} {{ figures.fmt_n(spacings|max)|n }} {{ t.body_c }}</p>
+
+<!-- models at a glance -->
+<h2 class="abs" style="left:51pt; top:360.5pt;">{{ t.h2_models }}</h2>
+<div class="abs" style="left:51pt; top:375.5pt; width:510pt;">
+  <table class="glance">
+    <thead><tr>
+      <th style="width:68.2pt">{{ t.th_model }}</th><th style="width:74.3pt">{{ t.th_fov }}</th><th style="width:88.5pt">{{ t.th_wd }}</th>
+      <th style="width:58.5pt">{{ t.th_depth }}</th><th style="width:53.3pt">{{ t.th_spacing }}</th><th style="width:64.4pt">{{ t.th_z|safe }}</th>
+      <th style="width:65.3pt">{{ t.th_dims }}</th><th style="width:37.5pt">{{ t.th_weight }}</th>
+    </tr></thead>
+    <tbody>
+    {% for m in ms %}
+      {% set wd = figures.model_wd(m) %}
+      <tr>
+        <td class="model">{{ m.model }}{% if m.note %} <sup>{{ m.note|replace('²','2')|replace('¹','1') }}</sup>{% endif %}</td>
+        <td>{{ m.fov|n }}</td>
+        <td>{% if '–' in m.wd %}{{ figures.fmt_n(wd[0])|n }} / {{ figures.fmt_n(wd[1])|n }} / {{ figures.fmt_n(wd[2])|n }}{% else %}– / {{ figures.fmt_n(wd[1])|n }} / –{% endif %}</td>
+        <td>{{ m.depth|n }}</td><td>{{ m.spacing|n }}</td><td>{{ m.z|n }}</td><td>{{ m.dims|n }}</td><td>{{ m.weight|n }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  <p class="note wide" style="margin-top:5pt;">{{ t.note|safe }}</p>
+</div>
+
+<!-- applications -->
+<h2 class="abs" style="left:51pt; top:494.5pt;">{{ t.h2_apps }}</h2>
+{% for a in d.apps %}
+{% set x = 51 + loop.index0 * 173.25 %}
+<div class="tile" style="left:{{ x }}pt; top:527.2pt; width:164.2pt; height:199.6pt;">
+  <img src="../../../assets/pages/{{ a.img }}" alt="">
+</div>
+<p class="abs caption" style="left:{{ x }}pt; top:729.5pt; width:164.2pt; font-size:7pt; line-height:1.3;">{{ t[a.caption] }}</p>
+{% endfor %}
+{% endblock %}

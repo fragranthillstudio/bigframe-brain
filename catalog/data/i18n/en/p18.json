@@ -43,6 +43,6 @@
   "vrd_title": "VRD series",
   "trs_optical": "Four projection directions, one camera",
   "vrd_optical": "Two cameras, one projector",
-  "note_trs": "<sup>2</sup> TRS-050B and TRS-075B: near and far working distances and fields of view on request; measuring depth 8 mm.",
+  "note_trs": "<sup>2</sup> <nobr>TRS-050B</nobr> and <nobr>TRS-075B</nobr>: near and far working distances and fields of view on request; measuring depth 8 mm.",
   "note_volume": "<sup>3</sup> Optimum measuring volume: the depth over which the stated figures hold; the measuring depth is the full Z range over which points are returned (definitions, page 22)."
 }

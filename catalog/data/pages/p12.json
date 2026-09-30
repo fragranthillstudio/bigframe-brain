@@ -1,0 +1,14 @@
+{
+  "camera_img": "p12_img69.png",
+  "camera_img_w": 85.1,
+  "camera_img_h": 44.2,
+  "far_fov": {
+    "VRD-600B": [795, 490],
+    "VRD-1200B": [1538, 974]
+  },
+  "mount": {"pattern_l": 156, "pattern_w": 82, "hole_d": 5.2, "connector_spacing": 28},
+  "apps": [
+    {"img": "p12_img216.png", "caption": "app1"},
+    {"img": "p12_img217.png", "caption": "app2"}
+  ]
+}

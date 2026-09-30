@@ -402,10 +402,11 @@ def fov_cone_vr_svg(wd_near: float, wd_opt: float, wd_far: float, opt_w: float, 
                     far_w: float, far_h: float, img_href: str, img_w: float, img_h: float,
                     labels: dict, uid: str, W: float = 129.4, H: float = 200, apex_y: float = 27.5,
                     far_y: float = 153.5, far_px: float = 73.5, img_top: float = 2.0,
-                    caption_top: float = 160.7, fmt=lambda v: str(v)) -> str:
+                    caption_top: float = 160.7, axis_dx: float = 41.9, decimal: str = ".") -> str:
     """Oblique measuring-volume pyramid of one VR/VRD model: near, optimum (hatched) and far
     field-of-view planes at their working distances, drawn to scale within the model.
-    `labels`: wd, opt, far, depth, mm. `fmt` localises numbers."""
+    `labels`: wd, opt, far, depth, mm. `decimal`: the language's decimal separator."""
+    fmt = lambda v: str(v).replace(".", decimal)  # noqa: E731
     ax = W / 2
     s = far_px / far_w                       # pt per mm across the field of view
     kx, ky = 0.36, 0.21                      # oblique shear of the depth axis
@@ -454,7 +455,7 @@ def fov_cone_vr_svg(wd_near: float, wd_opt: float, wd_far: float, opt_w: float, 
     o.append(_poly([opt["fl"], opt["fr"], opt["br"], opt["bl"]], fill=f"url(#h{uid})", stroke=INK, **{"stroke-width": 0.85}))
     o.append(_poly([near["fl"], near["fr"], near["br"], near["bl"]], fill=BLUE_PAPER, **{"fill-opacity": 0.42, "stroke": INK, "stroke-width": 0.74}))
     # working-distance axis
-    axx = ax - 41.9
+    axx = ax - axis_dx
     o.append(_line((axx, apex_y), (axx, far_y), stroke=FAINT, **{"stroke-width": 0.57}))
     o.append(f'<circle cx="{axx}" cy="{apex_y}" r="1.1" fill="{FAINT}"/>')
     o.append(_text(axx - 3.6, apex_y + 2, labels["wd"], size=5.1, fill=FAINT, anchor="end"))
@@ -476,10 +477,11 @@ def fov_cone_vr_svg(wd_near: float, wd_opt: float, wd_far: float, opt_w: float, 
 def housing_views_vr_svg(l: float, w: float, h: float, pattern_l: float, pattern_w: float, hole_d: float,
                          conn_spacing: float, labels: dict, variant: str = "vr", s: float = 0.264,
                          mx: float = 49.0, my: float = 62.0, bx: float = 154.3, fs: float = 1.0,
-                         W: float = 250, H: float = 170, fmt=lambda v: str(v)) -> str:
+                         W: float = 250, H: float = 170, decimal: str = ".") -> str:
     """Mounting face, back and measuring face of a VR (variant 'vr') or VRD ('vrd') housing with
     dimension lines. l, w, h in mm; s in pt/mm; mx/my/bx: drawing origins; fs: label size factor.
-    `labels`: through, mounting_face, back, measuring_face."""
+    `labels`: through, mounting_face, back, measuring_face. `decimal`: the language's decimal separator."""
+    fmt = lambda v: str(v).replace(".", decimal)  # noqa: E731
     o = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}pt" height="{H}pt" viewBox="0 0 {W} {H}" font-family="{MONO}">']
     dim = dict(stroke=FAINT, **{"stroke-width": 0.54})
     dimline = dict(stroke=FAINT, **{"stroke-width": 0.73})
@@ -885,3 +887,76 @@ def vrh9_dimensions_svg(dims: dict, labels: dict | None = None, W: float = 240, 
     o.append(_view_label(mx + w / 2, my + 56.5, labels.get("face", "MEASURING FACE"), size=8))
     o.append("</svg>")
     return "".join(o)
+
+
+# ------------------------------------------- page 22: reference-plate method
+def plate_method_svg(img_href: str, W: float = 261, H: float = 196) -> str:
+    """The Z-repeatability method: a camera over the ceramic reference plate at the near,
+    optimum and far working distance; nine regions per plate with the A / B areas."""
+    out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}pt" height="{H}pt">',
+           '<defs><linearGradient id="pm-beam" x1="0" y1="0" x2="0" y2="1">'
+           '<stop offset="0" stop-color="#3d5afe" stop-opacity="0.40"/>'
+           '<stop offset="1" stop-color="#3d5afe" stop-opacity="0.06"/></linearGradient></defs>']
+    cam_w, cam_h = 66, 66 * 747 / 900
+    cam_x, cam_y = 100, 20
+    apex = (cam_x + cam_w * 0.42, cam_y + cam_h * 0.90)
+    # plates: (y centre, width, depth, skew, fill, opacity)
+    plates = [(121, 102, 18, 8, "#a9aeb8", 0.72), (153, 130, 24, 10, "#c3c7cf", 0.82), (183, 156, 27, 12, "#eef0f3", 1.0)]
+    cx = 149
+
+    def quad(yc, w, dpt, sk):
+        return [(cx - w / 2 + sk, yc - dpt / 2), (cx + w / 2 + sk, yc - dpt / 2),
+                (cx + w / 2 - sk, yc + dpt / 2), (cx - w / 2 - sk, yc + dpt / 2)]
+
+    far = quad(*plates[-1][:4])
+    # beam to the far plate, drawn under the plates
+    out.append(_poly([apex, far[0], far[1]], fill="url(#pm-beam)"))
+    out.append(_poly([apex, far[3], far[2]], fill="url(#pm-beam)"))
+    out.append(_poly([apex, far[0], far[3]], fill="#3d5afe", fill_opacity="0.10"))
+    out.append(_poly([apex, far[1], far[2]], fill="#3d5afe", fill_opacity="0.10"))
+    for c in far:
+        out.append(_line(apex, c, stroke="#9fb0ff", stroke_width=0.45, stroke_opacity=0.8))
+    for yc, w, dpt, sk, fill, op in plates:
+        q = quad(yc, w, dpt, sk)
+        out.append(_poly(q, fill=fill, fill_opacity=op))
+        # 3 × 3 grid
+        for i in (1, 2):
+            f = i / 3
+            a = (q[0][0] + (q[1][0] - q[0][0]) * f, q[0][1])
+            b = (q[3][0] + (q[2][0] - q[3][0]) * f, q[3][1])
+            out.append(_line(a, b, stroke="#7d8593", stroke_width=0.35, stroke_opacity=0.7))
+            a = (q[0][0] + (q[3][0] - q[0][0]) * f, q[0][1] + (q[3][1] - q[0][1]) * f)
+            b = (q[1][0] + (q[2][0] - q[1][0]) * f, q[1][1] + (q[2][1] - q[1][1]) * f)
+            out.append(_line(a, b, stroke="#7d8593", stroke_width=0.35, stroke_opacity=0.7))
+        # A / B areas in the centre region
+        bw, bh = w * 0.045, dpt * 0.10
+        out.append(f'<rect x="{cx - bw - 0.6:.1f}" y="{yc - bh / 2:.1f}" width="{bw:.1f}" height="{bh:.1f}" fill="{BLUE_PAPER}"/>')
+        out.append(f'<rect x="{cx + 0.6:.1f}" y="{yc - bh / 2:.1f}" width="{bw:.1f}" height="{bh:.1f}" fill="{GREEN_PAPER}"/>')
+    out.append(camera_image(img_href, cx=cam_x + cam_w / 2, y_top=cam_y, width=cam_w, aspect=900 / 747))
+    out.append("</svg>")
+    return "".join(out)
+
+
+def plate_plan_svg(label_a: str = "A", label_b: str = "B", W: float = 119.1, H: float = 74.6) -> str:
+    """Plan view of the reference plate: nine regions, A and B adjacent in each."""
+    out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}pt" height="{H}pt">',
+           f'<rect x="0.45" y="0.45" width="{W - 0.9:.1f}" height="{H - 0.9:.1f}" fill="#ecedf1" stroke="{INK}" stroke-width="0.85"/>']
+    for i in (1, 2):
+        x = W * i / 3
+        y = H * i / 3
+        out.append(_line((x, 0.9), (x, H - 0.9), stroke="#6a7786", stroke_width=0.6, stroke_dasharray="2.2 1.6"))
+        out.append(_line((0.9, y), (W - 0.9, y), stroke="#6a7786", stroke_width=0.6, stroke_dasharray="2.2 1.6"))
+    bw, bh = 6.2, 5.6
+    for r in range(3):
+        for c in range(3):
+            x = W * (c + 0.5) / 3
+            y = H * (r + 0.5) / 3
+            centre = r == 1 and c == 1
+            fa, fb = (BLUE_PAPER, GREEN_PAPER) if centre else ("#c3c7cf", "#c3c7cf")
+            out.append(f'<rect x="{x - bw - 0.4:.1f}" y="{y - bh / 2 + (1.6 if centre else 0):.1f}" width="{bw}" height="{bh}" fill="{fa}"/>')
+            out.append(f'<rect x="{x + 0.4:.1f}" y="{y - bh / 2 + (1.6 if centre else 0):.1f}" width="{bw}" height="{bh}" fill="{fb}"/>')
+            if centre:
+                out.append(_text(x - 3.6, y - 3.4, label_a, size=6.2, fill=BLUE_PAPER, anchor="middle", weight=600))
+                out.append(_text(x + 3.6, y - 3.4, label_b, size=6.2, fill=GREEN_PAPER, anchor="middle", weight=600))
+    out.append("</svg>")
+    return "".join(out)

@@ -1,0 +1,13 @@
+{
+  "lockup": "assets/pages/p23_lockup.png",
+  "lineup": "assets/pages/p01_products.png",
+  "lineup_source": "assets/pages/p23_img44.png",
+  "industries": [
+    {"title": "ind1_title", "desc": "ind1_desc"},
+    {"title": "ind2_title", "desc": "ind2_desc"},
+    {"title": "ind3_title", "desc": "ind3_desc"},
+    {"title": "ind4_title", "desc": "ind4_desc"},
+    {"title": "ind5_title", "desc": "ind5_desc"}
+  ],
+  "linkedin_url": "https://www.linkedin.com/company/bigframetechnology"
+}

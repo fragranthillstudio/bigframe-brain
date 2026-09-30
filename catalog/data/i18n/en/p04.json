@@ -14,7 +14,6 @@
   "tile2_title": "Depalletizing",
   "tile2_desc_prefix": "Layer height and carton positions from one capture at",
   "tile2_caption": "Rendering — PRS over a Euro pallet",
-  "tile2_fig_label": "PRS over a Euro pallet · illustration",
   "tile3_title": "Piece picking from totes",
   "tile3_desc": "Items segmented by shape, color and print; pick pose per item",
   "tile4_title": "Fastener bin picking",

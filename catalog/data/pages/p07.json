@@ -1,0 +1,12 @@
+{
+  "series": "vrh9",
+  "hero_img": "p07_img144.png",
+  "apps": [
+    {"img": "p07_img140.png", "caption": "app1", "top": -7.6, "height": 88.6},
+    {"img": "p07_img75.png", "caption": "app2", "top": -8.3, "height": 90.0},
+    {"img": "p07_img141.png", "caption": "app3", "top": -6.8, "height": 87.8},
+    {"img": "p07_img142.png", "caption": "app4", "top": -7.5, "height": 88.5},
+    {"img": "p07_img143.png", "caption": "app5", "top": -8.2, "height": 90.0},
+    {"img": "p07_img76.png", "caption": "app6", "top": -7.5, "height": 88.5}
+  ]
+}

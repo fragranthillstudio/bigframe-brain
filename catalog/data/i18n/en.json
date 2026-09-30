@@ -22,6 +22,12 @@
     "interface": "Interface",
     "email": "info@bigframe.com",
     "prelim_final": "Preliminary specification; final data sheet at launch.",
-    "z_method_launch": "method to be stated at launch."
+    "z_method_launch": "method to be stated at launch.",
+    "company": "Bigframe Technology Co., Ltd.",
+    "address1": "South Building, Building 5, Jingdong Intelligent Industrial Park",
+    "address2": "No. 9 Jinjie Road, Kunshan, Jiangsu Province, China",
+    "website": "www.bigframe.com",
+    "linkedin": "linkedin.com/company/bigframetechnology",
+    "tel": "Tel. (China) 400-182-8892"
   }
 }

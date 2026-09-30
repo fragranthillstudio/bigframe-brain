@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% set page_title = t.page_title %}
+{% block head %}
+<style>
+  .body86 { font-size: 8.6pt; line-height: 1.42; color: var(--ink); }
+  .addr { font-size: 9.5pt; line-height: 1.5; color: var(--ink); }
+  .contact-mono { font-family: var(--mono); font-size: 9.5pt; line-height: 1.5; color: var(--ink); }
+  .ind-eb { font-family: var(--mono); font-size: 6.6pt; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-muted); }
+  .ind { border-top: 0.75pt solid var(--rule-strong); padding: 4pt 0 5pt; }
+  .ind .tt { font-size: 8pt; font-weight: 600; line-height: 1.3; color: var(--ink); }
+  .ind .ds { font-size: 8pt; line-height: 1.41; color: var(--ink); margin-top: 1.6pt; }
+  .qrbox { position: absolute; width: 60.7pt; height: 60pt; background: #fff; border: 0.75pt solid var(--rule); padding: 5.6pt; }
+  .qrbox svg { display: block; width: 100%; height: 100%; }
+  .qrlab { position: absolute; font-size: 7.2pt; color: var(--ink-muted); }
+  .notes { font-size: 6.9pt; line-height: 1.32; letter-spacing: -0.02em; color: var(--ink-muted); }
+  .lineup-label { position: absolute; right: 51pt; top: 581pt; font-family: var(--mono); font-size: 6.6pt; letter-spacing: 0.2em; text-transform: uppercase; color: var(--on-dark-muted); }
+</style>
+{% endblock %}
+{% block header %}
+<div class="tab right">
+  <div class="box"><span class="num">{{ t.section_num }}</span><span>{{ t.section_name }}</span></div>
+  <span class="crumb">{{ t.crumb }}</span>
+</div>
+{% endblock %}
+
+{% block content %}
+<img src="../../../{{ d.lockup }}" class="abs" style="left:49pt; top:55pt; width:225pt;" alt="BIGFRAME">
+<h1 class="title" style="top:139.5pt;">{{ t.title }}</h1>
+<div class="abs" style="left:51pt; top:178pt; width:348pt;">
+  <p class="body86">{{ t.para1 }}</p>
+  <p class="body86" style="margin-top:6.4pt;">{{ t.para2 }}</p>
+</div>
+
+<div class="abs" style="left:51pt; top:298.6pt; width:342pt;">
+  <h2>{{ t.h_contact }}</h2>
+  <p class="addr" style="margin-top:3.6pt;">{{ c.address1 }}<br>{{ c.address2 }}</p>
+  <p class="contact-mono" style="margin-top:11.5pt;">{{ c.email }}<br>{{ c.website }}<br>{{ c.linkedin }}<br>{{ c.tel }}</p>
+</div>
+
+<div class="abs" style="left:408pt; top:145pt; width:153pt;">
+  <div class="ind-eb">{{ t.h_industries }}</div>
+  <div style="margin-top:4.6pt;">
+  {% for i in d.industries %}
+    <div class="ind"><div class="tt">{{ t[i.title] }}</div><div class="ds">{{ t[i.desc] }}</div></div>
+  {% endfor %}
+  </div>
+</div>
+<div class="qrbox" style="left:408.4pt; top:374.6pt;">{{ qr_svg|safe }}</div>
+<div class="qrbox" style="left:492.4pt; top:374.6pt;">{{ figures.qr_svg(d.linkedin_url)|safe }}</div>
+<div class="qrlab" style="left:408.2pt; top:441.8pt;">{{ t.qr_web }}</div>
+<div class="qrlab" style="left:491.9pt; top:441.8pt;">{{ t.qr_linkedin }}</div>
+
+<div class="abs" style="left:51pt; top:469pt; width:510pt;">
+  <h2>{{ t.h_notes }}</h2>
+  <p class="notes" style="margin-top:3.6pt;">{{ t.notes }} {{ catalog.edition }} · {{ t.notes_copyright }}</p>
+</div>
+
+<div class="abs panel-dark glow" style="left:8.2pt; top:555.8pt; width:595.6pt; height:243.7pt; overflow:hidden;">
+  <img src="../../../{{ d.lineup }}" class="abs" style="left:85.6pt; top:-24.8pt; width:425.2pt;" alt="">
+</div>
+<div class="lineup-label">{{ t.lineup_label }}</div>
+{% endblock %}

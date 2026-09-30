@@ -8,10 +8,9 @@
   .tile .img { position: absolute; left: 0; top: 0; width: 246pt; height: 147pt; background: var(--deep); overflow: hidden; }
   .tile .img img { display: block; width: 100%; height: 100%; object-fit: cover; }
   .tile .img svg { position: absolute; left: -12pt; top: 0; width: 270pt; height: 147pt; }
-  .tile .img .fig-label { position: absolute; left: 8.5pt; top: 7pt; }
-  .tile .txt { position: absolute; left: 7.4pt; right: 6pt; top: 152.5pt; }
+  .tile .txt { position: absolute; left: 7.4pt; right: 6pt; top: 153.2pt; }
   .tile .ind { font-family: var(--mono); font-size: 6.2pt; letter-spacing: 0.2em; text-transform: uppercase; color: var(--ink-muted); line-height: 1.3; }
-  .tile .ttl { font-size: 9pt; font-weight: 600; line-height: 1.3; color: var(--ink); margin-top: 2.2pt; }
+  .tile .ttl { font-size: 9pt; font-weight: 600; line-height: 1.3; color: var(--ink); margin-top: 2.6pt; }
   .tile .dsc { font-size: 7.3pt; line-height: 1.3; color: var(--ink-muted); margin-top: 2.2pt; }
   .tile .mdl { font-family: var(--mono); font-size: 6.6pt; line-height: 1.3; color: var(--ink); margin-top: 4pt; }
   .tile .mdl i { font-style: normal; color: var(--ink-muted); }
@@ -19,7 +18,7 @@
   .cta-tile { position: absolute; width: 247.5pt; height: 205.4pt; background: var(--deep); color: #fff; }
   .cta-tile .eb { position: absolute; left: 9.9pt; top: 8.7pt; font-family: var(--mono); font-size: 6.6pt; font-weight: 500; letter-spacing: 0.2em; text-transform: uppercase; color: var(--on-dark-muted); }
   .cta-tile .t { position: absolute; left: 9.9pt; top: 17.5pt; font-family: var(--serif); font-size: 13pt; line-height: 1.2; color: #fff; }
-  .cta-tile .b { position: absolute; left: 9.9pt; top: 40.4pt; width: 230pt; font-size: 6.8pt; line-height: 1.42; color: var(--on-dark-data); }
+  .cta-tile .b { position: absolute; left: 9.9pt; top: 40.4pt; width: 232pt; font-size: 6.8pt; line-height: 1.42; color: var(--on-dark-data); }
   .cta-tile .ct { position: absolute; left: 9.9pt; top: 72.6pt; font-family: var(--mono); font-size: 6.6pt; color: #fff; }
   .cta-tile .qr { position: absolute; left: 183.7pt; top: 91.4pt; width: 54pt; height: 54pt; background: #fff; padding: 6pt; }
   .cta-tile .qr svg { display: block; width: 100%; height: 100%; }
@@ -48,7 +47,6 @@
   <div class="img">
     {% if tile.scene == 'prs_use_case' %}
       {{ use_case_compact_svg|safe }}
-      <div class="fig-label">{{ t.tile2_fig_label }}</div>
     {% else %}
       <img src="../../../{{ tile.img }}" style="object-position: {{ tile.pos }};" alt="">
     {% endif %}

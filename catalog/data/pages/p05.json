@@ -1,0 +1,18 @@
+{
+  "series": "trs",
+  "hero_img": "p05_img95.png",
+  "apps": [
+    {
+      "img": "p05_img72.png",
+      "caption": "app1"
+    },
+    {
+      "img": "p05_img93.png",
+      "caption": "app2"
+    },
+    {
+      "img": "p05_img94.png",
+      "caption": "app3"
+    }
+  ]
+}

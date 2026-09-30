@@ -1,0 +1,12 @@
+{
+  "hero_img": "p11_img206.png",
+  "method_page": 22,
+  "apps": [
+    {"img": "p11_img86.png", "caption": "app1"},
+    {"img": "p11_img203.png", "caption": "app2"},
+    {"img": "p11_img204.png", "caption": "app3"},
+    {"img": "p11_img84.png", "caption": "app4"},
+    {"img": "p11_img85.png", "caption": "app5"},
+    {"img": "p11_img205.png", "caption": "app6"}
+  ]
+}

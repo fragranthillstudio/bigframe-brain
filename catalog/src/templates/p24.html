@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% set page_title = t.page_title %}
+{% block head %}
+<style>
+  body { background: radial-gradient(ellipse 60% 45% at 50% 46%, #1a2a4c 0%, #131d36 45%, var(--deep) 100%); color: #fff; }
+  .footer { display: none; }
+  .tagline { position: absolute; left: 406.6pt; top: 377pt; font-family: var(--sans); font-size: 13.6pt; letter-spacing: 0.045em; color: #9aa6b4; white-space: nowrap; }
+  .divider { position: absolute; left: 385.8pt; top: 371.2pt; width: 1.1pt; height: 19.7pt; background: #9aa6b4; }
+  .co { font-size: 8pt; font-weight: 600; line-height: 1.3; color: #fff; }
+  .addr { font-size: 8pt; line-height: 1.5; color: var(--on-dark-data); }
+  .cmono { font-family: var(--mono); font-size: 7.4pt; line-height: 1.5; color: var(--on-dark-data); }
+  .qrbox { position: absolute; width: 60pt; height: 59.2pt; background: #fff; padding: 6pt; }
+  .qrbox svg { display: block; width: 100%; height: 100%; }
+  .qrlab { position: absolute; transform: translateX(-50%); white-space: nowrap; font-family: var(--mono); font-size: 6.6pt; letter-spacing: 0.2em; text-transform: uppercase; color: var(--on-dark-muted); }
+  .qrurl { position: absolute; transform: translateX(-50%); white-space: nowrap; font-family: var(--mono); font-size: 5.6pt; color: var(--ink-faint); }
+  .cover-foot { position: absolute; left: 59.2pt; width: 493.6pt; top: 802.5pt; }
+  .cover-foot .spectrum { height: 2.3pt; display: flex; }
+  .cover-foot .spectrum i { flex: 1; display: block; }
+  .cover-foot .spectrum i:nth-child(1) { background: var(--red); }
+  .cover-foot .spectrum i:nth-child(2) { background: var(--lime); }
+  .cover-foot .spectrum i:nth-child(3) { background: var(--green); }
+  .cover-foot .spectrum i:nth-child(4) { background: var(--blue); }
+  .cover-foot .line { display: flex; justify-content: space-between; margin-top: 9.5pt;
+                      font-family: var(--mono); font-size: 6.6pt; letter-spacing: 0.2em; color: var(--on-dark-muted); }
+</style>
+{% endblock %}
+{% block header %}{% endblock %}
+
+{% block content %}
+<img src="../../../{{ d.lockup }}" class="abs" style="left:91.2pt; top:324pt; width:277.1pt;" alt="BIGFRAME">
+<div class="divider"></div>
+<div class="tagline">{{ t.tagline }}</div>
+
+<div class="abs" style="left:59.5pt; top:659.5pt; width:300pt;">
+  <div class="co">{{ c.company }}</div>
+  <p class="addr" style="margin-top:3.6pt;">{{ c.address1 }}<br>{{ c.address2 }}</p>
+  <p class="cmono" style="margin-top:5.2pt;">{{ c.email }}<br>{{ c.website }}<br>{{ c.linkedin }}<br>{{ c.tel }}</p>
+</div>
+
+<div class="qrbox" style="left:366.7pt; top:663.8pt;">{{ figures.qr_svg(d.linkedin_url)|safe }}</div>
+<div class="qrlab" style="left:396.7pt; top:726.5pt;">{{ t.qr_linkedin }}</div>
+<div class="qrurl" style="left:396.7pt; top:740.3pt;">{{ c.linkedin }}</div>
+<div class="qrbox" style="left:531.7pt; top:663.8pt;">{{ qr_svg|safe }}</div>
+<div class="qrlab" style="left:561.7pt; top:726.5pt;">{{ t.qr_website }}</div>
+<div class="qrurl" style="left:561.7pt; top:740.3pt;">{{ c.website }}</div>
+
+<div class="cover-foot">
+  <div class="spectrum"><i></i><i></i><i></i><i></i></div>
+  <div class="line"><span>{{ t.copyright }}</span><span>{{ catalog.edition }}</span></div>
+</div>
+{% endblock %}

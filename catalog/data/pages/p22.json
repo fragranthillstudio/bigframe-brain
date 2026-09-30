@@ -1,0 +1,13 @@
+{
+  "camera_img": "assets/series/vrh9.png",
+  "definitions": [
+    {"term": "def1_term", "desc": "def1_desc"},
+    {"term": "def2_term", "desc": "def2_desc"},
+    {"term": "def3_term", "desc": "def3_desc"},
+    {"term": "def4_term", "desc": "def4_desc"},
+    {"term": "def5_term", "desc": "def5_desc"},
+    {"term": "def6_term", "desc": "def6_desc"},
+    {"term": "def7_term", "desc": "def7_desc"},
+    {"term": "def8_term", "desc": "def8_desc"}
+  ]
+}

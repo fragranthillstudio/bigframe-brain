@@ -1,0 +1,25 @@
+{
+  "cables": [
+    {"name": "VR-Power-I/O", "len_m": 5, "desc": "cable_power", "series": ["VRH9", "VR", "VRD"]},
+    {"name": "VR-Power-I/O", "len_m": 10, "desc": "cable_power", "series": ["VRH9", "VR", "VRD"]},
+    {"name": "VR-Power-I/O", "len_m": 20, "desc": "cable_power", "series": ["VRH9", "VR", "VRD"]},
+    {"name": "VR-Ethernet Cable", "len_m": 5, "desc": "cable_gige", "series": ["VRH9", "VR", "VRD"]},
+    {"name": "VR-Ethernet Cable", "len_m": 10, "desc": "cable_gige", "series": ["VRH9", "VR", "VRD"]},
+    {"name": "VR-Ethernet Cable", "len_m": 20, "desc": "cable_gige", "series": ["VRH9", "VR", "VRD"]},
+    {"name": "TRS-CP12-HD-HD", "len_m": 5, "desc": "cable_cxp", "series": ["TRS"]},
+    {"name": "TRS-CP12-HD-HD", "len_m": 10, "desc": "cable_cxp", "series": ["TRS"]},
+    {"name": "TRS-CP12-HD-HD", "len_m": 20, "desc": "cable_cxp", "series": ["TRS"]}
+  ],
+  "cable_photos": [
+    {"file": "p21_img246.png", "caption": "photo_power", "img_left": -2.2, "img_top": 0.7, "img_width": 99},
+    {"file": "p21_img247.png", "caption": "photo_gige", "img_left": 0.7, "img_top": 0, "img_width": 93}
+  ],
+  "targets": [
+    {"model": "CAL-CB-HC3D-40-6×6", "file": "p21_img248.png", "tol_um": 5, "size_mm": 40, "array": [6, 6], "corners": [5, 5], "pitch_mm": 2.5, "marker_mm": 1.8, "models": ["VRH9-040B", "VRH9-080B"]},
+    {"model": "CAL-CB-HC3D-50-6×6", "file": "p21_img249.png", "tol_um": 5, "size_mm": 50, "array": [6, 6], "corners": [5, 5], "pitch_mm": 6, "marker_mm": 4, "models": ["VRH9-120B", "VRH9-160B"]},
+    {"model": "CAL-CB-HC3D-90-6×6", "file": "p21_img250.png", "tol_um": 5, "size_mm": 90, "array": [6, 6], "corners": [5, 5], "pitch_mm": 12, "marker_mm": 9, "models": ["VRH9-200B", "VRH9-280B"]},
+    {"model": "CAL-CB-HC3D-200-6×6", "file": "p21_img251.png", "tol_um": 10, "size_mm": 200, "array": [6, 6], "corners": [5, 5], "pitch_mm": 25, "marker_mm": 20, "models": ["VR-400B", "VR-600B", "VRD-600B"]},
+    {"model": "CAL-CB-HC3D-400-6×6", "file": "p21_img252.png", "tol_um": 10, "size_mm": 400, "array": [6, 6], "corners": [5, 5], "pitch_mm": 60, "marker_mm": 48, "models": ["VR-1300B", "VRD-1200B"]},
+    {"model": "CAL-CB-HC3D-770-9×9", "file": "p21_img253.png", "tol_um": 10, "size_mm": 770, "array": [9, 9], "corners": [8, 8], "pitch_mm": 80, "marker_mm": 64, "models": ["VR-2300B"]}
+  ]
+}

@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% set page_title = t.page_title %}
+{% set section_num = t.section_num %}{% set section_name = t.section_name %}{% set crumb = t.crumb %}
+{% block head %}
+<style>
+  .lede9 { font-size: 9pt; line-height: 1.43; color: var(--ink); }
+  table.defs td { font-size: 8pt; line-height: 1.4; padding: 6.4pt 4.8pt 6.4pt 4.5pt; border-bottom: 0.75pt solid var(--rule-strong); vertical-align: top; color: var(--ink); }
+  table.defs td:first-child { width: 124.5pt; font-weight: 600; }
+  .body84 { font-size: 8.4pt; line-height: 1.43; color: var(--ink); }
+  .plate-label { position: absolute; right: 9.1pt; font-family: var(--mono); font-size: 5.6pt; letter-spacing: 0.2em; color: var(--on-dark-data); text-transform: uppercase; }
+  .plan-cap { font-size: 5.7pt; line-height: 1.5; text-align: center; color: var(--ink); }
+  .plan-cap .s { color: var(--ink-faint); }
+</style>
+{% endblock %}
+
+{% block content %}
+<h1 class="title">{{ t.title }}</h1>
+<p class="abs lede9" style="left:51pt; top:89.5pt; width:425pt;">{{ t.lede }}</p>
+
+<h2 class="abs" style="left:51pt; top:127pt;">{{ t.h_definitions }}</h2>
+<table class="defs abs" style="left:51pt; top:141.8pt; width:510pt;">
+  {% for r in d.definitions %}
+  <tr><td>{{ t[r.term] }}</td><td>{{ t[r.desc] }}</td></tr>
+  {% endfor %}
+</table>
+
+<h2 class="abs" style="left:51pt; top:399pt;">{{ t.h_method }}</h2>
+<div class="abs panel-dark" style="left:51pt; top:414pt; width:261pt; height:195.8pt; overflow:hidden;">
+  <div class="abs" style="left:0; top:0;">{{ figures.plate_method_svg('../../../' ~ d.camera_img)|safe }}</div>
+  <div class="fig-label abs" style="left:8.5pt; top:8.5pt;">{{ t.fig_label }}</div>
+  <div class="plate-label" style="top:114.5pt;">{{ t.label_near }}</div>
+  <div class="plate-label" style="top:145.3pt;">{{ t.label_optimum }}</div>
+  <div class="plate-label" style="top:176.8pt;">{{ t.label_far }}</div>
+</div>
+<p class="abs caption" style="left:51pt; top:614pt; width:261pt;">{{ t.fig_caption }}</p>
+
+<p class="abs body84" style="left:328.8pt; top:413pt; width:232.2pt;">{{ t.method_text }}</p>
+
+<div class="abs" style="left:331.3pt; top:532.3pt; width:119.1pt;">
+  {{ figures.plate_plan_svg(t.plan_a, t.plan_b)|safe }}
+  <div class="plan-cap" style="margin-top:3pt;">{{ t.plan_caption }}<br><span class="s">{{ t.plan_sub }}</span></div>
+</div>
+<p class="abs body84" style="left:464.8pt; top:508.3pt; width:96.2pt;">{{ t.aside_text }}</p>
+
+<div class="abs" style="left:51pt; top:679pt; width:243.5pt;">
+  <h2>{{ t.h_why }}</h2>
+  <p class="body84" style="margin-top:3.2pt;">{{ t.why_text }}</p>
+</div>
+<div class="abs" style="left:314.6pt; top:679pt; width:246.4pt;">
+  <h2>{{ t.h_where }}</h2>
+  <p class="body84" style="margin-top:3.2pt;">{{ t.where_text }}</p>
+</div>
+{% endblock %}
