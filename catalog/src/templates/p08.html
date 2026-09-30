@@ -4,15 +4,17 @@
 
 {% block head %}
 <style>
+  h1.title { top:55.5pt; }
+  .cta .t { width:154.5pt; }
   .col { position:absolute; top:92.8pt; width:67.1pt; height:140pt; text-align:center; }
   .col .name { font-size:7.9pt; font-weight:600; line-height:1.3; }
   .col img.cam { position:absolute; top:14.2pt; width:24.9pt; }
   .col svg { position:absolute; left:0; top:20.5pt; }
   .col .lbl { position:absolute; left:-20pt; right:-20pt; top:102pt; font-family:var(--mono); font-size:5.8pt; line-height:1.466; white-space:nowrap; }
   .col .lbl .dp { color:var(--ink-faint); }
-  table.kv2 td { font-size:6.9pt; line-height:1.3; padding:0.9pt 0; vertical-align:top; }
+  table.kv2 td { font-size:6.9pt; line-height:1.3; padding:1.1pt 0 1.3pt; vertical-align:top; }
   table.kv2 td:first-child { color:var(--ink-muted); width:61.7pt; }
-  table.kv2 td:last-child { font-family:var(--mono); }
+  table.kv2 td:last-child { font-family:var(--mono); letter-spacing:-0.02em; }
   .tile { position:absolute; background:var(--deep); overflow:hidden; }
   .tile img { display:block; width:100%; height:100%; object-fit:cover; }
 </style>
@@ -44,7 +46,7 @@
 <!-- dimensions card -->
 <div class="abs card" style="left:51pt; top:267.8pt; width:510pt; height:177.7pt;"></div>
 <div class="abs" style="left:55pt; top:270pt; width:240pt;">{{ figures.vrh9_dimensions_svg(h, {'mounting': t.mounting_face, 'back': t.back, 'face': t.face, 'through': t.through})|safe }}</div>
-<div class="abs" style="left:306.9pt; top:273.5pt; width:245pt;">
+<div class="abs" style="left:306.9pt; top:273.5pt; width:254pt;">
   <h2 style="font-size:8pt;">{{ t.h2_dims }}</h2>
   <table class="kv2" style="margin-top:3.6pt;">
     <tr><td>{{ t.kv_housing }}</td><td>{{ first.dims|n }} mm</td></tr>

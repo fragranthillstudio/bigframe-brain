@@ -656,8 +656,8 @@ def fov_cone_svg(m: dict, W: float = 122.8, cone_h: float = 147.4, cx: float | N
     H = top + cone_h + bottom
     o = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H:.1f}" width="{W}pt" height="{H:.1f}pt" overflow="visible">',
          f'<defs><linearGradient id="cg{uid}" x1="0" y1="0" x2="0" y2="1">'
-         f'<stop offset="0" stop-color="{BLUE_PAPER}" stop-opacity="0.10"/>'
-         f'<stop offset="1" stop-color="{BLUE_PAPER}" stop-opacity="0.34"/></linearGradient></defs>']
+         f'<stop offset="0" stop-color="{BLUE_PAPER}" stop-opacity="0.07"/>'
+         f'<stop offset="1" stop-color="{BLUE_PAPER}" stop-opacity="0.22"/></linearGradient></defs>']
     apex = (cx, ay)
     ffl, ffr, fbr, fbl = plane(far)
     # cone: back faces first, then the front face
@@ -665,7 +665,7 @@ def fov_cone_svg(m: dict, W: float = 122.8, cone_h: float = 147.4, cx: float | N
         o.append(_poly(tri, fill=f"url(#cg{uid})", stroke=BLUE_PAPER, stroke_width=0.45, stroke_linejoin="round"))
     # measuring depth: box between the near and the far plane
     nfl, nfr, nbr, nbl = plane(near)
-    box_style = dict(fill=BLUE_PAPER, fill_opacity=0.35, stroke=BLUE_PAPER, stroke_width=0.45, stroke_linejoin="round")
+    box_style = dict(fill=BLUE_PAPER, fill_opacity=0.22, stroke=BLUE_PAPER, stroke_width=0.45, stroke_linejoin="round")
     o.append(_poly((nbl, nbr, fbr, fbl), **box_style))
     o.append(_poly((nfl, nbl, fbl, ffl), **box_style))
     o.append(_poly((nfr, nbr, fbr, ffr), **box_style))
@@ -692,7 +692,8 @@ def fov_cone_svg(m: dict, W: float = 122.8, cone_h: float = 147.4, cx: float | N
     o.append(_line((lx - 1.6, ffl[1]), (lx + 1.6, ffl[1]), stroke=FAINT, stroke_width=0.57))
     o.append(_text(lx - 3.6, ay + 1.9, wd_label, size=5.1, fill=FAINT, anchor="end"))
     span = ffl[1] - nfl[1]
-    if span > stack_gap:
+    ranged = "–" in str(m.get("wd", "")) or "-" in str(m.get("wd", ""))
+    if span > stack_gap and ranged:
         for wd in (near, opt, far):
             yy = y_of(wd)
             o.append(_line((lx, yy), (ffl[0] - 1.5, yy), stroke=FAINT, stroke_width=0.4))
@@ -700,7 +701,7 @@ def fov_cone_svg(m: dict, W: float = 122.8, cone_h: float = 147.4, cx: float | N
     else:
         yy = ofl[1]
         o.append(_line((lx, yy), (ofl[0] - 1.5, yy), stroke=FAINT, stroke_width=0.4))
-        label = fmt_n(opt) if near == far else f"{fmt_n(near)}–{fmt_n(far)}"
+        label = f"{fmt_n(near)}–{fmt_n(far)}" if ranged else fmt_n(opt)
         o.append(_text(lx - 3.6, yy + wd_size * 0.36, label, size=wd_size, fill=INK, anchor="end"))
     o.append("</svg>")
     return "".join(o)
@@ -717,8 +718,8 @@ _DIM = dict(stroke=FAINT, stroke_width=0.55)
 
 
 def _arrow_defs(uid: str) -> str:
-    return (f'<defs><marker id="as{uid}" viewBox="0 0 6 6" refX="0.5" refY="3" markerWidth="6" markerHeight="6" orient="auto-start-reverse" markerUnits="userSpaceOnUse">'
-            f'<path d="M0,3 L6,0.6 L6,5.4 z" fill="{FAINT}"/></marker></defs>')
+    return (f'<defs><marker id="as{uid}" viewBox="0 0 6 6" refX="0.5" refY="3" markerWidth="4" markerHeight="4" orient="auto-start-reverse" markerUnits="userSpaceOnUse">'
+            f'<path d="M0,3 L6,1 L6,5 z" fill="{FAINT}"/></marker></defs>')
 
 
 def _dim_h(x0, x1, y, label, uid, size=6.7, above=True, ext=None, color=INK) -> str:
@@ -869,7 +870,7 @@ def vrh9_dimensions_svg(dims: dict, labels: dict | None = None, W: float = 240, 
     o.append(_line((bx, by + 1.6), (bx + w, by + 1.6), stroke=FAINT, stroke_width=0.6))
     o.append(_line((bx, by + bh - 1.6), (bx + w, by + bh - 1.6), stroke=FAINT, stroke_width=0.6))
     o.append(f'<rect x="{bx + w - 18:.1f}" y="{by + 3.4:.1f}" width="13" height="{bh - 6.8:.1f}" rx="1.4" fill="#e8ecef" stroke="{INK}" stroke-width="0.9"/>')
-    o.append(_dim_v(bx + w + 7.6, by, by + bh, str(Hh), uid, size=8.3, ext=(bx + w + 1, bx + w + 10), dx=4.6))
+    o.append(_dim_v(bx + w + 7.6, by, by + bh, str(Hh), uid, size=8.3, ext=(bx + w + 1, bx + w + 10), dx=5.5))
     o.append(_view_label(bx + w / 2, by + 34.5, labels.get("back", "BACK"), size=8))
     # ---- measuring face
     mx, my = 150.3, 101.7

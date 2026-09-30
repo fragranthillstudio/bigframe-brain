@@ -4,13 +4,15 @@
 
 {% block head %}
 <style>
+  h1.title { top:55.5pt; }
+  .cta .t { width:154.5pt; }
   .col { position:absolute; top:92pt; width:122.8pt; height:262pt; text-align:center; }
   .col .name { font-size:8.5pt; font-weight:600; line-height:1.3; }
   .col img.cam { position:absolute; top:15pt; width:61.1pt; }
   .col svg { position:absolute; left:0; top:60.2pt; }
   .col .lbl { position:absolute; left:-20pt; right:-20pt; top:226pt; font-family:var(--mono); font-size:6.7pt; line-height:1.4; white-space:nowrap; }
   .col .lbl .dp { color:var(--ink-faint); }
-  table.kv2 td { font-size:6.9pt; line-height:1.3; padding:0.9pt 0; vertical-align:top; }
+  table.kv2 td { font-size:6.9pt; line-height:1.3; padding:1.1pt 0 1.3pt; vertical-align:top; }
   table.kv2 td:first-child { color:var(--ink-muted); width:61.7pt; }
   table.kv2 td:last-child { font-family:var(--mono); }
   .tile { position:absolute; background:var(--deep); overflow:hidden; }
@@ -23,7 +25,7 @@
 {% set first = ms[0] %}{% set last = ms[-1] %}
 {% set shown = (ms|selectattr('model', 'equalto', d.shown_model)|list)[0] %}
 {% set weights = ms|map(attribute='weight')|map('float')|list %}
-{% set wds = [] %}{% for m in ms %}{% set _ = wds.extend([figures.model_wd(m)[0], figures.model_wd(m)[2]]) %}{% endfor %}
+{% set wds = [] %}{% for m in ms %}{% if '–' in m.wd %}{% set _ = wds.extend([figures.model_wd(m)[0], figures.model_wd(m)[2]]) %}{% else %}{% set _ = wds.append(figures.model_wd(m)[1]) %}{% endif %}{% endfor %}
 <h1 class="title">{{ t.title }}</h1>
 
 <!-- FOV cones, one column per model -->
