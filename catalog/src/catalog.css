@@ -14,6 +14,13 @@
 @font-face { font-family: "Bodoni Moda"; src: url("../assets/fonts/BodoniModa-400-normal.ttf"); font-weight: 400; }
 @font-face { font-family: "Bodoni Moda"; src: url("../assets/fonts/BodoniModa-500-normal.ttf"); font-weight: 500; }
 @font-face { font-family: "Bodoni Moda"; src: url("../assets/fonts/BodoniModa-600-normal.ttf"); font-weight: 600; }
+/* CJK fallbacks for the ZH edition (fetched by build/fetch_fonts.py; Latin glyphs still come from IBM Plex / Bodoni) */
+@font-face { font-family: "Noto Sans SC"; src: url("../assets/fonts/NotoSansSC-400-normal.ttf"); font-weight: 400; }
+@font-face { font-family: "Noto Sans SC"; src: url("../assets/fonts/NotoSansSC-500-normal.ttf"); font-weight: 500; }
+@font-face { font-family: "Noto Sans SC"; src: url("../assets/fonts/NotoSansSC-700-normal.ttf"); font-weight: 600; }
+@font-face { font-family: "Noto Serif SC"; src: url("../assets/fonts/NotoSerifSC-500-normal.ttf"); font-weight: 400; }
+@font-face { font-family: "Noto Serif SC"; src: url("../assets/fonts/NotoSerifSC-600-normal.ttf"); font-weight: 500; }
+@font-face { font-family: "Noto Serif SC"; src: url("../assets/fonts/NotoSerifSC-600-normal.ttf"); font-weight: 600; }
 
 :root {
   --paper: #f4f5f2;
@@ -34,9 +41,9 @@
   --on-dark: #d1d5db;
   --on-dark-muted: #9aa3b2;
   --on-dark-data: #c9cfd8;
-  --sans: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
-  --mono: "IBM Plex Mono", Menlo, Consolas, monospace;
-  --serif: "Bodoni Moda", Didot, "Times New Roman", serif;
+  --sans: "IBM Plex Sans", "Noto Sans SC", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", "Noto Sans SC", Menlo, Consolas, monospace;
+  --serif: "Bodoni Moda", "Noto Serif SC", Didot, "Times New Roman", serif;
 }
 
 @page { size: 612pt 858.96pt; margin: 0; }

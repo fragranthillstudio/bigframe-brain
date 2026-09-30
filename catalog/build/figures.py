@@ -23,8 +23,8 @@ AMBER = "#f2a33a"
 ON_DARK = "#c9cfd8"
 ON_DARK_MUTED = "#9aa3b2"
 
-MONO = "IBM Plex Mono"
-SANS = "IBM Plex Sans"
+MONO = "IBM Plex Mono, Noto Sans SC"
+SANS = "IBM Plex Sans, Noto Sans SC"
 
 
 # Labels used inside the figures; build.py overrides them per language via set_labels().
