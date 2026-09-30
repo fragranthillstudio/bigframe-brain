@@ -39,9 +39,10 @@ catalog's 612 × 858.96 pt page.
 | XY point spacing | 643 / 1074 / 1721 µm | **680 / 1400 / 2000 µm** |
 | Measuring depth | 2500 mm | **2300 mm** |
 | Z repeatability | 250 µm | **300 µm** |
-| Stereo baseline | 800 mm | **approx. 300 mm** |
+| Stereo baseline | 800 mm | **approx. 350 mm** (sheet v2; v1 said ~300) |
 | Model code | PRS-2500 | **PRS-2500B** |
-| Housing, weight, sensor, interface, power, laser, temperature | unchanged | 890 × 97.5 × 95 mm, 3.9 kg, 2 × 5 MP (2448 × 2048), GigE, 24 V / 4 A, 638 nm, 0–45 °C |
+| Housing L × W × H, weight | 890 × 97.5 × 95 mm, 3.9 kg | **450 × 97.5 × 95 mm, 3.5 kg** (sheet v2, 30 Sep 2026; the first sheet still carried the old housing) |
+| Sensor, interface, power, laser, temperature | unchanged | 2 × 5 MP (2448 × 2048), GigE, 24 V / 4 A, 638 nm, 0–45 °C |
 
 Pages touched: cover (render only), 2, 13, 14, 17, 20. All other pages are the Rev. C
 originals. The footer still reads *EN 2026-10 · Rev. C*; bump it in `data/models.json`
@@ -50,9 +51,11 @@ then need the same footer patch.
 
 ## Open points to confirm with engineering
 
-1. **Baseline vs. housing.** The sheet gives a stereo baseline of ~300 mm, but the render
-   shows camera windows at both ends of the 890 mm bar. The drawings therefore show the
-   housing without a baseline dimension; the baseline is stated in the tables only.
+1. **Baseline vs. housing.** Resolved by sheet v2: the housing is 450 mm long and the
+   baseline ~350 mm, which matches camera windows near both ends of the bar. The
+   measuring-face drawing is drawn to that geometry; the baseline is still stated in the
+   tables only, not dimensioned. Replacement pages for the already printed edition are in
+   `output/replacement_pages/` (pages 13, 14, 17, 20; see `REPLACEMENT_SHEET.md`).
 2. **Plate colour.** The rendering PDF shows the cobalt-blue plate (the CMF of every other
    series); the WebP shows a black plate. The blue one is used everywhere.
 3. **Points per frame** for the PRS is still "on request".

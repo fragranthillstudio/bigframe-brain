@@ -182,7 +182,7 @@
     },
     "prs": {
       "status": "vorläufig",
-      "baseline_mm": "ca. 300",
+      "baseline_mm": "ca. 350",
       "frame_rate": "1 fps bei voller Auflösung",
       "color": "RGB-Bild, auf die Punktwolke registriert",
       "light_source": "Roter Laser, 638 nm",

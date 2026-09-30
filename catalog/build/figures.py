@@ -243,29 +243,29 @@ def use_case_svg(prs: dict, img_href: str, W: float = 283, H: float = 200, compa
 
 # ------------------------------------------------ dimension drawings
 def measuring_face_svg(prs: dict, W: float = 196, H: float = 66, label: bool = True) -> str:
-    """Measuring face: the 890 mm bar with both camera windows, the RGB window and the projector module."""
+    """Measuring face: the 450 mm bar with both camera windows (centres ≈350 mm apart, the stereo baseline), the RGB window and the projector module."""
     L, Wd = prs["dimensions_mm"]["l"], prs["dimensions_mm"]["w"]
     k = (W - 34) / L  # pt per mm, leaving room for the width dimension at the right
-    x0, y0 = 8, 16
     w, h = L * k, Wd * k
+    x0, y0 = 8, max(6, (H - 22 - h) / 2)  # centre the bar above the length dimension and the label
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}pt" height="{H}pt">',
            '<defs><pattern id="weave" width="3" height="3" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">'
            '<rect width="3" height="3" fill="#e9ebe7"/><line x1="0" y1="0" x2="0" y2="3" stroke="#d3d6d0" stroke-width="0.7"/></pattern></defs>']
     out.append(f'<rect x="{x0}" y="{y0}" width="{w:.1f}" height="{h:.1f}" fill="url(#weave)" stroke="{INK}" stroke-width="0.7"/>')
     # end caps
-    cap = 42 * k
+    cap = 14 * k
     for xx in (x0, x0 + w - cap):
         out.append(f'<rect x="{xx:.1f}" y="{y0}" width="{cap:.1f}" height="{h:.1f}" fill="#cfd3cc" stroke="{INK}" stroke-width="0.6"/>')
     # camera windows near each end, RGB window and projector module
     win = 58 * k
-    for xx in (x0 + 52 * k, x0 + w - 52 * k - win):
+    for xx in (x0 + 22 * k, x0 + w - 22 * k - win):
         out.append(f'<rect x="{xx:.1f}" y="{y0 + (h - win) / 2:.1f}" width="{win:.1f}" height="{win:.1f}" fill="#ffffff" stroke="{INK}" stroke-width="0.6"/>')
         out.append(f'<rect x="{xx + 4:.1f}" y="{y0 + (h - win) / 2 + 4:.1f}" width="{win - 8:.1f}" height="{win - 8:.1f}" fill="{BLUE_PAPER}" fill-opacity="0.75"/>')
-    rgb_x = x0 + 300 * k
+    rgb_x = x0 + 115 * k
     out.append(f'<circle cx="{rgb_x:.1f}" cy="{y0 + h / 2:.1f}" r="{20 * k:.1f}" fill="#ffffff" stroke="{INK}" stroke-width="0.6"/>')
     out.append(f'<circle cx="{rgb_x:.1f}" cy="{y0 + h / 2:.1f}" r="{14 * k:.1f}" fill="{BLUE_PAPER}" fill-opacity="0.75"/>')
-    mod_w, mod_h = 170 * k, 86 * k
-    mx = x0 + w / 2 - mod_w / 2 + 20 * k
+    mod_w, mod_h = 150 * k, 80 * k
+    mx = x0 + w / 2 - mod_w / 2 + 12 * k
     out.append(f'<rect x="{mx:.1f}" y="{y0 + (h - mod_h) / 2:.1f}" width="{mod_w:.1f}" height="{mod_h:.1f}" rx="2" fill="#dfe3f5" stroke="{INK}" stroke-width="0.6"/>')
     out.append(f'<rect x="{mx + mod_w / 2 - 34 * k:.1f}" y="{y0 + h / 2 - 16 * k:.1f}" width="{68 * k:.1f}" height="{32 * k:.1f}" fill="{BLUE_PAPER}" fill-opacity="0.75"/>')
     # dimension: length below
