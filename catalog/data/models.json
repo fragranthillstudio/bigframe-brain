@@ -68,8 +68,8 @@
     { "series": "vrh9", "model": "VRH9-200B",  "fov": "205 × 105",    "fov_w": 205,  "wd": "330–390",     "opt": "360",  "depth": "60",   "spacing": "49",   "z": 1.3,  "points": "9.07 million", "iface": "GigE", "dims": "190 × 140 × 60", "weight": "1.8", "page": 7 },
     { "series": "vrh9", "model": "VRH9-280B",  "fov": "277 × 142",    "fov_w": 277,  "wd": "450–550",     "opt": "500",  "depth": "100",  "spacing": "66",   "z": 1.8,  "points": "9.07 million", "iface": "GigE", "dims": "190 × 140 × 60", "weight": "1.8", "page": 7 },
     { "series": "vr",   "model": "VR-400B",    "fov": "300 × 220",    "fov_w": 300,  "wd": "350–650",     "opt": "500",  "depth": "300",  "spacing": "150",  "z": 2,    "points": "3.2 million",  "iface": "GigE", "dims": "220 × 120 × 56", "weight": "1.6", "page": 9 },
-    { "series": "vr",   "model": "VR-600B",    "fov": "415 × 305",    "fov_w": 415,  "wd": "500–900",     "opt": "700",  "depth": "400",  "spacing": "200",  "z": 6,    "points": "3.2 million",  "iface": "GigE", "dims": "220 × 120 × 56", "weight": "1.6", "page": 9 },
-    { "series": "vr",   "model": "VR-1300B",   "fov": "865 × 645",    "fov_w": 865,  "wd": "900–2200",    "opt": "1500", "depth": "1300", "spacing": "420",  "z": 34,   "points": "3.2 million",  "iface": "GigE", "dims": "220 × 120 × 56", "weight": "1.6", "page": 9 },
+    { "series": "vr",   "model": "VR-600B",    "fov": "415 × 305",    "fov_w": 415,  "wd": "500–900",     "opt": "700",  "depth": "400",  "spacing": "200",  "z": 14,    "points": "3.2 million",  "iface": "GigE", "dims": "220 × 120 × 56", "weight": "1.6", "page": 9 },
+    { "series": "vr",   "model": "VR-1300B",   "fov": "865 × 645",    "fov_w": 865,  "wd": "900–2200",    "opt": "1500", "depth": "1300", "spacing": "420",  "z": 60,   "points": "3.2 million",  "iface": "GigE", "dims": "220 × 120 × 56", "weight": "1.6", "page": 9 },
     { "series": "vr",   "model": "VR-2300B",   "fov": "1500 × 1115",  "fov_w": 1500, "wd": "1900–3800",   "opt": "2600", "depth": "1900", "spacing": "730",  "z": 100,  "points": "3.2 million",  "iface": "GigE", "dims": "220 × 120 × 56", "weight": "1.6", "page": 9 },
     { "series": "vrd",  "model": "VRD-600B",   "fov": "580 × 369",    "fov_w": 580,  "wd": "400–800",     "opt": "600",  "depth": "400",  "spacing": "240",  "z": 6,    "points": "5 million",    "iface": "GigE", "dims": "166 × 90 × 54",  "weight": "0.87", "page": 11 },
     { "series": "vrd",  "model": "VRD-1200B",  "fov": "1166 × 731",   "fov_w": 1166, "wd": "900–1600",    "opt": "1200", "depth": "700",  "spacing": "480",  "z": 24,   "points": "5 million",    "iface": "GigE", "dims": "166 × 90 × 54",  "weight": "0.87", "page": 11 },
@@ -77,9 +77,16 @@
   ],
 
   "large_scene_compare": [
-    { "model": "VR-1300B",  "fov": "865 × 645",   "wd": "900 / 1500 / 2200",  "spacing": "420",  "z": "34",  "color": "No",  "mount": "fixed, above the scene" },
+    { "model": "VR-1300B",  "fov": "865 × 645",   "wd": "900 / 1500 / 2200",  "spacing": "420",  "z": "60",  "color": "No",  "mount": "fixed, above the scene" },
     { "model": "VR-2300B",  "fov": "1500 × 1115", "wd": "1900 / 2600 / 3800", "spacing": "730",  "z": "100", "color": "No",  "mount": "fixed, above the scene" },
     { "model": "VRD-1200B", "fov": "1166 × 731",  "wd": "900 / 1200 / 1600",  "spacing": "480",  "z": "24",  "color": "Yes", "mount": "robot arm" },
     { "model": "PRS-2500B", "note": "¹", "fov": "2560 × 2060", "wd": "1200 / 2500 / 3500", "spacing": "1400", "z": "300", "color": "Yes", "mount": "fixed, above the scene" }
+  ]
+,
+  "cell_patches": [
+    { "page": 9,  "old": "6",  "new": "14", "near": "VR-600B",  "note": "VR series table, Z repeatability 2σ (µm)" },
+    { "page": 9,  "old": "34", "new": "60", "near": "VR-1300B", "note": "VR series table, Z repeatability 2σ (µm)" },
+    { "page": 19, "old": "6",  "new": "14", "near": "VR-600B",  "note": "VR technical data, Z repeatability (µm)" },
+    { "page": 19, "old": "34", "new": "60", "near": "VR-1300B", "note": "VR technical data, Z repeatability (µm)" }
   ]
 }

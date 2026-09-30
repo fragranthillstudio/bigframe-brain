@@ -148,9 +148,47 @@ def patch_page4(doc: pymupdf.Document, data: dict, scene_png: Path) -> None:
                          fontfile=str(ROOT / "assets" / "fonts" / "IBMPlexMono-400-normal.ttf"), fontname="PlexMono")
 
 
+MONO_TTF = ROOT / "assets" / "fonts" / "IBMPlexMono-400-normal.ttf"
+INK = (0x2d / 255, 0x37 / 255, 0x48 / 255)
+
+
+def patch_cells(doc: pymupdf.Document, data: dict) -> None:
+    """Replace single table cells on carried-over pages (data/models.json 'cell_patches').
+
+    The cell is found as the span whose text equals `old` on the same table row (same
+    baseline within 2 pt) as the model name `near`, so a bare "6" cannot match the wrong cell.
+    """
+    for patch in data.get("cell_patches", []):
+        page = doc[patch["page"] - 1]
+        spans = [s for b in page.get_text("dict")["blocks"] for l in b.get("lines", []) for s in l["spans"]]
+        anchors = [s for s in spans if s["text"].strip() == patch["near"]]
+        # the model name may appear as a column header (page 19): use the header column instead
+        targets = []
+        for a in anchors:
+            for s in spans:
+                if s["text"].strip() != patch["old"]:
+                    continue
+                same_row = abs(s["bbox"][3] - a["bbox"][3]) < 2 and s["bbox"][0] > a["bbox"][2]
+                same_col = abs(s["bbox"][0] - a["bbox"][0]) < 2 and s["bbox"][1] > a["bbox"][3]
+                if same_row or same_col:
+                    targets.append(s)
+        if len(targets) != 1:
+            raise SystemExit(f"cell patch p{patch['page']} {patch['near']} {patch['old']}: {len(targets)} matches")
+        s = targets[0]
+        r = pymupdf.Rect(s["bbox"])
+        # fill with the row's own ground colour, sampled just right of the cell
+        pix = page.get_pixmap(dpi=144, clip=pymupdf.Rect(r.x1 + 3, r.y0, r.x1 + 4, r.y1))
+        px = pix.pixel(0, pix.height // 2)
+        page.add_redact_annot(r + (-0.5, -0.5, 2, 0.5), fill=tuple(c / 255 for c in px[:3]))
+        page.apply_redactions(images=pymupdf.PDF_REDACT_IMAGE_NONE)
+        page.insert_text((r.x0, r.y1 - 0.22 * s["size"]), patch["new"], fontsize=s["size"], color=INK,
+                         fontfile=str(MONO_TTF), fontname="PlexMono")
+
+
 def assemble(pdfs: dict[int, Path], data: dict) -> Path:
     doc = pymupdf.open(SOURCE_PDF)
     patch_cover(doc)
+    patch_cells(doc, data)
     patch_page4(doc, data, render_scene_png(data))
     for n, p in pdfs.items():
         new = pymupdf.open(p)
