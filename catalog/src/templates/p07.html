@@ -86,10 +86,10 @@
 </div>
 
 <!-- applications -->
-<h2 class="abs" style="left:51pt; top:558.5pt;">{{ t.h2_apps }}</h2>
+<h2 class="abs" style="left:51pt; top:565.5pt;">{{ t.h2_apps }}</h2>
 {% for a in d.apps %}
 {% set x = 51 + (loop.index0 % 3) * 173.25 %}
-{% set y = 573.8 + (loop.index0 // 3) * 104.2 %}
+{% set y = 580.8 + (loop.index0 // 3) * 104.2 %}
 <div class="tile" style="left:{{ x }}pt; top:{{ y }}pt; width:164.2pt; height:73.4pt;">
   <img src="../../../assets/pages/{{ a.img }}" style="top:{{ a.top }}pt; height:{{ a.height }}pt;" alt="">
 </div>
