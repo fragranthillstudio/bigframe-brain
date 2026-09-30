@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{ page_title }}</title>
+<link rel="stylesheet" href="../catalog.css">
+{% block head %}{% endblock %}
+</head>
+<body>
+{% block header %}
+<div class="tab left">
+  <div class="box"><span class="num">{{ section_num }}</span><span>{{ section_name }}</span></div>
+  <span class="crumb">{{ crumb }}</span>
+</div>
+{% endblock %}
+
+{% block content %}{% endblock %}
+
+<div class="footer">
+  <div class="spectrum"><i></i><i></i><i></i><i></i></div>
+  <div class="line"><span>{{ catalog.footer }}</span><span class="pn">{{ page_number }}</span></div>
+</div>
+</body>
+</html>

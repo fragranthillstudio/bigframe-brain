@@ -1,0 +1,85 @@
+{
+  "catalog": {
+    "title": "Bigframe Product Catalog 2026",
+    "edition": "EN 2026-10 · REV. C",
+    "footer": "BIGFRAME · PRODUCT CATALOG 2026 · EN 2026-10 · REV. C",
+    "qr_url": "https://www.bigframe.com",
+    "model_count": 18
+  },
+
+  "prs": {
+    "series": "PRS",
+    "model": "PRS-2500B",
+    "status": "preliminary",
+    "source": "data/PRS_spec_2026-09-30.xlsx, right-hand column (confirmed by Lan Wu, 30 Sep 2026). The 4000 mm row of that column repeats the superseded left-hand figures and is dropped; far working distance is 3500 mm.",
+    "page_series": 13,
+    "page_fov": 14,
+    "page_data": 20,
+    "sensor": { "w_px": 2448, "h_px": 2048, "megapixels": 5, "cameras": 2 },
+    "wd": { "near": 1200, "opt": 2500, "far": 3500 },
+    "fov_range_mm": { "min": 1300, "max": 3600 },
+    "by_wd": [
+      { "wd": 1200, "tag": "near", "fov_w": 1300, "fov_h": 1050, "spacing_um": 680 },
+      { "wd": 2500, "tag": "opt.", "fov_w": 2560, "fov_h": 2060, "spacing_um": 1400 },
+      { "wd": 3500, "tag": "far",  "fov_w": 3600, "fov_h": 2907, "spacing_um": 2000 }
+    ],
+    "measuring_depth_mm": 2300,
+    "z_repeatability_um": 300,
+    "baseline_mm": "approx. 300",
+    "frame_rate": "1 fps at full resolution",
+    "color": "RGB image registered to the point cloud",
+    "light_source": "Red laser, 638 nm",
+    "laser_class": "Stated at launch",
+    "interface": "Gigabit Ethernet",
+    "power": "24 V DC, up to 4 A",
+    "operating_temp": "0 to 45 °C",
+    "dimensions_mm": { "l": 890, "w": 97.5, "h": 95 },
+    "weight_kg": 3.9,
+    "software": "TridiVision",
+    "mounting": "Bracket kit; details at launch"
+  },
+
+  "series_cards": [
+    { "id": "trs",  "name": "TRS series",  "desc": "Micrometer measurement: solder balls, bumps, weld beads", "fov": "FOV 9.8–74 mm",   "z": "Z repeatability from 0.06 µm", "page": 5,  "img": "assets/series/trs.png",  "img_h": 84 },
+    { "id": "vrh9", "name": "VRH9 series", "desc": "Fine measurement: connectors, frames, boards",           "fov": "FOV 24–277 mm",   "z": "Z repeatability from 0.15 µm", "page": 7,  "img": "assets/series/vrh9.png", "img_h": 69 },
+    { "id": "vr",   "name": "VR series",   "desc": "Guidance and inspection: bins, pallets, body panels",    "fov": "FOV 300–1500 mm", "z": "Z repeatability from 2 µm",    "page": 9,  "img": "assets/series/vr.png",   "img_h": 35 },
+    { "id": "vrd",  "name": "VRD series",  "desc": "Color stereo on the robot arm: totes, tools, fasteners", "fov": "FOV 580–1166 mm", "z": "Z repeatability from 6 µm",    "page": 11, "img": "assets/series/vrd.png",  "img_h": 44 },
+    { "id": "prs",  "name": "PRS series",  "new": true, "desc": "Large scenes from a fixed bar: pallets, vehicles, containers", "fov": "FOV 1.3–3.6 m at WD 1.2–3.5 m", "z": "Z repeatability 300 µm ¹", "page": 13, "img": "assets/prs-2500b.png", "img_h": 40 }
+  ],
+
+  "series_groups": [
+    { "id": "trs",  "color": "#ff2d6f", "label": "TRS series — Four-projection structured-light 3D cameras" },
+    { "id": "vrh9", "color": "#3d5afe", "label": "VRH9 series — Area-scan structured-light 3D cameras, fine measurement" },
+    { "id": "vr",   "color": "#00a86a", "label": "VR series — Area-scan structured-light 3D cameras, medium and large scenes" },
+    { "id": "vrd",  "color": "#2d3748", "label": "VRD series — Color stereo structured-light 3D cameras, robot guidance" },
+    { "id": "prs",  "color": "#f2a33a", "label": "PRS series — Wide-baseline stereo 3D cameras for large scenes · preliminary ³" }
+  ],
+
+  "models": [
+    { "series": "trs",  "model": "TRS-010B",   "fov": "9.8 × 9.8",    "fov_w": 9.8,  "wd": "62–63",       "opt": "62.5", "depth": "1",    "spacing": "1.9",  "z": 0.06, "points": "26.2 million", "iface": "CoaXPress", "dims": "230 × 230 × 250", "weight": "8.85", "page": 5 },
+    { "series": "trs",  "model": "TRS-025B",   "fov": "25.5 × 25.5",  "fov_w": 25.5, "wd": "101.5–106.5", "opt": "104",  "depth": "5",    "spacing": "5",    "z": 0.1,  "points": "26.2 million", "iface": "CoaXPress", "dims": "240 × 240 × 275", "weight": "9.74", "page": 5 },
+    { "series": "trs",  "model": "TRS-050B",   "note": "²", "fov": "51 × 51", "fov_w": 51, "wd": "on request", "opt": "131", "depth": "8", "spacing": "10", "z": 0.2, "points": "26.2 million", "iface": "CoaXPress", "dims": "300 × 300 × 253", "weight": "11", "page": 5 },
+    { "series": "trs",  "model": "TRS-075B",   "note": "²", "fov": "74 × 74", "fov_w": 74, "wd": "on request", "opt": "191", "depth": "8", "spacing": "14", "z": 1,   "points": "26.2 million", "iface": "CoaXPress", "dims": "360 × 360 × 350", "weight": "17", "page": 5 },
+    { "series": "vrh9", "model": "VRH9-020B",  "fov": "24.3 × 12.5",  "fov_w": 24.3, "wd": "112–114.5",   "opt": "113",  "depth": "2.5",  "spacing": "5.8",  "z": 0.15, "points": "9.07 million", "iface": "GigE", "dims": "190 × 140 × 60", "weight": "1.8", "page": 7 },
+    { "series": "vrh9", "model": "VRH9-040B",  "fov": "48.2 × 24.7",  "fov_w": 48.2, "wd": "243–257",     "opt": "250",  "depth": "14",   "spacing": "11",   "z": 0.23, "points": "9.07 million", "iface": "GigE", "dims": "190 × 140 × 60", "weight": "1.8", "page": 7 },
+    { "series": "vrh9", "model": "VRH9-080B",  "fov": "81.5 × 41.5",  "fov_w": 81.5, "wd": "260–280",     "opt": "270",  "depth": "20",   "spacing": "19",   "z": 0.36, "points": "9.07 million", "iface": "GigE", "dims": "190 × 140 × 60", "weight": "1.8", "page": 7 },
+    { "series": "vrh9", "model": "VRH9-120B",  "fov": "126 × 64.5",   "fov_w": 126,  "wd": "260–290",     "opt": "275",  "depth": "30",   "spacing": "30",   "z": 0.5,  "points": "9.07 million", "iface": "GigE", "dims": "190 × 140 × 60", "weight": "1.8", "page": 7 },
+    { "series": "vrh9", "model": "VRH9-160B",  "fov": "159 × 81.5",   "fov_w": 159,  "wd": "340–380",     "opt": "360",  "depth": "40",   "spacing": "38",   "z": 0.95, "points": "9.07 million", "iface": "GigE", "dims": "190 × 140 × 60", "weight": "1.8", "page": 7 },
+    { "series": "vrh9", "model": "VRH9-200B",  "fov": "205 × 105",    "fov_w": 205,  "wd": "330–390",     "opt": "360",  "depth": "60",   "spacing": "49",   "z": 1.3,  "points": "9.07 million", "iface": "GigE", "dims": "190 × 140 × 60", "weight": "1.8", "page": 7 },
+    { "series": "vrh9", "model": "VRH9-280B",  "fov": "277 × 142",    "fov_w": 277,  "wd": "450–550",     "opt": "500",  "depth": "100",  "spacing": "66",   "z": 1.8,  "points": "9.07 million", "iface": "GigE", "dims": "190 × 140 × 60", "weight": "1.8", "page": 7 },
+    { "series": "vr",   "model": "VR-400B",    "fov": "300 × 220",    "fov_w": 300,  "wd": "350–650",     "opt": "500",  "depth": "300",  "spacing": "150",  "z": 2,    "points": "3.2 million",  "iface": "GigE", "dims": "220 × 120 × 56", "weight": "1.6", "page": 9 },
+    { "series": "vr",   "model": "VR-600B",    "fov": "415 × 305",    "fov_w": 415,  "wd": "500–900",     "opt": "700",  "depth": "400",  "spacing": "200",  "z": 6,    "points": "3.2 million",  "iface": "GigE", "dims": "220 × 120 × 56", "weight": "1.6", "page": 9 },
+    { "series": "vr",   "model": "VR-1300B",   "fov": "865 × 645",    "fov_w": 865,  "wd": "900–2200",    "opt": "1500", "depth": "1300", "spacing": "420",  "z": 34,   "points": "3.2 million",  "iface": "GigE", "dims": "220 × 120 × 56", "weight": "1.6", "page": 9 },
+    { "series": "vr",   "model": "VR-2300B",   "fov": "1500 × 1115",  "fov_w": 1500, "wd": "1900–3800",   "opt": "2600", "depth": "1900", "spacing": "730",  "z": 100,  "points": "3.2 million",  "iface": "GigE", "dims": "220 × 120 × 56", "weight": "1.6", "page": 9 },
+    { "series": "vrd",  "model": "VRD-600B",   "fov": "580 × 369",    "fov_w": 580,  "wd": "400–800",     "opt": "600",  "depth": "400",  "spacing": "240",  "z": 6,    "points": "5 million",    "iface": "GigE", "dims": "166 × 90 × 54",  "weight": "0.87", "page": 11 },
+    { "series": "vrd",  "model": "VRD-1200B",  "fov": "1166 × 731",   "fov_w": 1166, "wd": "900–1600",    "opt": "1200", "depth": "700",  "spacing": "480",  "z": 24,   "points": "5 million",    "iface": "GigE", "dims": "166 × 90 × 54",  "weight": "0.87", "page": 11 },
+    { "series": "prs",  "model": "PRS-2500B",  "note": "³", "fov": "2560 × 2060", "fov_w": 2560, "wd": "1200–3500", "opt": "2500", "depth": "2300", "spacing": "1400", "z": 300, "points": "on request", "iface": "GigE", "dims": "890 × 97.5 × 95", "weight": "3.9", "page": 13 }
+  ],
+
+  "large_scene_compare": [
+    { "model": "VR-1300B",  "fov": "865 × 645",   "wd": "900 / 1500 / 2200",  "spacing": "420",  "z": "34",  "color": "No",  "mount": "fixed, above the scene" },
+    { "model": "VR-2300B",  "fov": "1500 × 1115", "wd": "1900 / 2600 / 3800", "spacing": "730",  "z": "100", "color": "No",  "mount": "fixed, above the scene" },
+    { "model": "VRD-1200B", "fov": "1166 × 731",  "wd": "900 / 1200 / 1600",  "spacing": "480",  "z": "24",  "color": "Yes", "mount": "robot arm" },
+    { "model": "PRS-2500B", "note": "¹", "fov": "2560 × 2060", "wd": "1200 / 2500 / 3500", "spacing": "1400", "z": "300", "color": "Yes", "mount": "fixed, above the scene" }
+  ]
+}

@@ -1,0 +1,138 @@
+/* Bigframe Product Catalog 2026 — page stylesheet.
+   Geometry is in pt so it matches the Rev. C pages measured from the PDF
+   (page 612 × 858.96 pt, 51 pt side margins). Tokens follow the Big Frame
+   design system: Graphite ink, Paper ground, Deep dark ground, the four Bayer
+   wing colours only as rules and marks. */
+
+@font-face { font-family: "IBM Plex Sans"; src: url("../assets/fonts/IBMPlexSans-400-normal.ttf"); font-weight: 400; }
+@font-face { font-family: "IBM Plex Sans"; src: url("../assets/fonts/IBMPlexSans-400-italic.ttf"); font-weight: 400; font-style: italic; }
+@font-face { font-family: "IBM Plex Sans"; src: url("../assets/fonts/IBMPlexSans-500-normal.ttf"); font-weight: 500; }
+@font-face { font-family: "IBM Plex Sans"; src: url("../assets/fonts/IBMPlexSans-600-normal.ttf"); font-weight: 600; }
+@font-face { font-family: "IBM Plex Mono"; src: url("../assets/fonts/IBMPlexMono-400-normal.ttf"); font-weight: 400; }
+@font-face { font-family: "IBM Plex Mono"; src: url("../assets/fonts/IBMPlexMono-500-normal.ttf"); font-weight: 500; }
+@font-face { font-family: "IBM Plex Mono"; src: url("../assets/fonts/IBMPlexMono-600-normal.ttf"); font-weight: 600; }
+@font-face { font-family: "Bodoni Moda"; src: url("../assets/fonts/BodoniModa-400-normal.ttf"); font-weight: 400; }
+@font-face { font-family: "Bodoni Moda"; src: url("../assets/fonts/BodoniModa-500-normal.ttf"); font-weight: 500; }
+@font-face { font-family: "Bodoni Moda"; src: url("../assets/fonts/BodoniModa-600-normal.ttf"); font-weight: 600; }
+
+:root {
+  --paper: #f4f5f2;
+  --white: #ffffff;
+  --deep: #111827;
+  --ink: #2d3748;
+  --ink-muted: #5b6675;
+  --ink-faint: #6b7787;
+  --rule: #d9dcd6;
+  --rule-strong: #c4c9c2;
+  --lime: #c8ff3d;
+  --green: #00e38c;
+  --green-paper: #00a86a;
+  --blue: #3d5afe;
+  --blue-paper: #3149d6;
+  --red: #ff2d6f;
+  --amber: #f2a33a;
+  --on-dark: #d1d5db;
+  --on-dark-muted: #9aa3b2;
+  --on-dark-data: #c9cfd8;
+  --sans: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono: "IBM Plex Mono", Menlo, Consolas, monospace;
+  --serif: "Bodoni Moda", Didot, "Times New Roman", serif;
+}
+
+@page { size: 612pt 858.96pt; margin: 0; }
+html, body { margin: 0; padding: 0; }
+body {
+  width: 612pt; height: 858.96pt; overflow: hidden; position: relative;
+  background: var(--paper); color: var(--ink);
+  font-family: var(--sans); font-size: 8pt; line-height: 1.32;
+  -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  -webkit-font-smoothing: antialiased;
+}
+* { box-sizing: border-box; }
+p { margin: 0; }
+.mono { font-family: var(--mono); }
+.serif { font-family: var(--serif); }
+.muted { color: var(--ink-muted); }
+.abs { position: absolute; }
+
+/* ---- header tab and footer, identical on every page ---- */
+.tab { position: absolute; top: 27pt; height: 15pt; display: flex; align-items: center; gap: 6pt;
+       font-family: var(--mono); font-size: 6.2pt; letter-spacing: 0.2em; text-transform: uppercase; }
+.tab.left { left: 51pt; }
+.tab.right { right: 51pt; flex-direction: row-reverse; }
+.tab .box { height: 15pt; padding: 0 6pt 0 6.2pt; display: flex; align-items: center; gap: 6pt;
+            background: var(--deep); color: var(--white); }
+.tab .box .num { color: var(--lime); font-weight: 500; }
+.tab .crumb { color: var(--ink-muted); }
+.tab.on-dark .box { background: var(--white); color: var(--deep); }
+.tab.on-dark .box .num { color: var(--deep); font-weight: 500; }
+.tab.on-dark .crumb { color: var(--on-dark-data); }
+
+.footer { position: absolute; left: 51pt; right: 51pt; top: 811.5pt; }
+.footer .spectrum { height: 1.5pt; display: flex; }
+.footer .spectrum i { flex: 1; display: block; }
+.footer .spectrum i:nth-child(1) { background: var(--red); }
+.footer .spectrum i:nth-child(2) { background: var(--lime); }
+.footer .spectrum i:nth-child(3) { background: var(--green); }
+.footer .spectrum i:nth-child(4) { background: var(--blue); }
+.footer .line { display: flex; justify-content: space-between; margin-top: 4.5pt;
+                font-family: var(--mono); font-size: 6.2pt; letter-spacing: 0.2em; color: var(--ink-muted); }
+.footer .line .pn { color: var(--ink); font-weight: 500; }
+
+/* ---- type ---- */
+h1.title { position: absolute; left: 51pt; top: 51pt; margin: 0; font-family: var(--serif); font-weight: 400;
+           font-size: 22pt; line-height: 1.2; letter-spacing: -0.005em; color: var(--ink); }
+h1.title.s19 { font-size: 19pt; }
+h2 { margin: 0; font-size: 8.8pt; font-weight: 600; line-height: 1.3; color: var(--ink); }
+.lede { font-size: 10pt; line-height: 1.42; }
+.body { font-size: 8.2pt; line-height: 1.38; }
+.body-s { font-size: 8pt; line-height: 1.4; }
+.caption { font-size: 7.2pt; line-height: 1.35; color: var(--ink-muted); }
+.note { font-size: 6.9pt; line-height: 1.4; color: var(--ink-muted); }
+.eyebrow { font-family: var(--mono); font-size: 6.6pt; letter-spacing: 0.2em; text-transform: uppercase; color: var(--on-dark-muted); }
+.badge { display: inline-block; vertical-align: 1pt; margin-left: 6pt; padding: 1.2pt 3pt 1pt; background: var(--lime); color: var(--deep);
+         font-family: var(--sans); font-size: 5.6pt; font-weight: 600; letter-spacing: 0.08em; line-height: 1; }
+.badge.mono { font-family: var(--mono); }
+sup { font-size: 70%; line-height: 0; vertical-align: 0.45em; }
+
+/* ---- cards and panels ---- */
+.card { background: var(--white); border: 0.75pt solid var(--rule); }
+.panel-dark { background: var(--deep); color: var(--white); }
+.panel-dark.glow { background: radial-gradient(ellipse 70% 80% at 68% 45%, #223354 0%, #172038 45%, var(--deep) 100%); }
+
+/* ---- stat trio (series pages) ---- */
+.stats { position: absolute; left: 51pt; right: 51pt; display: flex; gap: 19pt; }
+.stat { flex: 1; border-top: 1pt solid var(--green-paper); padding-top: 6pt; }
+.stat .v { font-family: var(--serif); font-weight: 500; font-size: 19pt; line-height: 1.1; color: var(--ink); }
+.stat .l { font-size: 8.6pt; font-weight: 600; margin-top: 2pt; }
+.stat .d { font-size: 7.6pt; line-height: 1.35; color: var(--ink-muted); margin-top: 1.5pt; }
+
+/* ---- tables ---- */
+table { border-collapse: collapse; width: 100%; }
+table.data th { font-size: 6.5pt; font-weight: 600; text-align: left; vertical-align: bottom;
+                padding: 4pt 4pt 4pt 3pt; border-bottom: 0.75pt solid var(--rule-strong); line-height: 1.3; }
+table.data td { font-family: var(--mono); font-size: 6.5pt; padding: 5.2pt 4pt 5pt 3pt; border-bottom: 0.5pt solid var(--rule);
+                vertical-align: top; line-height: 1.3; }
+table.data td.model { font-family: var(--sans); font-weight: 500; white-space: nowrap; }
+table.data tr.group td { font-family: var(--sans); font-weight: 600; font-size: 6.9pt; background: var(--paper); padding: 4.5pt 4pt 4pt 3pt; }
+table.data tr.group td i { display: inline-block; width: 6pt; height: 6pt; border-radius: 50%; margin: 0 4pt -0.6pt 0; }
+table.data tr.hl td { background: #fbfbf9; }
+table.spec td { font-size: 6.6pt; padding: 5.4pt 4pt 5pt 3pt; border-bottom: 0.5pt solid var(--rule); vertical-align: top; line-height: 1.32; }
+table.spec td:first-child { font-family: var(--sans); font-weight: 600; width: 55%; }
+table.spec td:last-child { font-family: var(--mono); }
+table.kv td { font-size: 7pt; padding: 1.6pt 0; vertical-align: top; }
+table.kv td:first-child { color: var(--ink-muted); width: 62pt; }
+table.kv td:last-child { font-family: var(--mono); }
+
+/* ---- CTA band ---- */
+.cta { position: absolute; left: 51pt; right: 51pt; background: var(--deep); color: var(--white); display: flex; align-items: center; }
+.cta .t { font-family: var(--serif); font-size: 9.6pt; line-height: 1.16; width: 146pt; padding-left: 8.5pt; }
+.cta .d { font-size: 6.8pt; line-height: 1.42; color: var(--on-dark-data); flex: 1; padding-right: 12pt; }
+.cta .d b { color: var(--white); font-weight: 600; }
+.cta .qr { width: 34pt; height: 34pt; margin-right: 8.5pt; background: var(--white); padding: 2pt; }
+.cta .qr svg { display: block; width: 100%; height: 100%; }
+
+/* ---- drawings and figures ---- */
+figure { margin: 0; }
+.fig-label { font-family: var(--mono); font-size: 5.9pt; letter-spacing: 0.2em; text-transform: uppercase; color: var(--on-dark-muted); }
+.dim-label { font-family: var(--sans); font-size: 6.2pt; letter-spacing: 0.12em; color: var(--ink-faint); text-transform: uppercase; }

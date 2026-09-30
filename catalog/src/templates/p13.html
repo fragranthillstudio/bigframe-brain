@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+{% set page_title = "PRS series" %}
+{% block header %}
+<div class="tab right on-dark">
+  <div class="box"><span class="num">02</span><span>Cameras</span></div>
+  <span class="crumb">PRS series</span>
+</div>
+{% endblock %}
+
+{% block content %}
+{% set p = prs %}
+{% set near = p.by_wd[0] %}{% set opt = p.by_wd[1] %}{% set far = p.by_wd[2] %}
+
+<!-- hero -->
+<div class="abs panel-dark glow" style="left:8.2pt; top:8.2pt; width:595.6pt; height:238.6pt;"></div>
+<div class="abs" style="left:51pt; top:64pt; width:230pt;">
+  <div class="eyebrow">PRS series <span class="badge mono">NEW</span></div>
+  <div class="serif" style="font-size:19pt; line-height:1.1; color:#fff; margin-top:8pt;">3D cameras for pallets,<br>vehicles and containers</div>
+  <p style="font-size:8.8pt; line-height:1.45; color:var(--on-dark); margin-top:8pt;">Large scenes at {{ near.wd/1000 }} to {{ far.wd/1000 }} m from a bar above the dock, the cell or the conveyor; a color image registered to every point.</p>
+  <div class="mono" style="font-size:6.3pt; letter-spacing:0.2em; color:var(--amber); margin-top:9pt;">PRELIMINARY · VISION 2026</div>
+</div>
+<img src="../../assets/prs-2500b.png" class="abs" style="left:268pt; top:62pt; width:325pt;" alt="">
+
+<!-- stat trio -->
+<div class="stats" style="top:252pt;">
+  <div class="stat">
+    <div class="v">{{ "%.2f"|format(opt.fov_w/1000) }} × {{ "%.2f"|format(opt.fov_h/1000) }} m</div>
+    <div class="l">field of view at {{ opt.wd/1000 }} m</div>
+    <div class="d">{{ "%.2f"|format(near.fov_w/1000) }} × {{ "%.2f"|format(near.fov_h/1000) }} m at {{ near.wd/1000 }} m; {{ "%.2f"|format(far.fov_w/1000) }} × {{ "%.2f"|format(far.fov_h/1000) }} m at {{ far.wd/1000 }} m.</div>
+  </div>
+  <div class="stat">
+    <div class="v">{{ near.wd/1000 }}–{{ far.wd/1000 }} m</div>
+    <div class="l">working distance</div>
+    <div class="d">{{ p.measuring_depth_mm/1000 }} m measuring depth from one fixed mount; {{ p.dimensions_mm.l }} mm bar, {{ p.weight_kg }} kg, above the scene.</div>
+  </div>
+  <div class="stat">
+    <div class="v">{{ p.z_repeatability_um }} µm</div>
+    <div class="l">Z repeatability <sup>1</sup></div>
+    <div class="d">With {{ opt.spacing_um }} µm point spacing at {{ opt.wd/1000 }} m; two {{ p.sensor.megapixels }} MP cameras, RGB image, {{ p.frame_rate.split(' ')[0] }} fps.</div>
+  </div>
+</div>
+<p class="abs body" style="left:51pt; top:326pt; width:470pt;">The PRS covers the largest scenes in the range — a pallet, a vehicle, a container, a stack on a dock — from one capture, with the color image the operator needs to see what was measured.</p>
+
+<!-- in use -->
+<h2 class="abs" style="left:51pt; top:361pt;">The PRS in use</h2>
+<div class="abs panel-dark" style="left:51pt; top:376.5pt; width:283.5pt; height:199.5pt;">
+  <div class="fig-label abs" style="left:8.5pt; top:8pt;">Euro pallet under the PRS · illustration</div>
+  <div class="abs" style="left:0; top:0;">{{ use_case_svg|safe }}</div>
+</div>
+<p class="abs caption" style="left:51pt; top:580pt; width:283pt;">At {{ opt.wd/1000 }} m the field of view of {{ "%.2f"|format(opt.fov_w/1000) }} × {{ "%.2f"|format(opt.fov_h/1000) }} m covers a Euro pallet with margin; layer height and carton positions come from one capture.</p>
+
+<div class="abs" style="left:348.6pt; top:384pt; width:212.4pt;">
+  <h2>Which large-scene camera?</h2>
+  <p class="body-s" style="margin-top:3pt;">Choose the VR-2300B where the finest point spacing at 2 to 4 m matters and no color image is needed; the VRD-1200B for a camera on the arm; the PRS where a scene of 2 m or more must be covered from a fixed mount with a color image.</p>
+  <p class="body-s" style="margin-top:7pt;">The {{ p.model }} is specified at three working distances from {{ near.wd/1000 }} to {{ far.wd/1000 }} m (table on page {{ p.page_fov }}); at {{ far.wd/1000 }} m the field of view of {{ "%.2f"|format(far.fov_w/1000) }} × {{ "%.2f"|format(far.fov_h/1000) }} m covers a container door with margin; at {{ near.wd/1000 }} m it is {{ "%.2f"|format(near.fov_w/1000) }} × {{ "%.2f"|format(near.fov_h/1000) }} m.</p>
+</div>
+
+<!-- comparison -->
+<h2 class="abs" style="left:51pt; top:611pt;">Large-scene cameras compared</h2>
+<div class="abs" style="left:51pt; top:626pt; width:510pt;">
+  <table class="data">
+    <thead><tr>
+      <th style="width:68pt">Model</th><th style="width:90pt">Field of view at optimum WD (mm)</th><th style="width:112pt">Working distance near / optimum / far (mm)</th>
+      <th style="width:60pt">XY point spacing (µm)</th><th style="width:67pt">Z repeatability 2σ (µm)</th><th style="width:38pt">Color image</th><th>Mounting</th>
+    </tr></thead>
+    <tbody>
+    {% for r in compare %}
+      <tr{% if r.model == p.model %} class="hl"{% endif %}>
+        <td class="model">{{ r.model }}{% if r.note %} <sup>{{ r.note|replace('¹','1') }}</sup>{% endif %}</td>
+        <td>{{ r.fov }}</td><td>{{ r.wd }}</td><td>{{ r.spacing }}</td><td>{{ r.z }}</td><td>{{ r.color }}</td><td>{{ r.mount }}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  <p class="note" style="margin-top:6pt;"><sup>1</sup> PRS: preliminary specification; Z repeatability {{ p.z_repeatability_um }} µm, method to be stated at launch.</p>
+</div>
+{% endblock %}

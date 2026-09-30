@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% set page_title = "PRS series: field of view and dimensions" %}
+{% set section_num = "02" %}{% set section_name = "Cameras" %}{% set crumb = "PRS series" %}
+
+{% block content %}
+{% set p = prs %}
+<h1 class="title">PRS series: field of view and dimensions</h1>
+
+<!-- FOV scene -->
+<div class="abs panel-dark" style="left:51pt; top:90pt; width:510pt; height:363pt;">
+  <div class="fig-label abs" style="left:8.5pt; top:8pt;">Field of view at the three specified working distances · illustration</div>
+  <div class="abs" style="left:0; top:0;">{{ fov_scene_svg|safe }}</div>
+  <p class="abs" style="left:321pt; top:322pt; width:170pt; font-size:6.6pt; line-height:1.38; color:var(--on-dark-muted);">Loaded Euro pallet, 1 m high, on the floor at the {{ p.wd.far/1000 }} m far working distance; its top layer at the {{ p.wd.opt/1000 }} m optimum. Fields of view to scale, camera not to scale.</p>
+</div>
+
+<!-- FOV table -->
+<div class="abs" style="left:51pt; top:488pt; width:226pt;">
+  <h2>Field of view by working distance <sup>1</sup></h2>
+  <table class="data" style="margin-top:5pt;">
+    <thead><tr><th style="width:48pt">WD (mm)</th><th style="width:85pt">Field of view (mm)</th><th>XY point spacing (µm)</th></tr></thead>
+    <tbody>
+    {% for r in p.by_wd %}
+      <tr><td class="model">{{ r.wd }} {{ r.tag }}</td><td>{{ r.fov_w }} × {{ r.fov_h }}</td><td>{{ r.spacing_um }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  <p class="note" style="margin-top:6pt;"><sup>1</sup> Preliminary specification; final data sheet at launch. Z repeatability {{ p.z_repeatability_um }} µm, method to be stated at launch. Measuring depth {{ p.measuring_depth_mm }} mm, near to far.</p>
+</div>
+
+<!-- dimensions -->
+<div class="abs" style="left:300.4pt; top:488pt; width:260.6pt;">
+  <h2>Dimensions and mounting</h2>
+  <div style="display:flex; gap:6pt; margin-top:6pt; align-items:flex-start;">
+    <div style="width:196pt;">{{ measuring_face_svg|safe }}</div>
+    <div style="width:56pt;">{{ end_view_svg|safe }}</div>
+  </div>
+  <table class="kv" style="margin-top:6pt;">
+    <tr><td>Housing L × W × H</td><td>{{ p.dimensions_mm.l }} × {{ p.dimensions_mm.w }} × {{ p.dimensions_mm.h }} mm</td></tr>
+    <tr><td>Weight</td><td>{{ p.weight_kg }} kg</td></tr>
+    <tr><td>Stereo baseline</td><td>{{ p.baseline_mm }} mm</td></tr>
+    <tr><td>Interface</td><td>{{ p.interface }}; {{ p.power }}</td></tr>
+    <tr><td>Mounting</td><td>{{ p.mounting }}</td></tr>
+  </table>
+  <p class="caption" style="margin-top:5pt;">Preliminary specification; dimensions over the housing, connectors excluded. Dimension drawings and 3D CAD data on request.</p>
+</div>
+
+<!-- CTA -->
+<div class="cta" style="top:696pt; height:43.5pt;">
+  <div class="t">Your pallet or vehicle,<br>measured before you buy.</div>
+  <div class="d">Send a photograph of the scene and the measurement you need to <b>info@bigframe.com</b> — we come back with the model and the working distance.</div>
+  <div class="qr">{{ qr_svg|safe }}</div>
+</div>
+{% endblock %}

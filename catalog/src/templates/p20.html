@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% set page_title = "PRS series: technical data" %}
+{% set section_num = "04" %}{% set section_name = "Technical data" %}{% set crumb = "Data by series" %}
+
+{% block content %}
+{% set p = prs %}
+{% set near = p.by_wd[0] %}{% set opt = p.by_wd[1] %}{% set far = p.by_wd[2] %}
+<h1 class="title s19">PRS series: technical data</h1>
+
+<h2 class="abs" style="left:51pt; top:89pt;">PRS series</h2>
+<div class="abs" style="left:51pt; top:104pt;"><span class="badge" style="margin-left:0;">NEW</span></div>
+
+<div class="abs card" style="left:51pt; top:121.5pt; width:294.8pt; padding:3pt 8pt 2pt;">
+  <style>table.spec td{padding:4.3pt 4pt 4.1pt 3pt}</style>
+  <table class="spec">
+    <tr><td>Model</td><td>{{ p.model }}</td></tr>
+    <tr><td>Working distance near / optimum / far (mm)</td><td>{{ near.wd }} / {{ opt.wd }} / {{ far.wd }}</td></tr>
+    <tr><td>Field of view at {{ near.wd }} / {{ opt.wd }} / {{ far.wd }} mm, W × H (mm)</td><td>{{ near.fov_w }} × {{ near.fov_h }} / {{ opt.fov_w }} × {{ opt.fov_h }} / {{ far.fov_w }} × {{ far.fov_h }}</td></tr>
+    <tr><td>Measuring depth, Z range (mm)</td><td>{{ p.measuring_depth_mm }}</td></tr>
+    <tr><td>XY point spacing at {{ near.wd }} / {{ opt.wd }} / {{ far.wd }} mm (µm)</td><td>{{ near.spacing_um }} / {{ opt.spacing_um }} / {{ far.spacing_um }}</td></tr>
+    <tr><td>Z repeatability (µm) <sup>1</sup></td><td>{{ p.z_repeatability_um }}</td></tr>
+    <tr><td>Camera resolution</td><td>{{ p.sensor.w_px }} × {{ p.sensor.h_px }} pixels, {{ p.sensor.megapixels }} MP, {{ p.sensor.cameras }} cameras</td></tr>
+    <tr><td>Frame rate</td><td>{{ p.frame_rate }}</td></tr>
+    <tr><td>Optical configuration</td><td>Two cameras, stereo baseline {{ p.baseline_mm }} mm; laser pattern projector; RGB camera</td></tr>
+    <tr><td>Light source</td><td>{{ p.light_source }}</td></tr>
+    <tr><td>Laser class</td><td>{{ p.laser_class }}</td></tr>
+    <tr><td>Color image output</td><td>{{ p.color }}</td></tr>
+    <tr><td>Data interface</td><td>{{ p.interface }}</td></tr>
+    <tr><td>Power</td><td>{{ p.power }}</td></tr>
+    <tr><td>Operating temperature</td><td>{{ p.operating_temp }}</td></tr>
+    <tr><td>Dimensions L × W × H (mm)</td><td>{{ p.dimensions_mm.l }} × {{ p.dimensions_mm.w }} × {{ p.dimensions_mm.h }}</td></tr>
+    <tr><td>Weight (kg)</td><td>{{ p.weight_kg }}</td></tr>
+    <tr style="border:0"><td style="border:0">Software</td><td style="border:0">{{ p.software }}</td></tr>
+  </table>
+</div>
+<p class="abs note" style="left:51pt; top:522pt; width:294pt;">Preliminary specification; final data sheet at launch. <sup>1</sup> Method to be stated at launch. Dimensions over the housing, connectors excluded.</p>
+
+<!-- right column -->
+<div class="abs panel-dark glow" style="left:363pt; top:81.8pt; width:198pt; height:78.7pt; overflow:hidden;">
+  <img src="../../assets/prs-2500b.png" style="position:absolute; left:10pt; top:9pt; width:178pt;" alt="">
+</div>
+<div class="abs" style="left:363pt; top:166pt; width:198pt;">
+  {{ measuring_face_small_svg|safe }}
+</div>
+<p class="abs caption" style="left:363pt; top:240pt; width:190pt;">PRS, measuring face; housing {{ p.dimensions_mm.l }} × {{ p.dimensions_mm.w }} × {{ p.dimensions_mm.h }} mm, camera windows at both ends, RGB camera and laser projector module between them.</p>
+
+<div class="abs" style="left:363pt; top:286pt; width:198pt;">
+  <h2>By working distance</h2>
+  <table class="data" style="margin-top:5pt;">
+    <thead><tr><th style="width:44pt">WD (mm)</th><th style="width:74pt">Field of view (mm)</th><th>XY point spacing (µm)</th></tr></thead>
+    <tbody>
+    {% for r in p.by_wd %}
+      <tr><td class="model">{{ r.wd }} {{ r.tag }}</td><td>{{ r.fov_w }} × {{ r.fov_h }}</td><td>{{ r.spacing_um }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<!-- chart -->
+<h2 class="abs" style="left:51pt; top:556pt;">Field of view and point spacing against working distance</h2>
+<div class="abs card" style="left:51pt; top:571pt; width:510pt; height:199pt; padding:6pt 0 0;">
+  {{ fov_wd_chart_svg|safe }}
+</div>
+<p class="abs caption" style="left:51pt; top:774pt; width:510pt;">Field-of-view width and height at the three specified working distances, with the XY point spacing under each. At {{ opt.wd/1000 }} m the field of view covers a Euro pallet with margin; at {{ far.wd/1000 }} m it covers a container door.</p>
+{% endblock %}

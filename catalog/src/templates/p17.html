@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% set page_title = "All models" %}
+{% block header %}
+<div class="tab right">
+  <div class="box"><span class="num">04</span><span>Technical data</span></div>
+  <span class="crumb">All models</span>
+</div>
+{% endblock %}
+
+{% block content %}
+<h1 class="title">All models</h1>
+<p class="abs" style="left:51pt; top:90pt; width:440pt; font-size:9pt; line-height:1.42;">The figures that decide the choice, in catalog order. Full specifications on pages 18 to 20; definitions and the repeatability method on page 22.</p>
+
+<div class="abs" style="left:51pt; top:126pt; width:510pt;">
+  <style>#all td{white-space:nowrap; padding:4.9pt 3pt 4.7pt 3pt} #all th{padding-left:3pt}</style>
+  <table class="data" id="all" style="font-size:7pt;">
+    <thead><tr>
+      <th style="width:42pt">Model</th><th style="width:52.5pt">Field of view at optimum WD (mm)</th><th style="width:52pt">Working distance near–far (mm)</th>
+      <th style="width:36.5pt">Optimum WD (mm)</th><th style="width:40.5pt">Measuring depth (mm)</th><th style="width:33pt">XY point spacing (µm)</th>
+      <th style="width:48pt">Z repeatability 2σ (µm) <sup>1</sup></th><th style="width:51.5pt">Points per frame</th><th style="width:40pt">Interface</th>
+      <th style="width:62.5pt">L × W × H (mm)</th><th style="width:29pt">Weight (kg)</th><th>Page</th>
+    </tr></thead>
+    <tbody>
+    {% for g in series_groups %}
+      <tr class="group"><td colspan="12"><i style="background:{{ g.color }}"></i>{{ g.label }}</td></tr>
+      {% for m in models if m.series == g.id %}
+      <tr>
+        <td class="model" style="font-size:7pt;">{{ m.model }}{% if m.note %} <sup>{{ m.note|replace('²','2')|replace('³','3') }}</sup>{% endif %}</td>
+        <td style="font-size:7pt;">{{ m.fov }}</td><td style="font-size:7pt;">{{ m.wd }}</td><td style="font-size:7pt;">{{ m.opt }}</td><td style="font-size:7pt;">{{ m.depth }}</td>
+        <td style="font-size:7pt;">{{ m.spacing }}</td><td style="font-size:7pt;">{{ m.z }}</td><td style="font-size:7pt;">{{ m.points }}</td><td style="font-size:7pt;">{{ m.iface }}</td>
+        <td style="font-size:7pt;">{{ m.dims }}</td><td style="font-size:7pt;">{{ m.weight }}</td><td style="font-size:7pt;">{{ m.page }}</td>
+      </tr>
+      {% endfor %}
+    {% endfor %}
+    </tbody>
+  </table>
+  <p class="note" style="margin-top:6pt;"><sup>1</sup> Regional 2σ on a ceramic reference plate; the largest value found at the near, optimum and far working distance; method on page 22. <sup>2</sup> TRS-050B and TRS-075B: near and far working distances on request; measuring depth 8 mm. <sup>3</sup> PRS: preliminary specification; Z repeatability method and points per frame stated at launch.</p>
+</div>
+
+<!-- selecting a model -->
+<div class="abs" style="left:51pt; top:668pt; width:294pt;">
+  <h2>Selecting a model</h2>
+  <div class="body-s" style="margin-top:4pt;">
+    <p style="padding:5pt 0; border-bottom:0.5pt solid var(--rule);">Choose a <b>field of view</b> that covers the part with margin at the optimum working distance.</p>
+    <p style="padding:5pt 0; border-bottom:0.5pt solid var(--rule);">Choose a <b>point spacing</b> of one tenth of the smallest feature or finer.</p>
+    <p style="padding:5pt 0; border-bottom:0.5pt solid var(--rule);">Choose a <b>Z repeatability</b> of one tenth of the tolerance or better; a gauge study on the part decides.</p>
+  </div>
+</div>
+<div class="abs panel-dark" style="left:363pt; top:668pt; width:198pt; height:120pt; padding:10pt 9pt;">
+  <div class="serif" style="font-size:12pt; line-height:1.1;">Which model? Ask us.</div>
+  <p style="font-size:6.8pt; line-height:1.42; color:var(--on-dark-data); margin-top:5pt;">Send a photograph of the part, the feature and its tolerance to <b style="color:#fff;">info@bigframe.com</b>. We come back with the model and the working distance, and say what the camera will and will not resolve.</p>
+  <div class="abs" style="left:9pt; bottom:9pt; width:34pt; height:34pt; background:#fff; padding:2pt;">{{ qr_svg|safe }}</div>
+</div>
+{% endblock %}
