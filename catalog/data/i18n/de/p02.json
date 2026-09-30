@@ -1,7 +1,7 @@
 {
   "title": "Das Programm im Überblick",
   "crumb": "Das Programm",
-  "lede": "Achtzehn Streifenlicht-3D-Kameras in fünf Baureihen, Sichtfelder von 9,8 mm bis 3,6 m. Eine Softwareplattform, TridiVision, für das gesamte Programm. Jede Kennzahl ist gleich angegeben: Sichtfeld bei nahem, optimalem und fernem Arbeitsabstand, Punktabstand am Optimum, Z-Wiederholgenauigkeit als regionaler 2σ-Wert (Definitionen und Verfahren: Seite 22).",
+  "lede": "Achtzehn Streifenlicht-3D-Kameras in fünf Serien, Sichtfelder von 9,8 mm bis 3,6 m. Eine Softwareplattform, TridiVision, für das gesamte Programm. Jede Kennzahl ist gleich angegeben: Sichtfeld bei nahem, optimalem und fernem Arbeitsabstand, Punktabstand am Optimum, Z-Wiederholgenauigkeit als regionaler 2σ-Wert (Definitionen und Verfahren: Seite 22).",
   "contents_label": "Inhalt",
   "toc1_name": "Überblick",
   "toc1_desc": "Programm · Anwendungen",
@@ -10,10 +10,10 @@
   "toc3_name": "Software",
   "toc3_desc": "TridiVision",
   "toc4_name": "Technische Daten",
-  "toc4_desc": "Alle Modelle · Baureihen · Zubehör · Definitionen",
+  "toc4_desc": "Alle Modelle · Serien · Zubehör · Definitionen",
   "toc5_name": "Unternehmen",
   "toc5_desc": "Bigframe · Kontakt",
   "h2_scatter": "Sichtfeld gegen Z-Wiederholgenauigkeit",
-  "caption_scatter": "Breite des Sichtfelds bei optimalem Arbeitsabstand gegen regionale Z-Wiederholgenauigkeit, 2σ, für alle achtzehn Modelle. Benachbarte Baureihen überlappen: für die meisten Teile kommen zwei Modelle in Frage.",
+  "caption_scatter": "Breite des Sichtfelds bei optimalem Arbeitsabstand gegen regionale Z-Wiederholgenauigkeit, 2σ, für alle achtzehn Modelle. Benachbarte Serien überlappen: für die meisten Teile kommen zwei Modelle in Frage.",
   "caption_note": "PRS: vorläufige Spezifikation, Seite"
 }

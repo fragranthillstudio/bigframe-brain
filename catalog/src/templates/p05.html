@@ -67,9 +67,9 @@
 <div class="abs" style="left:51pt; top:375.5pt; width:510pt;">
   <table class="glance">
     <thead><tr>
-      <th style="width:68.2pt">{{ t.th_model }}</th><th style="width:74.3pt">{{ t.th_fov }}</th><th style="width:88.5pt">{{ t.th_wd }}</th>
-      <th style="width:58.5pt">{{ t.th_depth }}</th><th style="width:53.3pt">{{ t.th_spacing }}</th><th style="width:64.4pt">{{ t.th_z|safe }}</th>
-      <th style="width:65.3pt">{{ t.th_dims }}</th><th style="width:37.5pt">{{ t.th_weight }}</th>
+      <th style="width:60pt">{{ t.th_model }}</th><th style="width:70pt">{{ t.th_fov }}</th><th style="width:86pt">{{ t.th_wd }}</th>
+      <th style="width:52pt">{{ t.th_depth }}</th><th style="width:52pt">{{ t.th_spacing }}</th><th style="width:62pt">{{ t.th_z|safe }}</th>
+      <th style="width:84pt">{{ t.th_dims }}</th><th style="width:44pt">{{ t.th_weight }}</th>
     </tr></thead>
     <tbody>
     {% for m in ms %}
@@ -87,7 +87,7 @@
 </div>
 
 <!-- applications -->
-<h2 class="abs" style="left:51pt; top:494.5pt;">{{ t.h2_apps }}</h2>
+<h2 class="abs" style="left:51pt; top:503pt;">{{ t.h2_apps }}</h2>
 {% for a in d.apps %}
 {% set x = 51 + loop.index0 * 173.25 %}
 <div class="tile" style="left:{{ x }}pt; top:527.2pt; width:164.2pt; height:199.6pt;">
