@@ -52,10 +52,19 @@ def load_data() -> dict:
 
 
 def load_strings(lang: str) -> dict:
-    path = ROOT / "data" / "i18n" / f"{lang}.json"
-    if not path.exists():
-        raise SystemExit(f"no strings for language '{lang}': {path}")
-    return json.loads(path.read_text())
+    """data/i18n/<lang>.json (common strings) merged with data/i18n/<lang>/pNN.json (one file per page)."""
+    base = ROOT / "data" / "i18n" / f"{lang}.json"
+    if not base.exists():
+        raise SystemExit(f"no strings for language '{lang}': {base}")
+    strings = json.loads(base.read_text())
+    for f in sorted((ROOT / "data" / "i18n" / lang).glob("p[0-9][0-9].json")):
+        strings[f.stem] = json.loads(f.read_text())
+    return strings
+
+
+def load_page_data() -> dict:
+    """data/pages/pNN.json: structured, language-independent content of one page (tables, lists)."""
+    return {f.stem: json.loads(f.read_text()) for f in sorted((ROOT / "data" / "pages").glob("p[0-9][0-9].json"))}
 
 
 def localize_number(value, lang: str) -> str:
@@ -101,12 +110,13 @@ def render_html(data: dict, strings: dict, lang: str, pages: list[int]) -> dict[
         range_scatter_svg=figures.range_scatter_svg(data["models"], data["series_groups"]),
         figures=figures,
     )
+    page_data = load_page_data()
     html_dir = SRC / "rendered" / lang
     html_dir.mkdir(parents=True, exist_ok=True)
     paths = {}
     for n in pages:
         tpl = env.get_template(f"p{n:02d}.html")
-        html = tpl.render(page_number=n, t=strings.get(f"p{n:02d}", {}), **ctx)
+        html = tpl.render(page_number=n, t=strings.get(f"p{n:02d}", {}), d=page_data.get(f"p{n:02d}", {}), **ctx)
         p = html_dir / f"p{n:02d}.html"
         p.write_text(html)
         paths[n] = p
