@@ -27,10 +27,30 @@ MONO = "IBM Plex Mono"
 SANS = "IBM Plex Sans"
 
 
+# Labels used inside the figures; build.py overrides them per language via set_labels().
+LABELS = {
+    "wd": "WD", "near": "near", "opt": "optimum", "far": "far", "opt_short": "opt.",
+    "point_spacing": "µm point spacing", "spacing": "µm spacing", "fov": "FOV", "at_optimum": "at the optimum",
+    "measuring_face": "MEASURING FACE", "end_view": "END VIEW",
+    "fov_width": "Field-of-view width, mm", "fov_height": "Field-of-view height, mm",
+    "x_axis": "FIELD OF VIEW, WIDTH AT OPTIMUM WORKING DISTANCE", "y_axis": "Z REPEATABILITY, REGIONAL 2σ",
+    "series_trs": "TRS series", "series_vrh9": "VRH9 series", "series_vr": "VR series", "series_vrd": "VRD series",
+    "series_prs": "PRS series (preliminary)", "m": "m", "mm": "mm",
+}
+DECIMAL = "."
+
+
+def set_labels(labels: dict | None = None, decimal: str = ".") -> None:
+    global DECIMAL
+    if labels:
+        LABELS.update(labels)
+    DECIMAL = decimal
+
+
 def fmt_m(mm: float) -> str:
     v = mm / 1000
     s = f"{v:.2f}".rstrip("0").rstrip(".")
-    return s
+    return s.replace(".", DECIMAL)
 
 
 # ---------------------------------------------------------------- QR code
@@ -174,10 +194,10 @@ def fov_scene_svg(prs: dict, img_href: str, W: float = 510, H: float = 363) -> s
         col = LIME if row["tag"] == "opt." else "#ffffff"
         out.append(_line(corner, (lx - 8, y - 3), stroke="#ffffff", stroke_width=0.45, stroke_opacity=0.7))
         out.append(f'<circle cx="{corner[0]:.1f}" cy="{corner[1]:.1f}" r="1.6" fill="#ffffff"/>')
-        tag = {"near": " · near", "opt.": " · optimum", "far": " · far"}[row["tag"]]
-        out.append(_text(lx, y, f"WD {fmt_m(row['wd'])} m{tag}", size=7.6, fill=col, family=SANS, weight=600))
-        out.append(_text(lx, y + 10, f"{row['fov_w']} × {row['fov_h']} mm", size=6.4, fill=ON_DARK))
-        out.append(_text(lx, y + 19, f"{row['spacing_um']} µm point spacing", size=5.9, fill=ON_DARK_MUTED))
+        tag = {"near": LABELS["near"], "opt.": LABELS["opt"], "far": LABELS["far"]}[row["tag"]]
+        out.append(_text(lx, y, f"{LABELS['wd']} {fmt_m(row['wd'])} {LABELS['m']} · {tag}", size=7.6, fill=col, family=SANS, weight=600))
+        out.append(_text(lx, y + 10, f"{row['fov_w']} × {row['fov_h']} {LABELS['mm']}", size=6.4, fill=ON_DARK))
+        out.append(_text(lx, y + 19, f"{row['spacing_um']} {LABELS['point_spacing']}", size=5.9, fill=ON_DARK_MUTED))
     out.append("</svg>")
     return "".join(out)
 
@@ -215,8 +235,8 @@ def use_case_svg(prs: dict, img_href: str, W: float = 283, H: float = 200, compa
     out.append(_line((x, apex[1]), (x, r[1][1]), stroke=ON_DARK, stroke_width=0.5))
     out.append(_line((x - 3, apex[1]), (x + 3, apex[1]), stroke=ON_DARK, stroke_width=0.5))
     out.append(_line((x - 3, r[1][1]), (x + 3, r[1][1]), stroke=ON_DARK, stroke_width=0.5))
-    out.append(_text(x - 5, (apex[1] + r[1][1]) / 2 + 2, f"WD {fmt_m(opt['wd'])} m", size=5.6, fill=ON_DARK, anchor="end"))
-    out.append(_text(10, H - 12, f"FOV {fmt_m(opt['fov_w'])} × {fmt_m(opt['fov_h'])} m at the optimum", size=5.6, fill=ON_DARK))
+    out.append(_text(x - 5, (apex[1] + r[1][1]) / 2 + 2, f"{LABELS['wd']} {fmt_m(opt['wd'])} {LABELS['m']}", size=5.6, fill=ON_DARK, anchor="end"))
+    out.append(_text(10, H - 12, f"{LABELS['fov']} {fmt_m(opt['fov_w'])} × {fmt_m(opt['fov_h'])} {LABELS['m']} {LABELS['at_optimum']}", size=5.6, fill=ON_DARK))
     out.append("</svg>")
     return "".join(out)
 
@@ -260,9 +280,9 @@ def measuring_face_svg(prs: dict, W: float = 196, H: float = 66, label: bool = T
     out += [_line((dx, y0), (dx, y0 + h), stroke=INK, stroke_width=0.5),
             _line((x0 + w + 3, y0), (dx + 3, y0), stroke=INK, stroke_width=0.4),
             _line((x0 + w + 3, y0 + h), (dx + 3, y0 + h), stroke=INK, stroke_width=0.4),
-            _text(dx + 3, y0 + h / 2 + 2, f"{Wd}", size=5.9, fill=INK, extra=f'transform="rotate(-90 {dx + 3:.1f} {y0 + h / 2 + 2:.1f})" text-anchor="middle"')]
+            _text(dx + 3, y0 + h / 2 + 2, str(Wd).replace(".", DECIMAL), size=5.9, fill=INK, extra=f'transform="rotate(-90 {dx + 3:.1f} {y0 + h / 2 + 2:.1f})" text-anchor="middle"')]
     if label:
-        out.append(_text(x0 + w / 2, H - 2, "MEASURING FACE", size=6.2, fill=FAINT, family=SANS, anchor="middle", extra='letter-spacing="0.8"'))
+        out.append(_text(x0 + w / 2, H - 2, LABELS["measuring_face"], size=6.2, fill=FAINT, family=SANS, anchor="middle", extra='letter-spacing="0.8"'))
     out.append("</svg>")
     return "".join(out)
 
@@ -282,7 +302,7 @@ def end_view_svg(prs: dict, W: float = 56, H: float = 66, k: float = 0.182) -> s
             _line((x0 + w, y0 + h + 3), (x0 + w, dy + 3), stroke=INK, stroke_width=0.4),
             f'<rect x="{x0 + w / 2 - 6:.1f}" y="{dy - 4.5:.1f}" width="12" height="9" fill="#ffffff"/>',
             _text(x0 + w / 2, dy + 2.3, f"{Hh}", size=6.5, fill=INK, anchor="middle")]
-    out.append(_text(x0 + w / 2, H - 2, "END VIEW", size=6.2, fill=FAINT, family=SANS, anchor="middle", extra='letter-spacing="0.8"'))
+    out.append(_text(x0 + w / 2, H - 2, LABELS["end_view"], size=6.2, fill=FAINT, family=SANS, anchor="middle", extra='letter-spacing="0.8"'))
     out.append("</svg>")
     return "".join(out)
 
@@ -301,10 +321,10 @@ def fov_wd_chart_svg(prs: dict, W: float = 510, H: float = 192) -> str:
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}pt" height="{H}pt">']
     for m in range(0, ymax + 1, 1000):
         out.append(_line((x0, Y(m)), (x1, Y(m)), stroke=RULE, stroke_width=0.5))
-        out.append(_text(x0 - 6, Y(m) + 2, f"{m // 1000} m" if m else "0", size=5.7, fill=FAINT, anchor="end"))
+        out.append(_text(x0 - 6, Y(m) + 2, f"{m // 1000} {LABELS['m']}" if m else "0", size=5.7, fill=FAINT, anchor="end"))
     for r in by:
         out.append(_line((X(r["wd"]), y0), (X(r["wd"]), y1), stroke=RULE, stroke_width=0.5, stroke_dasharray="1.5 1.5"))
-    for key, col, lab in (("fov_w", BLUE, "Field-of-view width, mm"), ("fov_h", GREEN_PAPER, "Field-of-view height, mm")):
+    for key, col, lab in (("fov_w", BLUE, LABELS["fov_width"]), ("fov_h", GREEN_PAPER, LABELS["fov_height"])):
         pts = [(X(r["wd"]), Y(r[key])) for r in by]
         out.append(f'<polyline points="{" ".join(f"{x:.1f},{y:.1f}" for x, y in pts)}" fill="none" stroke="{col}" stroke-width="1.4" stroke-linejoin="round"/>')
         for (x, y), r in zip(pts, by):
@@ -315,12 +335,12 @@ def fov_wd_chart_svg(prs: dict, W: float = 510, H: float = 192) -> str:
     for r in by:
         x = X(r["wd"])
         bold = 600 if r["tag"] == "opt." else 400
-        t = f"WD {fmt_m(r['wd'])} m" + (" (opt.)" if r["tag"] == "opt." else "")
+        t = f"{LABELS['wd']} {fmt_m(r['wd'])} {LABELS['m']}" + (f" ({LABELS['opt_short']})" if r["tag"] == "opt." else "")
         out.append(_text(x, y1 + 12, t, size=5.9, fill=INK, family=SANS, anchor="middle", weight=bold))
-        out.append(_text(x, y1 + 21.5, f"{r['spacing_um']} µm spacing", size=5.4, fill=FAINT, anchor="middle"))
+        out.append(_text(x, y1 + 21.5, f"{r['spacing_um']} {LABELS['spacing']}", size=5.4, fill=FAINT, anchor="middle"))
     # legend
     lx = x0 + 8
-    for i, (col, lab) in enumerate(((BLUE, "Field-of-view width, mm"), (GREEN_PAPER, "Field-of-view height, mm"))):
+    for i, (col, lab) in enumerate(((BLUE, LABELS["fov_width"]), (GREEN_PAPER, LABELS["fov_height"]))):
         xx = lx + i * 135
         out.append(f'<rect x="{xx}" y="{y0 - 12}" width="9" height="3" fill="{col}"/>')
         out.append(_text(xx + 13, y0 - 8.6, lab, size=5.9, fill=FAINT, family=SANS))
@@ -364,10 +384,10 @@ def range_scatter_svg(models: list[dict], groups: list[dict], W: float = 510, H:
                 out.append(_line((x0, Y(v)), (x1, Y(v)), stroke=RULE, stroke_width=0.85 if k == 1 else 0.35))
     for v, lab in ((10, "10 mm"), (100, "100 mm"), (1000, "1 m")):
         out.append(_text(X(v), y1 + 11, lab, size=6.7, fill=INK, anchor="middle"))
-    for v, lab in ((0.1, "0.1 µm"), (1, "1 µm"), (10, "10 µm"), (100, "100 µm"), (1000, "1 mm")):
+    for v, lab in ((0.1, "0" + DECIMAL + "1 µm"), (1, "1 µm"), (10, "10 µm"), (100, "100 µm"), (1000, "1 mm")):
         out.append(_text(x0 - 5, Y(v) + 2.3, lab, size=6.7, fill=INK, anchor="end"))
-    out.append(_text((x0 + x1) / 2, y1 + 22, "FIELD OF VIEW, WIDTH AT OPTIMUM WORKING DISTANCE", size=6.4, fill=FAINT, anchor="middle", extra='letter-spacing="0.7"'))
-    out.append(_text(9, (y0 + y1) / 2, "Z REPEATABILITY, REGIONAL 2σ", size=6.4, fill=FAINT, anchor="middle",
+    out.append(_text((x0 + x1) / 2, y1 + 22, LABELS["x_axis"], size=6.4, fill=FAINT, anchor="middle", extra='letter-spacing="0.7"'))
+    out.append(_text(9, (y0 + y1) / 2, LABELS["y_axis"], size=6.4, fill=FAINT, anchor="middle",
                      extra=f'letter-spacing="0.7" transform="rotate(-90 9 {(y0 + y1) / 2:.1f})"'))
     color = {g["id"]: g["color"] for g in groups}
     for m in models:
@@ -383,7 +403,7 @@ def range_scatter_svg(models: list[dict], groups: list[dict], W: float = 510, H:
             out.append(f'<circle cx="{px:.1f}" cy="{py:.1f}" r="3.2" fill="{col}"/>')
         out.append(_text(px + dx, py + dy, label, size=7.4, fill=INK, anchor=anchor))
     # legend
-    names = {"trs": "TRS series", "vrh9": "VRH9 series", "vr": "VR series", "vrd": "VRD series", "prs": "PRS series (preliminary)"}
+    names = {k: LABELS["series_" + k] for k in ("trs", "vrh9", "vr", "vrd", "prs")}
     xx = 60
     for g in groups:
         col = g["color"]

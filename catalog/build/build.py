@@ -67,6 +67,23 @@ def load_page_data() -> dict:
     return {f.stem: json.loads(f.read_text()) for f in sorted((ROOT / "data" / "pages").glob("p[0-9][0-9].json"))}
 
 
+def apply_overrides(data: dict, ov: dict) -> dict:
+    """Language overrides for the English strings kept inside models.json (strings file key "data").
+
+    Shapes: {"series_cards": {id: {field: value}}, "series_groups": {id: {field: value}},
+    "models": {model: {field: value}}, "large_scene_compare": {model: {field: value}},
+    "prs": {field: value}, "prs_tags": {"near": "…", "opt.": "…", "far": "…"}}.
+    """
+    for key, id_field in (("series_cards", "id"), ("series_groups", "id"), ("models", "model"), ("large_scene_compare", "model")):
+        for row in data.get(key, []):
+            row.update(ov.get(key, {}).get(row[id_field], {}))
+    data["prs"].update(ov.get("prs", {}))
+    tags = ov.get("prs_tags", {})
+    for row in data["prs"]["by_wd"]:
+        row["tag_label"] = tags.get(row["tag"], row["tag"])
+    return data
+
+
 def localize_number(value, lang: str) -> str:
     """Decimal comma for German; leaves everything else as it is."""
     s = str(value)
@@ -256,8 +273,9 @@ def main() -> None:
     ap.add_argument("--lang", default="en")
     ap.add_argument("--pages", nargs="*", type=int, help="render only these pages (loose PDFs + PNGs), no assembly")
     args = ap.parse_args()
-    data = load_data()
     strings = load_strings(args.lang)
+    data = apply_overrides(load_data(), strings.get("data", {}))
+    figures.set_labels(strings.get("figures", {}), decimal="," if args.lang == "de" else ".")
     available = template_pages()
     if args.pages:
         missing = [n for n in args.pages if n not in available]

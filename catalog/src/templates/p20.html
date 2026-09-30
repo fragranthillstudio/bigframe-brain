@@ -50,7 +50,7 @@
     <thead><tr><th style="width:44pt">{{ c.th_wd_mm }}</th><th style="width:74pt">{{ c.th_fov_mm }}</th><th>{{ c.th_spacing_um }}</th></tr></thead>
     <tbody>
     {% for r in p.by_wd %}
-      <tr><td class="model">{{ r.wd|n }} {{ r.tag }}</td><td>{{ r.fov_w|n }} × {{ r.fov_h|n }}</td><td>{{ r.spacing_um|n }}</td></tr>
+      <tr><td class="model">{{ r.wd|n }} {{ r.tag_label }}</td><td>{{ r.fov_w|n }} × {{ r.fov_h|n }}</td><td>{{ r.spacing_um|n }}</td></tr>
     {% endfor %}
     </tbody>
   </table>
