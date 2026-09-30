@@ -1,0 +1,20 @@
+{
+  "title": "Alle Modelle",
+  "lede": "Die Werte, die die Wahl entscheiden, in Katalogreihenfolge. Vollständige Spezifikationen auf den Seiten 18 bis 20; Definitionen und das Verfahren der Wiederholgenauigkeit auf Seite 22.",
+  "th_wd_range": "Arbeitsabstand nah–fern (mm)",
+  "th_opt_wd": "Optimaler WD (mm)",
+  "th_depth": "Messtiefe (mm)",
+  "th_points": "Punkte pro Aufnahme",
+  "th_dims": "L × B × H (mm)",
+  "th_weight_kg": "Gewicht (kg)",
+  "note1": "Regional 2σ auf einer Keramik-Referenzplatte; größter Wert bei nahem, optimalem und fernem Arbeitsabstand; Verfahren auf Seite 22.",
+  "note2": "TRS-050B und TRS-075B: naher und ferner Arbeitsabstand auf Anfrage; Messtiefe 8 mm.",
+  "note3": "PRS: vorläufige Spezifikation; Verfahren der Z-Wiederholgenauigkeit und Punkte pro Aufnahme zur Markteinführung.",
+  "h2_select": "Ein Modell auswählen",
+  "select_1": "Wählen Sie ein <b>Sichtfeld</b>, das das Teil beim optimalen Arbeitsabstand mit Reserve abdeckt.",
+  "select_2": "Wählen Sie einen <b>Punktabstand</b> von einem Zehntel des kleinsten Merkmals oder feiner.",
+  "select_3": "Wählen Sie eine <b>Z-Wiederholgenauigkeit</b> von einem Zehntel der Toleranz oder besser; eine Messsystemanalyse am Teil entscheidet.",
+  "ask_title": "Modellwahl? Fragen Sie uns.",
+  "ask_desc_a": "Senden Sie ein Foto des Teils, Merkmal und Toleranz an",
+  "ask_desc_b": "Sie erhalten Modell und Arbeitsabstand und erfahren, was die Kamera auflöst und was nicht."
+}

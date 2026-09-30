@@ -36,7 +36,7 @@
   {% set c = s.common %}
   {% macro kv(id) -%}
     {%- if id == 'points' %}{{ m0.points }}{% if c.points_px %} ({{ c.points_px }}){% endif %}
-    {%- elif id == 'frame' %}{{ t[c.frame_rate.key]|format(*c.frame_rate.args) }}
+    {%- elif id == 'frame' %}{{ t[c.frame_rate.key]|format(*(c.frame_rate.args|map('n')|list)) }}
     {%- elif id == 'optical' %}{{ t[c.optical] }}
     {%- elif id == 'light' %}{{ t[c.light] }}
     {%- elif id == 'color' %}{{ t[c.color] }}

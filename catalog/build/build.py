@@ -78,6 +78,7 @@ def apply_overrides(data: dict, ov: dict) -> dict:
         for row in data.get(key, []):
             row.update(ov.get(key, {}).get(row[id_field], {}))
     data["prs"].update(ov.get("prs", {}))
+    data["catalog"].update(ov.get("catalog", {}))
     tags = ov.get("prs_tags", {})
     for row in data["prs"]["by_wd"]:
         row["tag_label"] = tags.get(row["tag"], row["tag"])

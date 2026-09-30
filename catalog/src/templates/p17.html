@@ -26,9 +26,9 @@
       {% for m in models if m.series == g.id %}
       <tr>
         <td class="model" style="font-size:7pt;">{{ m.model }}{% if m.note %} <sup>{{ m.note|replace('²','2')|replace('³','3') }}</sup>{% endif %}</td>
-        <td style="font-size:7pt;">{{ m.fov }}</td><td style="font-size:7pt;">{{ m.wd }}</td><td style="font-size:7pt;">{{ m.opt }}</td><td style="font-size:7pt;">{{ m.depth }}</td>
-        <td style="font-size:7pt;">{{ m.spacing }}</td><td style="font-size:7pt;">{{ m.z }}</td><td style="font-size:7pt;">{{ m.points }}</td><td style="font-size:7pt;">{{ m.iface }}</td>
-        <td style="font-size:7pt;">{{ m.dims }}</td><td style="font-size:7pt;">{{ m.weight }}</td><td style="font-size:7pt;">{{ m.page }}</td>
+        <td style="font-size:7pt;">{{ m.fov|n }}</td><td style="font-size:7pt;">{{ m.wd|n }}</td><td style="font-size:7pt;">{{ m.opt|n }}</td><td style="font-size:7pt;">{{ m.depth|n }}</td>
+        <td style="font-size:7pt;">{{ m.spacing|n }}</td><td style="font-size:7pt;">{{ m.z|n }}</td><td style="font-size:7pt;">{{ m.points }}</td><td style="font-size:7pt;">{{ m.iface }}</td>
+        <td style="font-size:7pt;">{{ m.dims|n }}</td><td style="font-size:7pt;">{{ m.weight|n }}</td><td style="font-size:7pt;">{{ m.page }}</td>
       </tr>
       {% endfor %}
     {% endfor %}

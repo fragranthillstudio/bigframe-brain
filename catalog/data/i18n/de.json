@@ -1,0 +1,206 @@
+{
+  "common": {
+    "footer": "BIGFRAME · PRODUKTKATALOG 2026 · DE 2026-10 · REV. C",
+    "new": "NEU",
+    "page": "Seite",
+    "sec_overview": "Überblick",
+    "sec_cameras": "Kameras",
+    "sec_technical": "Technische Daten",
+    "prs_series": "PRS-Serie",
+    "crumb_data_by_series": "Daten nach Serie",
+    "to": "bis",
+    "at": "bei",
+    "th_model": "Modell",
+    "th_wd_mm": "WD (mm)",
+    "th_fov_mm": "Sichtfeld (mm)",
+    "th_spacing_um": "XY-Punkt­abstand (µm)",
+    "th_fov_opt_mm": "Sichtfeld bei optimalem WD (mm)",
+    "th_wd_nof_mm": "Arbeitsabstand nah / optimal / fern (mm)",
+    "th_z2s_um": "Z-Wiederhol­genauigkeit 2σ (µm)",
+    "mounting": "Montage",
+    "weight": "Gewicht",
+    "interface": "Schnittstelle",
+    "email": "info@bigframe.com",
+    "prelim_final": "Vorläufige Spezifikation; endgültiges Datenblatt zur Markteinführung.",
+    "z_method_launch": "Verfahren wird zur Markteinführung angegeben.",
+    "company": "Bigframe Technology Co., Ltd.",
+    "address1": "South Building, Building 5, Jingdong Intelligent Industrial Park",
+    "address2": "No. 9 Jinjie Road, Kunshan, Provinz Jiangsu, China",
+    "website": "www.bigframe.com",
+    "linkedin": "linkedin.com/company/bigframetechnology",
+    "tel": "Tel. (China) 400-182-8892"
+  },
+  "figures": {
+    "wd": "WD",
+    "near": "nah",
+    "opt": "optimal",
+    "far": "fern",
+    "opt_short": "opt.",
+    "point_spacing": "µm Punktabstand",
+    "spacing": "µm Punktabstand",
+    "fov": "FOV",
+    "at_optimum": "am optimalen WD",
+    "measuring_face": "MESSSEITE",
+    "end_view": "STIRNSEITE",
+    "fov_width": "Sichtfeldbreite, mm",
+    "fov_height": "Sichtfeldhöhe, mm",
+    "x_axis": "SICHTFELD, BREITE BEI OPTIMALEM ARBEITSABSTAND",
+    "y_axis": "Z-WIEDERHOLGENAUIGKEIT, REGIONAL 2σ",
+    "series_trs": "TRS-Serie",
+    "series_vrh9": "VRH9-Serie",
+    "series_vr": "VR-Serie",
+    "series_vrd": "VRD-Serie",
+    "series_prs": "PRS-Serie (vorläufig)",
+    "m": "m",
+    "mm": "mm"
+  },
+  "data": {
+    "series_cards": {
+      "trs": {
+        "name": "TRS-Serie",
+        "desc": "Messung im Mikrometerbereich: Lötkugeln, Bumps, Schweißnähte",
+        "fov": "FOV 9,8–74 mm",
+        "z": "Z-Wiederholgenauigkeit ab 0,06 µm"
+      },
+      "vrh9": {
+        "name": "VRH9-Serie",
+        "desc": "Feinmessung: Steckverbinder, Rahmen, Leiterplatten",
+        "fov": "FOV 24–277 mm",
+        "z": "Z-Wiederholgenauigkeit ab 0,15 µm"
+      },
+      "vr": {
+        "name": "VR-Serie",
+        "desc": "Führung und Prüfung: Kisten, Paletten, Karosserieteile",
+        "fov": "FOV 300–1500 mm",
+        "z": "Z-Wiederholgenauigkeit ab 2 µm"
+      },
+      "vrd": {
+        "name": "VRD-Serie",
+        "desc": "Farb-Stereo am Roboterarm: Behälter, Werkzeuge, Verbindungselemente",
+        "fov": "FOV 580–1166 mm",
+        "z": "Z-Wiederholgenauigkeit ab 6 µm"
+      },
+      "prs": {
+        "name": "PRS-Serie",
+        "desc": "Große Szenen von einem festen Balken: Paletten, Fahrzeuge, Container",
+        "fov": "FOV 1,3–3,6 m bei WD 1,2–3,5 m",
+        "z": "Z-Wiederholgenauigkeit 300 µm ¹"
+      }
+    },
+    "series_groups": {
+      "trs": {
+        "label": "TRS-Serie — Streifenlicht-3D-Kameras mit vier Projektionsrichtungen"
+      },
+      "vrh9": {
+        "label": "VRH9-Serie — Flächen-Streifenlicht-3D-Kameras, Feinmessung"
+      },
+      "vr": {
+        "label": "VR-Serie — Flächen-Streifenlicht-3D-Kameras, mittlere und große Szenen"
+      },
+      "vrd": {
+        "label": "VRD-Serie — Farb-Stereo-Streifenlicht-3D-Kameras, Roboterführung"
+      },
+      "prs": {
+        "label": "PRS-Serie — Stereo-3D-Kameras mit großer Basis für große Szenen · vorläufig ³"
+      }
+    },
+    "models": {
+      "TRS-010B": {
+        "points": "26,2 Millionen"
+      },
+      "TRS-025B": {
+        "points": "26,2 Millionen"
+      },
+      "TRS-050B": {
+        "points": "26,2 Millionen",
+        "wd": "auf Anfrage"
+      },
+      "TRS-075B": {
+        "points": "26,2 Millionen",
+        "wd": "auf Anfrage"
+      },
+      "VRH9-020B": {
+        "points": "9,07 Millionen"
+      },
+      "VRH9-040B": {
+        "points": "9,07 Millionen"
+      },
+      "VRH9-080B": {
+        "points": "9,07 Millionen"
+      },
+      "VRH9-120B": {
+        "points": "9,07 Millionen"
+      },
+      "VRH9-160B": {
+        "points": "9,07 Millionen"
+      },
+      "VRH9-200B": {
+        "points": "9,07 Millionen"
+      },
+      "VRH9-280B": {
+        "points": "9,07 Millionen"
+      },
+      "VR-400B": {
+        "points": "3,2 Millionen"
+      },
+      "VR-600B": {
+        "points": "3,2 Millionen"
+      },
+      "VR-1300B": {
+        "points": "3,2 Millionen"
+      },
+      "VR-2300B": {
+        "points": "3,2 Millionen"
+      },
+      "VRD-600B": {
+        "points": "5 Millionen"
+      },
+      "VRD-1200B": {
+        "points": "5 Millionen"
+      },
+      "PRS-2500B": {
+        "points": "auf Anfrage"
+      }
+    },
+    "large_scene_compare": {
+      "VR-1300B": {
+        "color": "Nein",
+        "mount": "fest, über der Szene"
+      },
+      "VR-2300B": {
+        "color": "Nein",
+        "mount": "fest, über der Szene"
+      },
+      "VRD-1200B": {
+        "color": "Ja",
+        "mount": "Roboterarm"
+      },
+      "PRS-2500B": {
+        "color": "Ja",
+        "mount": "fest, über der Szene"
+      }
+    },
+    "prs": {
+      "status": "vorläufig",
+      "baseline_mm": "ca. 300",
+      "frame_rate": "1 fps bei voller Auflösung",
+      "color": "RGB-Bild, auf die Punktwolke registriert",
+      "light_source": "Roter Laser, 638 nm",
+      "laser_class": "Angabe zur Markteinführung",
+      "interface": "Gigabit Ethernet",
+      "power": "24 V DC, bis 4 A",
+      "operating_temp": "0 bis 45 °C",
+      "mounting": "Halterungssatz; Details zur Markteinführung",
+      "software": "TridiVision"
+    },
+    "prs_tags": {
+      "near": "nah",
+      "opt.": "opt.",
+      "far": "fern"
+    },
+    "catalog": {
+      "edition": "DE 2026-10 · REV. C",
+      "footer": "BIGFRAME · PRODUKTKATALOG 2026 · DE 2026-10 · REV. C"
+    }
+  }
+}

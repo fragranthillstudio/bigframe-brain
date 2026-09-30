@@ -1,0 +1,17 @@
+{
+  "page_title": "Titelseite",
+  "eyebrow": "Produktkatalog 2026",
+  "title": "Industrielle<br>3D-Kameras",
+  "lede": "Achtzehn Streifenlicht-3D-Kameras in fünf Baureihen – Sichtfelder von 9,8 mm bis 3,6 m, für Messung, Prüfung und Roboterführung.",
+  "fov_prefix": "FOV",
+  "series_trs_head": "Messung im Mikrometerbereich",
+  "series_trs_sub": "Lotkugeln, Bumps, Schweißnähte",
+  "series_vrh9_head": "Feinmessung",
+  "series_vrh9_sub": "Steckverbinder, Rahmen, Leiterplatten",
+  "series_vr_head": "Führung und Prüfung",
+  "series_vr_sub": "Kisten, Paletten, Karosserieteile",
+  "series_vrd_head": "Farb-Stereo am Roboterarm",
+  "series_vrd_sub": "Behälter, Werkzeuge, Schrauben",
+  "series_prs_head": "Große Szenen, fest montiert",
+  "series_prs_sub": "Paletten, Fahrzeuge, Container"
+}

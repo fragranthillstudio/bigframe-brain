@@ -1,0 +1,18 @@
+{
+  "title": "PRS-Serie: Sichtfeld und Abmessungen",
+  "fig_label_fov": "Sichtfeld bei den drei spezifizierten Arbeitsabständen · Illustration",
+  "scene_note_a": "Beladene Europalette, 1 m hoch, am Boden bei",
+  "scene_note_b": "(fern); oberste Lage bei",
+  "scene_note_c": "(optimal). Sichtfelder maßstäblich, Kamera nicht maßstäblich.",
+  "h2_fov": "Sichtfeld nach Arbeitsabstand <sup>1</sup>",
+  "note1_a": "Z-Wiederholgenauigkeit",
+  "note1_b": "Messtiefe",
+  "note1_c": "nah bis fern.",
+  "h2_dims": "Abmessungen und Montage",
+  "kv_housing": "Gehäuse L × B × H",
+  "kv_baseline": "Stereobasis",
+  "caption_dims": "Vorläufige Spezifikation; Abmessungen über das Gehäuse, ohne Steckverbinder. Maßzeichnungen und 3D-CAD-Daten auf Anfrage.",
+  "cta_title": "Ihre Palette oder Ihr Fahrzeug,<br>gemessen vor dem Kauf.",
+  "cta_desc_a": "Senden Sie ein Foto der Szene und die benötigte Messung an",
+  "cta_desc_b": "— Sie erhalten von uns Modell und Arbeitsabstand."
+}
