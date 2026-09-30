@@ -1,0 +1,784 @@
+{
+"page": 4,
+"size": [
+612,
+858.96
+],
+"text": [
+{
+"bbox": [
+51.0,
+817.2,
+307.8,
+825.2
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#5b6675",
+"text": "B I G F R A M E · P R O D U C T C A T A L O G 2 0 2 6 · E N 2 0 2 6 - 1 0 · R E V . C"
+},
+{
+"bbox": [
+556.4,
+817.2,
+560.1,
+825.2
+],
+"font": "IBMPlexMono-Medium",
+"size": 6.2,
+"color": "#2d3748",
+"text": "4"
+},
+{
+"bbox": [
+51.0,
+51.8,
+332.9,
+85.3
+],
+"font": "BodoniModa11pt-Regular",
+"size": 22.0,
+"color": "#2d3748",
+"text": "Robot guidance and picking"
+},
+{
+"bbox": [
+51.0,
+90.5,
+459.0,
+102.2
+],
+"font": "IBMPlexSans-Regular",
+"size": 9.0,
+"color": "#2d3748",
+"text": "Position and pose of parts in bins, totes and on pallets, from one stationary capture. Point clouds and"
+},
+{
+"bbox": [
+51.0,
+103.3,
+392.5,
+115.0
+],
+"font": "IBMPlexSans-Regular",
+"size": 9.0,
+"color": "#2d3748",
+"text": "color images from Bigframe application cases; the depalletizing scene is a rendering."
+},
+{
+"bbox": [
+59.1,
+277.2,
+102.8,
+285.2
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#5b6675",
+"text": "L O G I S T I C S"
+},
+{
+"bbox": [
+59.1,
+288.5,
+200.5,
+300.2
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 9.0,
+"color": "#2d3748",
+"text": "Parcel singulation and bin picking"
+},
+{
+"bbox": [
+59.1,
+301.5,
+244.9,
+311.0
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.3,
+"color": "#5b6675",
+"text": "Grasp points on unsorted parcels from the point cloud"
+},
+{
+"bbox": [
+59.1,
+315.0,
+175.7,
+323.6
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.6,
+"color": "#2d3748",
+"text": "VR-600B · VR-1300B · VRD-1200B"
+},
+{
+"bbox": [
+321.3,
+277.2,
+365.0,
+285.2
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#5b6675",
+"text": "L O G I S T I C S"
+},
+{
+"bbox": [
+321.3,
+288.5,
+376.5,
+300.2
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 9.0,
+"color": "#2d3748",
+"text": "Depalletizing"
+},
+{
+"bbox": [
+321.3,
+301.5,
+524.2,
+311.0
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.3,
+"color": "#5b6675",
+"text": "Layer height and carton positions from one capture at 2.5 m"
+},
+{
+"bbox": [
+321.3,
+315.0,
+395.2,
+323.6
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.6,
+"color": "#2d3748",
+"text": "PRS-2500 · VR-2300B"
+},
+{
+"bbox": [
+321.3,
+326.9,
+417.0,
+334.6
+],
+"font": "IBMPlexSans-Italic",
+"size": 6.0,
+"color": "#5b6675",
+"text": "Rendering — PRS over a Euro pallet"
+},
+{
+"bbox": [
+59.1,
+504.4,
+167.6,
+512.5
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#5b6675",
+"text": "L O G I S T I C S · E - C O M M E R C E"
+},
+{
+"bbox": [
+59.1,
+515.8,
+160.4,
+527.5
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 9.0,
+"color": "#2d3748",
+"text": "Piece picking from totes"
+},
+{
+"bbox": [
+59.1,
+528.8,
+270.2,
+538.3
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.3,
+"color": "#5b6675",
+"text": "Items segmented by shape, color and print; pick pose per item"
+},
+{
+"bbox": [
+59.1,
+542.2,
+136.9,
+550.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.6,
+"color": "#2d3748",
+"text": "VRD-600B · VRD-1200B"
+},
+{
+"bbox": [
+321.3,
+504.4,
+459.8,
+512.5
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#5b6675",
+"text": "P O W E R T R A I N · M A C H I N E T E N D I N G"
+},
+{
+"bbox": [
+321.3,
+515.8,
+405.7,
+527.5
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 9.0,
+"color": "#2d3748",
+"text": "Fastener bin picking"
+},
+{
+"bbox": [
+321.3,
+528.8,
+497.2,
+538.3
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.3,
+"color": "#5b6675",
+"text": "Screws, nuts and washers recognized in a mixed bin"
+},
+{
+"bbox": [
+321.3,
+542.2,
+391.3,
+550.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.6,
+"color": "#2d3748",
+"text": "VR-600B · VRD-600B"
+},
+{
+"bbox": [
+59.1,
+720.4,
+157.6,
+728.5
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#5b6675",
+"text": "C O L L A B O R A T I V E R O B O T S"
+},
+{
+"bbox": [
+59.1,
+731.8,
+170.6,
+743.5
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 9.0,
+"color": "#2d3748",
+"text": "Sorting by color and shape"
+},
+{
+"bbox": [
+59.1,
+744.8,
+254.6,
+754.3
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.3,
+"color": "#5b6675",
+"text": "Parts segmented on the registered color image and picked"
+},
+{
+"bbox": [
+59.1,
+758.2,
+90.3,
+766.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.6,
+"color": "#2d3748",
+"text": "VRD-600B"
+},
+{
+"bbox": [
+323.4,
+576.7,
+405.4,
+585.3
+],
+"font": "IBMPlexMono-Medium",
+"size": 6.6,
+"color": "#9aa3b2",
+"text": "Y O U R A P P L I C A T I O N"
+},
+{
+"bbox": [
+323.4,
+586.1,
+443.1,
+605.9
+],
+"font": "BodoniModa11pt-Regular",
+"size": 13.0,
+"color": "#ffffff",
+"text": "Not on these pages?"
+},
+{
+"bbox": [
+323.4,
+608.8,
+548.8,
+617.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#c9cfd8",
+"text": "Send a photograph of the part, the feature to be measured and its tolerance."
+},
+{
+"bbox": [
+323.4,
+617.8,
+536.6,
+626.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#c9cfd8",
+"text": "You receive the recommended model and working distance, and a clear"
+},
+{
+"bbox": [
+323.4,
+627.5,
+493.3,
+636.4
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#c9cfd8",
+"text": "statement of what the camera resolves — before you buy."
+},
+{
+"bbox": [
+323.4,
+641.2,
+458.6,
+649.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.6,
+"color": "#ffffff",
+"text": "info@bigframe.com · www.bigframe.com"
+},
+{
+"bbox": [
+129.0,
+29.7,
+187.6,
+37.7
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#5b6675",
+"text": "A P P L I C A T I O N S"
+},
+{
+"bbox": [
+57.2,
+29.7,
+66.0,
+37.7
+],
+"font": "IBMPlexMono-Medium",
+"size": 6.2,
+"color": "#c8ff3d",
+"text": "0 1"
+},
+{
+"bbox": [
+72.9,
+29.7,
+111.5,
+37.7
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#ffffff",
+"text": "O V E R V I E W"
+}
+],
+"rects": [
+{
+"bbox": [
+0.0,
+0.0,
+612.0,
+858.8
+],
+"fill": "#f4f5f1",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+0.0,
+0.0,
+612.8,
+859.5
+],
+"fill": "#f4f5f1",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+0.0,
+0.0,
+612.0,
+858.8
+],
+"fill": "#f4f5f1",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+811.5,
+178.5,
+813.0
+],
+"fill": "#ff2d6f",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+178.5,
+811.5,
+306.0,
+813.0
+],
+"fill": "#c7ff3c",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+306.0,
+811.5,
+433.5,
+813.0
+],
+"fill": "#00e38b",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+433.5,
+811.5,
+561.0,
+813.0
+],
+"fill": "#3c59fe",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+124.5,
+299.2,
+341.2
+],
+"fill": "#ffffff",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.4,
+124.9,
+298.9,
+340.9
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.75
+},
+{
+"bbox": [
+51.8,
+125.2,
+298.5,
+272.2
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+313.5,
+124.5,
+561.0,
+341.2
+],
+"fill": "#ffffff",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+313.9,
+124.9,
+560.6,
+340.9
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.75
+},
+{
+"bbox": [
+314.2,
+125.2,
+560.2,
+272.2
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+351.8,
+299.2,
+557.2
+],
+"fill": "#ffffff",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.4,
+352.1,
+298.9,
+556.9
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.75
+},
+{
+"bbox": [
+51.8,
+352.5,
+298.5,
+498.8
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+313.5,
+351.8,
+561.0,
+557.2
+],
+"fill": "#ffffff",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+313.9,
+352.1,
+560.6,
+556.9
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.75
+},
+{
+"bbox": [
+314.2,
+352.5,
+560.2,
+498.8
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+567.8,
+299.2,
+773.2
+],
+"fill": "#ffffff",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.4,
+568.1,
+298.9,
+772.9
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.75
+},
+{
+"bbox": [
+51.8,
+568.5,
+298.5,
+714.8
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+313.5,
+567.8,
+561.0,
+773.2
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+497.2,
+659.2,
+551.2,
+713.2
+],
+"fill": "#ffffff",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+503.2,
+665.4,
+545.8,
+706.2
+],
+"fill": "#000000",
+"stroke": "#111726",
+"width": 1.7
+},
+{
+"bbox": [
+51.0,
+27.0,
+119.2,
+42.0
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+}
+],
+"images": [
+{
+"bbox": [
+30.8,
+125.2,
+319.5,
+272.2
+],
+"file": "assets/pages/p04_img82.png",
+"px": [
+1035,
+525
+]
+},
+{
+"bbox": [
+302.2,
+125.2,
+572.2,
+272.2
+],
+"file": "assets/pages/p04_img83.png",
+"px": [
+1087,
+591
+]
+},
+{
+"bbox": [
+41.2,
+352.5,
+308.2,
+498.8
+],
+"file": "assets/pages/p04_img84.png",
+"px": [
+1005,
+552
+]
+},
+{
+"bbox": [
+303.0,
+352.5,
+571.5,
+498.8
+],
+"file": "assets/pages/p04_img85.png",
+"px": [
+1104,
+603
+]
+},
+{
+"bbox": [
+39.8,
+568.5,
+309.7,
+714.8
+],
+"file": "assets/pages/p04_img86.png",
+"px": [
+1110,
+603
+]
+}
+]
+}

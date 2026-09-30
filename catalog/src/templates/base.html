@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <title>{{ page_title }}</title>
-<link rel="stylesheet" href="../catalog.css">
+<link rel="stylesheet" href="../../catalog.css">
 {% block head %}{% endblock %}
 </head>
 <body>
@@ -18,7 +18,7 @@
 
 <div class="footer">
   <div class="spectrum"><i></i><i></i><i></i><i></i></div>
-  <div class="line"><span>{{ catalog.footer }}</span><span class="pn">{{ page_number }}</span></div>
+  <div class="line"><span>{{ c.footer if c and c.footer else catalog.footer }}</span><span class="pn">{{ page_number }}</span></div>
 </div>
 </body>
 </html>

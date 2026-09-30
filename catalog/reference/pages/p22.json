@@ -1,0 +1,1137 @@
+{
+"page": 22,
+"size": [
+612,
+858.96
+],
+"text": [
+{
+"bbox": [
+51.0,
+817.2,
+307.8,
+825.2
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#5b6675",
+"text": "B I G F R A M E · P R O D U C T C A T A L O G 2 0 2 6 · E N 2 0 2 6 - 1 0 · R E V . C"
+},
+{
+"bbox": [
+551.5,
+817.2,
+560.1,
+825.2
+],
+"font": "IBMPlexMono-Medium",
+"size": 6.2,
+"color": "#2d3748",
+"text": "2 2"
+},
+{
+"bbox": [
+51.0,
+51.8,
+283.3,
+85.3
+],
+"font": "BodoniModa11pt-Regular",
+"size": 22.0,
+"color": "#2d3748",
+"text": "Definitions and method"
+},
+{
+"bbox": [
+51.0,
+90.5,
+443.1,
+102.2
+],
+"font": "IBMPlexSans-Regular",
+"size": 9.0,
+"color": "#2d3748",
+"text": "Every figure in this catalog is stated with the condition under which it applies. Bigframe publishes"
+},
+{
+"bbox": [
+51.0,
+103.3,
+199.0,
+115.0
+],
+"font": "IBMPlexSans-Regular",
+"size": 9.0,
+"color": "#2d3748",
+"text": "repeatability, and the method with it."
+},
+{
+"bbox": [
+51.0,
+127.5,
+95.2,
+138.9
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.8,
+"color": "#2d3748",
+"text": "Definitions"
+},
+{
+"bbox": [
+55.5,
+148.6,
+132.0,
+158.9
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.0,
+"color": "#2d3748",
+"text": "3D points per frame"
+},
+{
+"bbox": [
+180.3,
+148.6,
+447.9,
+158.9
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#2d3748",
+"text": "The sensor grid: the maximum number of points one capture can return."
+},
+{
+"bbox": [
+55.5,
+172.6,
+142.2,
+182.9
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.0,
+"color": "#2d3748",
+"text": "Working distance (WD)"
+},
+{
+"bbox": [
+180.3,
+172.6,
+544.5,
+182.9
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#2d3748",
+"text": "Camera reference plane to the part. Every model is specified at the near, optimum and far working"
+},
+{
+"bbox": [
+180.3,
+183.8,
+213.9,
+194.2
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#2d3748",
+"text": "distance."
+},
+{
+"bbox": [
+55.5,
+208.6,
+104.1,
+218.9
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.0,
+"color": "#2d3748",
+"text": "Field of view"
+},
+{
+"bbox": [
+180.3,
+208.6,
+381.2,
+218.9
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#2d3748",
+"text": "Measured width × height at a stated working distance."
+},
+{
+"bbox": [
+55.5,
+233.3,
+118.7,
+243.7
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.0,
+"color": "#2d3748",
+"text": "Measuring depth"
+},
+{
+"bbox": [
+180.3,
+233.3,
+468.2,
+243.7
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#2d3748",
+"text": "Near to far working distance: the depth over which the camera returns points."
+},
+{
+"bbox": [
+55.5,
+257.3,
+162.8,
+267.7
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.0,
+"color": "#2d3748",
+"text": "Optimum measuring volume"
+},
+{
+"bbox": [
+180.3,
+257.3,
+525.9,
+267.7
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#2d3748",
+"text": "Field of view at the optimum working distance × the depth over which the stated figures hold."
+},
+{
+"bbox": [
+55.5,
+282.1,
+119.2,
+292.4
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.0,
+"color": "#2d3748",
+"text": "XY point spacing"
+},
+{
+"bbox": [
+180.3,
+282.1,
+538.7,
+292.4
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#2d3748",
+"text": "Distance between neighboring points at the optimum working distance: a sampling pitch, not the"
+},
+{
+"bbox": [
+180.3,
+293.3,
+282.9,
+303.7
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#2d3748",
+"text": "smallest resolvable feature."
+},
+{
+"bbox": [
+55.5,
+317.3,
+160.0,
+327.7
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.0,
+"color": "#2d3748",
+"text": "Z repeatability, regional, 2σ"
+},
+{
+"bbox": [
+180.3,
+317.3,
+552.4,
+327.7
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#2d3748",
+"text": "Repeatability of the height difference between two adjacent areas over 100 captures; the largest 2σ"
+},
+{
+"bbox": [
+180.3,
+328.6,
+240.2,
+338.9
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#2d3748",
+"text": "found is printed."
+},
+{
+"bbox": [
+55.5,
+353.3,
+96.8,
+363.7
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.0,
+"color": "#2d3748",
+"text": "Frame rate"
+},
+{
+"bbox": [
+180.3,
+353.3,
+352.7,
+363.7
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#2d3748",
+"text": "3D frames per second at the stated resolution."
+},
+{
+"bbox": [
+51.0,
+399.7,
+165.0,
+411.2
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.8,
+"color": "#2d3748",
+"text": "Z repeatability: the method"
+},
+{
+"bbox": [
+51.0,
+614.4,
+275.0,
+623.7
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#5b6675",
+"text": "The reference plate at the near, optimum and far working distance."
+},
+{
+"bbox": [
+51.0,
+624.1,
+92.7,
+633.5
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#5b6675",
+"text": "Illustration."
+},
+{
+"bbox": [
+328.8,
+413.6,
+560.9,
+424.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "A ceramic reference plate is imaged at the near, optimum and"
+},
+{
+"bbox": [
+328.8,
+425.6,
+540.4,
+436.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "far working distance. The field of view is divided into nine"
+},
+{
+"bbox": [
+328.8,
+437.6,
+554.9,
+448.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "regions; in each, two adjacent areas of under 1 % of the field"
+},
+{
+"bbox": [
+328.8,
+449.6,
+528.6,
+460.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "are measured. The difference of their mean heights is"
+},
+{
+"bbox": [
+328.8,
+461.6,
+545.6,
+472.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "measured 100 times; its standard deviation is the regional"
+},
+{
+"bbox": [
+328.8,
+473.6,
+547.4,
+484.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "repeatability (1σ). Twice that value (2σ), the largest across"
+},
+{
+"bbox": [
+328.8,
+485.6,
+527.6,
+496.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "nine regions and three distances, is the printed figure."
+},
+{
+"bbox": [
+386.0,
+557.4,
+389.7,
+565.5
+],
+"font": "IBMPlexMono-SemiBold",
+"size": 6.2,
+"color": "#3149d6",
+"text": "A"
+},
+{
+"bbox": [
+392.0,
+557.4,
+395.7,
+565.5
+],
+"font": "IBMPlexMono-SemiBold",
+"size": 6.2,
+"color": "#00a86a",
+"text": "B"
+},
+{
+"bbox": [
+339.1,
+610.8,
+442.1,
+618.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 5.7,
+"color": "#2d3748",
+"text": "Nine regions; A and B adjacent in each"
+},
+{
+"bbox": [
+355.6,
+619.3,
+426.0,
+626.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 5.7,
+"color": "#6b7787",
+"text": "Reference plate, plan view"
+},
+{
+"bbox": [
+464.8,
+508.9,
+524.2,
+519.8
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "The figure is the"
+},
+{
+"bbox": [
+464.8,
+520.9,
+527.8,
+531.8
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "repeatability of a"
+},
+{
+"bbox": [
+464.8,
+532.9,
+547.3,
+543.8
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "difference of two area"
+},
+{
+"bbox": [
+464.8,
+544.9,
+541.0,
+555.8
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "means: the standard"
+},
+{
+"bbox": [
+464.8,
+556.9,
+548.9,
+567.8
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "deviation of A − B over"
+},
+{
+"bbox": [
+464.8,
+568.1,
+535.4,
+579.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "100 captures (1σ),"
+},
+{
+"bbox": [
+464.8,
+580.1,
+532.7,
+591.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "printed as 2σ. It is"
+},
+{
+"bbox": [
+464.8,
+592.1,
+525.7,
+603.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "smaller than the"
+},
+{
+"bbox": [
+464.8,
+604.1,
+552.0,
+615.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "repeatability of a single"
+},
+{
+"bbox": [
+464.8,
+616.1,
+532.3,
+627.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "point, which is not"
+},
+{
+"bbox": [
+464.8,
+628.1,
+502.4,
+639.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "published."
+},
+{
+"bbox": [
+51.0,
+679.5,
+124.6,
+690.9
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.8,
+"color": "#2d3748",
+"text": "Why repeatability"
+},
+{
+"bbox": [
+51.0,
+694.1,
+292.1,
+705.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "Repeatability is one component of measurement uncertainty and"
+},
+{
+"bbox": [
+51.0,
+706.1,
+294.1,
+717.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "can be stated for the camera alone, on a stated method. Whether"
+},
+{
+"bbox": [
+51.0,
+718.1,
+279.1,
+729.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "a camera holds a tolerance is decided on the part, by a gauge"
+},
+{
+"bbox": [
+51.0,
+730.1,
+246.8,
+741.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "study; the figures here select the model to start with."
+},
+{
+"bbox": [
+314.6,
+679.5,
+405.8,
+690.9
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.8,
+"color": "#2d3748",
+"text": "Where the figures are"
+},
+{
+"bbox": [
+314.6,
+694.1,
+548.0,
+705.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "Series pages 5–14: models at a glance and fields of view. Page"
+},
+{
+"bbox": [
+314.6,
+706.1,
+521.7,
+717.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "17: all eighteen models on one table. Pages 18–20: full"
+},
+{
+"bbox": [
+314.6,
+718.1,
+552.4,
+729.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.4,
+"color": "#2d3748",
+"text": "specification per series; page 21: cables and calibration targets."
+},
+{
+"bbox": [
+59.5,
+423.0,
+274.8,
+430.6
+],
+"font": "IBMPlexMono-Regular",
+"size": 5.9,
+"color": "#9aa3b2",
+"text": "V R H 9 · C E R A M I C R E F E R E N C E P L A T E · I L L U S T R A T I O N"
+},
+{
+"bbox": [
+288.2,
+529.0,
+302.9,
+536.3
+],
+"font": "IBMPlexMono-Regular",
+"size": 5.6,
+"color": "#c9cfd8",
+"text": "NEAR"
+},
+{
+"bbox": [
+276.8,
+559.8,
+302.9,
+567.0
+],
+"font": "IBMPlexMono-Regular",
+"size": 5.6,
+"color": "#c9cfd8",
+"text": "OPTIMUM"
+},
+{
+"bbox": [
+291.9,
+591.3,
+302.9,
+598.5
+],
+"font": "IBMPlexMono-Regular",
+"size": 5.6,
+"color": "#c9cfd8",
+"text": "FAR"
+},
+{
+"bbox": [
+158.9,
+29.7,
+257.4,
+37.7
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#5b6675",
+"text": "D E F I N I T I O N S · M E T H O D"
+},
+{
+"bbox": [
+57.2,
+29.7,
+66.0,
+37.7
+],
+"font": "IBMPlexMono-Medium",
+"size": 6.2,
+"color": "#c8ff3d",
+"text": "0 4"
+},
+{
+"bbox": [
+72.9,
+29.7,
+141.5,
+37.7
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#ffffff",
+"text": "T E C H N I C A L D A T A"
+}
+],
+"rects": [
+{
+"bbox": [
+0.0,
+0.0,
+612.0,
+858.8
+],
+"fill": "#f4f5f1",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+0.0,
+0.0,
+612.8,
+859.5
+],
+"fill": "#f4f5f1",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+0.0,
+0.0,
+612.0,
+858.8
+],
+"fill": "#f4f5f1",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+811.5,
+178.5,
+813.0
+],
+"fill": "#ff2d6f",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+178.5,
+811.5,
+306.0,
+813.0
+],
+"fill": "#c7ff3c",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+306.0,
+811.5,
+433.5,
+813.0
+],
+"fill": "#00e38b",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+433.5,
+811.5,
+561.0,
+813.0
+],
+"fill": "#3c59fe",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+165.8,
+175.5,
+166.5
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+175.5,
+165.8,
+561.0,
+166.5
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+201.8,
+175.5,
+202.5
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+175.5,
+201.8,
+561.0,
+202.5
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+225.8,
+175.5,
+226.5
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+175.5,
+225.8,
+561.0,
+226.5
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+250.5,
+175.5,
+251.2
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+175.5,
+250.5,
+561.0,
+251.2
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+274.5,
+175.5,
+275.2
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+175.5,
+274.5,
+561.0,
+275.2
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+310.5,
+175.5,
+311.2
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+175.5,
+310.5,
+561.0,
+311.2
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+345.8,
+175.5,
+346.5
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+175.5,
+345.8,
+561.0,
+346.5
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+370.5,
+175.5,
+371.2
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+175.5,
+370.5,
+561.0,
+371.2
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+331.3,
+532.3,
+450.4,
+606.9
+],
+"fill": "#ecedf1",
+"stroke": "#2d3748",
+"width": 0.85
+},
+{
+"bbox": [
+370.7,
+532.3,
+371.3,
+606.0
+],
+"fill": "#6a7786",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+331.3,
+556.9,
+448.7,
+557.5
+],
+"fill": "#6a7786",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+410.4,
+532.3,
+411.0,
+606.0
+],
+"fill": "#6a7786",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+331.3,
+581.8,
+448.7,
+582.4
+],
+"fill": "#6a7786",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+27.0,
+149.2,
+42.0
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+}
+],
+"images": [
+{
+"bbox": [
+51.0,
+414.0,
+312.0,
+609.8
+],
+"file": "assets/pages/p22_img257.png",
+"px": [
+1039,
+780
+]
+}
+]
+}

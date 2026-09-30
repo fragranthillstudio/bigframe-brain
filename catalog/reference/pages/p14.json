@@ -1,0 +1,1108 @@
+{
+"page": 14,
+"size": [
+612,
+858.96
+],
+"text": [
+{
+"bbox": [
+51.0,
+817.2,
+307.8,
+825.2
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#5b6675",
+"text": "B I G F R A M E · P R O D U C T C A T A L O G 2 0 2 6 · E N 2 0 2 6 - 1 0 · R E V . C"
+},
+{
+"bbox": [
+551.5,
+817.2,
+560.1,
+825.2
+],
+"font": "IBMPlexMono-Medium",
+"size": 6.2,
+"color": "#2d3748",
+"text": "1 4"
+},
+{
+"bbox": [
+51.0,
+51.8,
+450.9,
+85.3
+],
+"font": "BodoniModa11pt-Regular",
+"size": 22.0,
+"color": "#2d3748",
+"text": "PRS series: field of view and dimensions"
+},
+{
+"bbox": [
+51.0,
+488.2,
+195.8,
+499.7
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.8,
+"color": "#2d3748",
+"text": "Field of view by working distance ¹"
+},
+{
+"bbox": [
+53.3,
+505.2,
+82.6,
+514.1
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 6.9,
+"color": "#2d3748",
+"text": "WD (mm)"
+},
+{
+"bbox": [
+101.7,
+505.2,
+158.0,
+514.1
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 6.9,
+"color": "#2d3748",
+"text": "Field of view (mm)"
+},
+{
+"bbox": [
+186.8,
+505.2,
+252.9,
+514.1
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 6.9,
+"color": "#2d3748",
+"text": "XY point spacing (µm)"
+},
+{
+"bbox": [
+53.3,
+521.4,
+83.5,
+529.8
+],
+"font": "IBMPlexSans-Medium",
+"size": 6.4,
+"color": "#2d3748",
+"text": "1500 near"
+},
+{
+"bbox": [
+101.7,
+521.4,
+143.0,
+529.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.4,
+"color": "#2d3748",
+"text": "1339 × 1251"
+},
+{
+"bbox": [
+186.8,
+521.4,
+198.2,
+529.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.4,
+"color": "#2d3748",
+"text": "643"
+},
+{
+"bbox": [
+53.3,
+536.4,
+81.4,
+544.8
+],
+"font": "IBMPlexSans-Medium",
+"size": 6.4,
+"color": "#2d3748",
+"text": "2500 opt."
+},
+{
+"bbox": [
+101.7,
+536.4,
+143.0,
+544.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.4,
+"color": "#2d3748",
+"text": "2236 × 2090"
+},
+{
+"bbox": [
+186.8,
+536.4,
+201.9,
+544.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.4,
+"color": "#2d3748",
+"text": "1074"
+},
+{
+"bbox": [
+53.3,
+551.4,
+68.4,
+559.8
+],
+"font": "IBMPlexSans-Medium",
+"size": 6.4,
+"color": "#2d3748",
+"text": "3500"
+},
+{
+"bbox": [
+101.7,
+551.4,
+143.0,
+559.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.4,
+"color": "#2d3748",
+"text": "3133 × 2930"
+},
+{
+"bbox": [
+186.8,
+551.4,
+201.9,
+559.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.4,
+"color": "#2d3748",
+"text": "1506"
+},
+{
+"bbox": [
+53.3,
+565.7,
+78.2,
+574.0
+],
+"font": "IBMPlexSans-Medium",
+"size": 6.4,
+"color": "#2d3748",
+"text": "4000 far"
+},
+{
+"bbox": [
+101.7,
+565.7,
+143.0,
+574.0
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.4,
+"color": "#2d3748",
+"text": "3582 × 3349"
+},
+{
+"bbox": [
+186.8,
+565.7,
+201.9,
+574.0
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.4,
+"color": "#2d3748",
+"text": "1721"
+},
+{
+"bbox": [
+51.0,
+581.7,
+277.1,
+590.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.9,
+"color": "#5b6675",
+"text": "¹ Preliminary specification; final data sheet at launch. Z repeatability 250 µm,"
+},
+{
+"bbox": [
+51.0,
+591.4,
+142.1,
+600.4
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.9,
+"color": "#5b6675",
+"text": "method to be stated at launch."
+},
+{
+"bbox": [
+300.4,
+488.2,
+408.7,
+499.7
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.8,
+"color": "#2d3748",
+"text": "Dimensions and mounting"
+},
+{
+"bbox": [
+352.1,
+507.1,
+430.7,
+514.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 5.9,
+"color": "#2d3748",
+"text": "800 (camera baseline)"
+},
+{
+"bbox": [
+385.9,
+551.7,
+397.3,
+560.1
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.5,
+"color": "#2d3748",
+"text": "890"
+},
+{
+"bbox": [
+480.6,
+530.1,
+488.4,
+545.0
+],
+"font": "IBMPlexMono-Regular",
+"size": 5.9,
+"color": "#2d3748",
+"text": "97.5"
+},
+{
+"bbox": [
+361.0,
+568.7,
+421.1,
+576.8
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.2,
+"color": "#6b7787",
+"text": "MEASURING FACE"
+},
+{
+"bbox": [
+515.3,
+551.7,
+522.9,
+560.1
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.5,
+"color": "#2d3748",
+"text": "95"
+},
+{
+"bbox": [
+501.9,
+568.7,
+535.7,
+576.8
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.2,
+"color": "#6b7787",
+"text": "END VIEW"
+},
+{
+"bbox": [
+300.4,
+589.1,
+354.1,
+598.2
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.0,
+"color": "#5b6675",
+"text": "Housing L × W × H"
+},
+{
+"bbox": [
+362.2,
+589.1,
+430.1,
+598.2
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.0,
+"color": "#2d3748",
+"text": "890 × 97.5 × 95 mm"
+},
+{
+"bbox": [
+300.4,
+600.3,
+321.7,
+609.4
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.0,
+"color": "#5b6675",
+"text": "Weight"
+},
+{
+"bbox": [
+362.2,
+600.3,
+385.1,
+609.4
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.0,
+"color": "#2d3748",
+"text": "3.9 kg"
+},
+{
+"bbox": [
+300.4,
+611.6,
+329.0,
+620.7
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.0,
+"color": "#5b6675",
+"text": "Interface"
+},
+{
+"bbox": [
+362.2,
+611.6,
+497.6,
+620.7
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.0,
+"color": "#2d3748",
+"text": "Gigabit Ethernet; 24 V DC, up to 4 A"
+},
+{
+"bbox": [
+300.4,
+622.8,
+328.1,
+631.9
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.0,
+"color": "#5b6675",
+"text": "Mounting"
+},
+{
+"bbox": [
+362.2,
+622.8,
+475.1,
+631.9
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.0,
+"color": "#2d3748",
+"text": "Bracket kit; details at launch"
+},
+{
+"bbox": [
+300.4,
+636.9,
+531.2,
+646.2
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#5b6675",
+"text": "Preliminary specification; dimensions over the housing, connectors"
+},
+{
+"bbox": [
+300.4,
+646.6,
+503.4,
+656.0
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#5b6675",
+"text": "excluded. Dimension drawings and 3D CAD data on request."
+},
+{
+"bbox": [
+59.5,
+704.0,
+157.6,
+718.6
+],
+"font": "BodoniModa11pt-Regular",
+"size": 9.6,
+"color": "#ffffff",
+"text": "Your pallet or vehicle,"
+},
+{
+"bbox": [
+59.5,
+715.2,
+176.2,
+729.8
+],
+"font": "BodoniModa11pt-Regular",
+"size": 9.6,
+"color": "#ffffff",
+"text": "measured before you buy."
+},
+{
+"bbox": [
+205.5,
+707.8,
+405.1,
+716.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#c9cfd8",
+"text": "Send a photograph of the scene and the measurement you need to "
+},
+{
+"bbox": [
+405.0,
+707.8,
+465.8,
+716.6
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 6.8,
+"color": "#ffffff",
+"text": "info@bigframe.com"
+},
+{
+"bbox": [
+465.7,
+707.8,
+501.7,
+716.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#c9cfd8",
+"text": " — we come"
+},
+{
+"bbox": [
+205.5,
+717.5,
+344.6,
+726.4
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#c9cfd8",
+"text": "back with the model and the working distance."
+},
+{
+"bbox": [
+59.5,
+98.2,
+385.4,
+105.9
+],
+"font": "IBMPlexMono-Regular",
+"size": 5.9,
+"color": "#9aa3b2",
+"text": "F I E L D O F V I E W A T T H E F O U R S P E C I F I E D W O R K I N G D I S T A N C E S · I L L U S T R A T I O N"
+},
+{
+"bbox": [
+385.5,
+221.0,
+440.2,
+230.8
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 7.6,
+"color": "#ffffff",
+"text": "WD 1.5 m · near"
+},
+{
+"bbox": [
+385.5,
+230.4,
+441.4,
+238.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.4,
+"color": "#c9cfd8",
+"text": "1339 × 1251 mm"
+},
+{
+"bbox": [
+385.5,
+273.5,
+456.0,
+283.3
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 7.6,
+"color": "#c8ff3d",
+"text": "WD 2.5 m · optimum"
+},
+{
+"bbox": [
+385.5,
+283.7,
+441.4,
+292.0
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.4,
+"color": "#c9cfd8",
+"text": "2236 × 2090 mm"
+},
+{
+"bbox": [
+385.5,
+326.7,
+418.5,
+336.6
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 7.6,
+"color": "#ffffff",
+"text": "WD 3.5 m"
+},
+{
+"bbox": [
+385.5,
+336.2,
+441.4,
+344.5
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.4,
+"color": "#c9cfd8",
+"text": "3133 × 2930 mm"
+},
+{
+"bbox": [
+385.5,
+353.7,
+427.5,
+363.6
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 7.6,
+"color": "#ffffff",
+"text": "WD 4 m · far"
+},
+{
+"bbox": [
+385.5,
+363.2,
+441.4,
+371.5
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.4,
+"color": "#c9cfd8",
+"text": "3582 × 3349 mm"
+},
+{
+"bbox": [
+385.5,
+414.7,
+543.3,
+423.3
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.6,
+"color": "#9aa3b2",
+"text": "Loaded Euro pallet, top layer at the 2.5 m optimum;"
+},
+{
+"bbox": [
+385.5,
+423.7,
+538.4,
+432.3
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.6,
+"color": "#9aa3b2",
+"text": "floor at 4 m. Fields of view to scale, camera not to"
+},
+{
+"bbox": [
+385.5,
+432.7,
+403.7,
+441.3
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.6,
+"color": "#9aa3b2",
+"text": "scale."
+},
+{
+"bbox": [
+124.0,
+29.7,
+172.6,
+37.7
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#5b6675",
+"text": "P R S S E R I E S"
+},
+{
+"bbox": [
+57.2,
+29.7,
+66.0,
+37.7
+],
+"font": "IBMPlexMono-Medium",
+"size": 6.2,
+"color": "#c8ff3d",
+"text": "0 2"
+},
+{
+"bbox": [
+72.9,
+29.7,
+106.5,
+37.7
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#ffffff",
+"text": "C A M E R A S"
+}
+],
+"rects": [
+{
+"bbox": [
+0.0,
+0.0,
+612.0,
+858.8
+],
+"fill": "#f4f5f1",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+0.0,
+0.0,
+612.8,
+859.5
+],
+"fill": "#f4f5f1",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+0.0,
+0.0,
+612.0,
+858.8
+],
+"fill": "#f4f5f1",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+811.5,
+178.5,
+813.0
+],
+"fill": "#ff2d6f",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+178.5,
+811.5,
+306.0,
+813.0
+],
+"fill": "#c7ff3c",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+306.0,
+811.5,
+433.5,
+813.0
+],
+"fill": "#00e38b",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+433.5,
+811.5,
+561.0,
+813.0
+],
+"fill": "#3c59fe",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+696.0,
+561.0,
+739.5
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+518.2,
+99.8,
+519.0
+],
+"fill": "#2d3748",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+99.8,
+518.2,
+184.5,
+519.0
+],
+"fill": "#2d3748",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+184.5,
+518.2,
+283.5,
+519.0
+],
+"fill": "#2d3748",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+532.5,
+99.8,
+533.2
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+99.8,
+532.5,
+184.5,
+533.2
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+184.5,
+532.5,
+283.5,
+533.2
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+547.5,
+99.8,
+548.2
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+99.8,
+547.5,
+184.5,
+548.2
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+184.5,
+547.5,
+283.5,
+548.2
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+561.8,
+99.8,
+562.5
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+99.8,
+561.8,
+184.5,
+562.5
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+184.5,
+561.8,
+283.5,
+562.5
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+576.8,
+99.8,
+577.5
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+99.8,
+576.8,
+184.5,
+577.5
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+184.5,
+576.8,
+283.5,
+577.5
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+312.1,
+528.8,
+470.9,
+546.2
+],
+"fill": null,
+"stroke": "#2d3748",
+"width": 1.13
+},
+{
+"bbox": [
+312.1,
+525.9,
+328.1,
+549.0
+],
+"fill": "#dbe1e6",
+"stroke": "#2d3748",
+"width": 0.99
+},
+{
+"bbox": [
+454.8,
+525.9,
+470.9,
+549.0
+],
+"fill": "#dbe1e6",
+"stroke": "#2d3748",
+"width": 0.99
+},
+{
+"bbox": [
+380.8,
+531.0,
+402.2,
+543.9
+],
+"fill": "#dbe1e6",
+"stroke": "#2d3748",
+"width": 0.99
+},
+{
+"bbox": [
+513.3,
+525.9,
+524.8,
+549.0
+],
+"fill": "#dbe1e6",
+"stroke": "#2d3748",
+"width": 0.99
+},
+{
+"bbox": [
+320.1,
+515.7,
+462.9,
+515.7
+],
+"fill": null,
+"stroke": "#6a7786",
+"width": 0.57
+},
+{
+"bbox": [
+312.1,
+560.9,
+470.9,
+560.9
+],
+"fill": null,
+"stroke": "#6a7786",
+"width": 0.57
+},
+{
+"bbox": [
+520.5,
+701.2,
+552.8,
+733.5
+],
+"fill": "#ffffff",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+523.5,
+705.5,
+549.0,
+730.0
+],
+"fill": "#000000",
+"stroke": "#111726",
+"width": 1.02
+},
+{
+"bbox": [
+51.0,
+90.0,
+561.0,
+453.0
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+27.0,
+114.0,
+42.0
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+}
+],
+"images": [
+{
+"bbox": [
+51.0,
+90.0,
+561.0,
+453.0
+],
+"file": "assets/pages/p14_img229.png",
+"px": [
+2126,
+1512
+]
+}
+]
+}

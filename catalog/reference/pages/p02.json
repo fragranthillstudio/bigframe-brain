@@ -1,0 +1,2319 @@
+{
+"page": 2,
+"size": [
+612,
+858.96
+],
+"text": [
+{
+"bbox": [
+51.0,
+817.2,
+307.8,
+825.2
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#5b6675",
+"text": "B I G F R A M E · P R O D U C T C A T A L O G 2 0 2 6 · E N 2 0 2 6 - 1 0 · R E V . C"
+},
+{
+"bbox": [
+556.4,
+817.2,
+560.1,
+825.2
+],
+"font": "IBMPlexMono-Medium",
+"size": 6.2,
+"color": "#2d3748",
+"text": "2"
+},
+{
+"bbox": [
+51.0,
+51.8,
+263.6,
+85.3
+],
+"font": "BodoniModa11pt-Regular",
+"size": 22.0,
+"color": "#2d3748",
+"text": "The range at a glance"
+},
+{
+"bbox": [
+51.0,
+90.3,
+321.4,
+103.2
+],
+"font": "IBMPlexSans-Regular",
+"size": 10.0,
+"color": "#2d3748",
+"text": "Eighteen structured-light 3D cameras in five series, with fields"
+},
+{
+"bbox": [
+51.0,
+104.5,
+284.7,
+117.5
+],
+"font": "IBMPlexSans-Regular",
+"size": 10.0,
+"color": "#2d3748",
+"text": "of view from 9.8 mm to 3.6 m. One software platform,"
+},
+{
+"bbox": [
+51.0,
+118.8,
+310.8,
+131.7
+],
+"font": "IBMPlexSans-Regular",
+"size": 10.0,
+"color": "#2d3748",
+"text": "TridiVision, across the range. Every figure is stated the same"
+},
+{
+"bbox": [
+51.0,
+133.0,
+288.0,
+146.0
+],
+"font": "IBMPlexSans-Regular",
+"size": 10.0,
+"color": "#2d3748",
+"text": "way: field of view at the near, optimum and far working"
+},
+{
+"bbox": [
+51.0,
+147.3,
+319.8,
+160.2
+],
+"font": "IBMPlexSans-Regular",
+"size": 10.0,
+"color": "#2d3748",
+"text": "distance, point spacing at the optimum, Z repeatability as the"
+},
+{
+"bbox": [
+51.0,
+161.5,
+278.0,
+174.5
+],
+"font": "IBMPlexSans-Regular",
+"size": 10.0,
+"color": "#2d3748",
+"text": "regional 2σ value (definitions and method, page 22)."
+},
+{
+"bbox": [
+350.0,
+64.5,
+390.3,
+73.1
+],
+"font": "IBMPlexMono-Medium",
+"size": 6.6,
+"color": "#5b6675",
+"text": "C O N T E N T S"
+},
+{
+"bbox": [
+350.0,
+83.7,
+359.0,
+93.6
+],
+"font": "IBMPlexMono-Medium",
+"size": 7.6,
+"color": "#5b6675",
+"text": "01"
+},
+{
+"bbox": [
+371.2,
+83.7,
+404.4,
+93.6
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 7.6,
+"color": "#2d3748",
+"text": "Overview"
+},
+{
+"bbox": [
+437.8,
+84.3,
+449.5,
+93.4
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.0,
+"color": "#2d3748",
+"text": "2–4"
+},
+{
+"bbox": [
+470.4,
+84.5,
+541.9,
+93.4
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#5b6675",
+"text": "The range · applications"
+},
+{
+"bbox": [
+350.0,
+104.0,
+359.0,
+113.8
+],
+"font": "IBMPlexMono-Medium",
+"size": 7.6,
+"color": "#5b6675",
+"text": "02"
+},
+{
+"bbox": [
+371.2,
+104.0,
+402.8,
+113.8
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 7.6,
+"color": "#2d3748",
+"text": "Cameras"
+},
+{
+"bbox": [
+437.8,
+104.6,
+453.3,
+113.7
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.0,
+"color": "#2d3748",
+"text": "5–14"
+},
+{
+"bbox": [
+470.4,
+104.8,
+539.4,
+113.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#5b6675",
+"text": "TRS · VRH9 · VR · VRD ·"
+},
+{
+"bbox": [
+470.4,
+113.8,
+532.8,
+122.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#5b6675",
+"text": "PRS, two pages each"
+},
+{
+"bbox": [
+350.0,
+134.0,
+359.0,
+143.8
+],
+"font": "IBMPlexMono-Medium",
+"size": 7.6,
+"color": "#5b6675",
+"text": "03"
+},
+{
+"bbox": [
+371.2,
+134.0,
+404.0,
+143.8
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 7.6,
+"color": "#2d3748",
+"text": "Software"
+},
+{
+"bbox": [
+437.8,
+134.6,
+457.0,
+143.7
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.0,
+"color": "#2d3748",
+"text": "15–16"
+},
+{
+"bbox": [
+470.4,
+134.8,
+500.5,
+143.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#5b6675",
+"text": "TridiVision"
+},
+{
+"bbox": [
+350.0,
+154.2,
+359.0,
+164.1
+],
+"font": "IBMPlexMono-Medium",
+"size": 7.6,
+"color": "#5b6675",
+"text": "04"
+},
+{
+"bbox": [
+371.2,
+154.2,
+422.7,
+164.1
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 7.6,
+"color": "#2d3748",
+"text": "Technical data"
+},
+{
+"bbox": [
+437.8,
+154.8,
+457.0,
+163.9
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.0,
+"color": "#2d3748",
+"text": "17–22"
+},
+{
+"bbox": [
+470.4,
+155.0,
+546.9,
+163.9
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#5b6675",
+"text": "All models · series tables ·"
+},
+{
+"bbox": [
+470.4,
+164.0,
+541.9,
+172.9
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#5b6675",
+"text": "accessories · definitions"
+},
+{
+"bbox": [
+350.0,
+184.2,
+359.0,
+194.1
+],
+"font": "IBMPlexMono-Medium",
+"size": 7.6,
+"color": "#5b6675",
+"text": "05"
+},
+{
+"bbox": [
+371.2,
+184.2,
+404.4,
+194.1
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 7.6,
+"color": "#2d3748",
+"text": "Company"
+},
+{
+"bbox": [
+437.8,
+184.8,
+445.8,
+193.9
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.0,
+"color": "#2d3748",
+"text": "23"
+},
+{
+"bbox": [
+470.4,
+185.0,
+526.8,
+193.9
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#5b6675",
+"text": "Bigframe · contact"
+},
+{
+"bbox": [
+79.1,
+341.1,
+118.5,
+351.8
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.2,
+"color": "#2d3748",
+"text": "TRS series"
+},
+{
+"bbox": [
+58.5,
+353.2,
+138.4,
+361.8
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.6,
+"color": "#5b6675",
+"text": "Micrometer measurement:"
+},
+{
+"bbox": [
+61.9,
+362.2,
+135.5,
+370.8
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.6,
+"color": "#5b6675",
+"text": "solder balls, bumps, weld"
+},
+{
+"bbox": [
+89.6,
+371.2,
+107.9,
+379.8
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.6,
+"color": "#5b6675",
+"text": "beads"
+},
+{
+"bbox": [
+74.3,
+383.2,
+122.8,
+391.8
+],
+"font": "IBMPlexSans-Medium",
+"size": 6.6,
+"color": "#2d3748",
+"text": "FOV 9.8–74 mm"
+},
+{
+"bbox": [
+69.0,
+392.2,
+128.1,
+400.8
+],
+"font": "IBMPlexSans-Medium",
+"size": 6.6,
+"color": "#2d3748",
+"text": "Z repeatability from"
+},
+{
+"bbox": [
+86.3,
+401.2,
+110.8,
+409.8
+],
+"font": "IBMPlexSans-Medium",
+"size": 6.6,
+"color": "#2d3748",
+"text": "0.06 µm"
+},
+{
+"bbox": [
+85.5,
+414.3,
+111.2,
+422.5
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.3,
+"color": "#5b6675",
+"text": "Page 5"
+},
+{
+"bbox": [
+179.5,
+341.1,
+225.6,
+351.8
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.2,
+"color": "#2d3748",
+"text": "VRH9 series"
+},
+{
+"bbox": [
+173.1,
+353.2,
+231.3,
+361.8
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.6,
+"color": "#5b6675",
+"text": "Fine measurement:"
+},
+{
+"bbox": [
+161.9,
+362.2,
+243.1,
+370.8
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.6,
+"color": "#5b6675",
+"text": "connectors, frames, boards"
+},
+{
+"bbox": [
+177.3,
+374.2,
+227.3,
+382.8
+],
+"font": "IBMPlexSans-Medium",
+"size": 6.6,
+"color": "#2d3748",
+"text": "FOV 24–277 mm"
+},
+{
+"bbox": [
+172.8,
+383.2,
+231.8,
+391.8
+],
+"font": "IBMPlexSans-Medium",
+"size": 6.6,
+"color": "#2d3748",
+"text": "Z repeatability from"
+},
+{
+"bbox": [
+190.0,
+392.2,
+214.6,
+400.8
+],
+"font": "IBMPlexSans-Medium",
+"size": 6.6,
+"color": "#2d3748",
+"text": "0.15 µm"
+},
+{
+"bbox": [
+189.2,
+414.3,
+214.9,
+422.5
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.3,
+"color": "#5b6675",
+"text": "Page 7"
+},
+{
+"bbox": [
+288.9,
+341.1,
+323.7,
+351.8
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.2,
+"color": "#2d3748",
+"text": "VR series"
+},
+{
+"bbox": [
+268.3,
+353.2,
+343.7,
+361.8
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.6,
+"color": "#5b6675",
+"text": "Guidance and inspection:"
+},
+{
+"bbox": [
+269.8,
+362.2,
+342.7,
+370.8
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.6,
+"color": "#5b6675",
+"text": "bins, pallets, body panels"
+},
+{
+"bbox": [
+277.3,
+374.2,
+334.8,
+382.8
+],
+"font": "IBMPlexSans-Medium",
+"size": 6.6,
+"color": "#2d3748",
+"text": "FOV 300–1500 mm"
+},
+{
+"bbox": [
+268.3,
+383.2,
+343.8,
+391.8
+],
+"font": "IBMPlexSans-Medium",
+"size": 6.6,
+"color": "#2d3748",
+"text": "Z repeatability from 2 µm"
+},
+{
+"bbox": [
+293.0,
+414.3,
+318.7,
+422.5
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.3,
+"color": "#5b6675",
+"text": "Page 9"
+},
+{
+"bbox": [
+389.6,
+341.1,
+430.5,
+351.8
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.2,
+"color": "#2d3748",
+"text": "VRD series"
+},
+{
+"bbox": [
+373.1,
+353.2,
+446.7,
+361.8
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.6,
+"color": "#5b6675",
+"text": "Color stereo on the robot"
+},
+{
+"bbox": [
+370.5,
+362.2,
+449.5,
+370.8
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.6,
+"color": "#5b6675",
+"text": "arm: totes, tools, fasteners"
+},
+{
+"bbox": [
+381.0,
+374.2,
+438.6,
+382.8
+],
+"font": "IBMPlexSans-Medium",
+"size": 6.6,
+"color": "#2d3748",
+"text": "FOV 580–1166 mm"
+},
+{
+"bbox": [
+372.0,
+383.2,
+447.6,
+391.8
+],
+"font": "IBMPlexSans-Medium",
+"size": 6.6,
+"color": "#2d3748",
+"text": "Z repeatability from 6 µm"
+},
+{
+"bbox": [
+394.5,
+414.3,
+424.6,
+422.5
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.3,
+"color": "#5b6675",
+"text": "Page 11"
+},
+{
+"bbox": [
+479.3,
+341.1,
+521.0,
+351.8
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.2,
+"color": "#2d3748",
+"text": "PRS series "
+},
+{
+"bbox": [
+529.5,
+343.0,
+543.4,
+350.3
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 5.6,
+"color": "#111827",
+"text": "NEW"
+},
+{
+"bbox": [
+475.0,
+353.2,
+552.3,
+361.8
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.6,
+"color": "#5b6675",
+"text": "Large scenes from a fixed"
+},
+{
+"bbox": [
+482.9,
+362.2,
+544.7,
+370.8
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.6,
+"color": "#5b6675",
+"text": "bar: pallets, vehicles,"
+},
+{
+"bbox": [
+497.9,
+371.2,
+529.6,
+379.8
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.6,
+"color": "#5b6675",
+"text": "containers"
+},
+{
+"bbox": [
+473.9,
+383.2,
+553.5,
+391.8
+],
+"font": "IBMPlexSans-Medium",
+"size": 6.6,
+"color": "#2d3748",
+"text": "FOV 1.3–3.6 m at WD 1.5–"
+},
+{
+"bbox": [
+508.0,
+392.2,
+519.1,
+400.8
+],
+"font": "IBMPlexSans-Medium",
+"size": 6.6,
+"color": "#2d3748",
+"text": "4 m"
+},
+{
+"bbox": [
+478.0,
+401.2,
+549.3,
+409.8
+],
+"font": "IBMPlexSans-Medium",
+"size": 6.6,
+"color": "#2d3748",
+"text": "Z repeatability 250 µm ¹"
+},
+{
+"bbox": [
+498.3,
+414.3,
+528.3,
+422.5
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.3,
+"color": "#5b6675",
+"text": "Page 13"
+},
+{
+"bbox": [
+51.0,
+446.2,
+200.4,
+457.7
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.8,
+"color": "#2d3748",
+"text": "Field of view against Z repeatability"
+},
+{
+"bbox": [
+133.1,
+686.4,
+152.2,
+695.2
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.7,
+"color": "#2d3748",
+"text": "10 mm"
+},
+{
+"bbox": [
+290.4,
+686.4,
+313.2,
+695.2
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.7,
+"color": "#2d3748",
+"text": "100 mm"
+},
+{
+"bbox": [
+455.2,
+686.4,
+466.7,
+695.2
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.7,
+"color": "#2d3748",
+"text": "1 m"
+},
+{
+"bbox": [
+67.8,
+654.1,
+90.6,
+662.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.7,
+"color": "#2d3748",
+"text": "0.1 µm"
+},
+{
+"bbox": [
+75.3,
+605.2,
+90.6,
+613.9
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.7,
+"color": "#2d3748",
+"text": "1 µm"
+},
+{
+"bbox": [
+71.6,
+556.3,
+90.6,
+565.0
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.7,
+"color": "#2d3748",
+"text": "10 µm"
+},
+{
+"bbox": [
+67.8,
+507.4,
+90.6,
+516.1
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.7,
+"color": "#2d3748",
+"text": "100 µm"
+},
+{
+"bbox": [
+235.6,
+696.7,
+415.7,
+705.0
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.4,
+"color": "#6b7787",
+"text": "FIELD OF VIEW, WIDTH AT OPTIMUM WORKING DISTANCE"
+},
+{
+"bbox": [
+60.4,
+537.5,
+68.7,
+638.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.4,
+"color": "#6b7787",
+"text": "Z REPEATABILITY, REGIONAL 2"
+},
+{
+"bbox": [
+60.4,
+533.8,
+68.7,
+537.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.4,
+"color": "#6b7787",
+"text": "σ"
+},
+{
+"bbox": [
+150.2,
+664.3,
+186.1,
+673.9
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#2d3748",
+"text": "TRS-010B"
+},
+{
+"bbox": [
+216.3,
+653.4,
+252.2,
+663.0
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#2d3748",
+"text": "TRS-025B"
+},
+{
+"bbox": [
+264.2,
+642.7,
+300.1,
+652.2
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#2d3748",
+"text": "TRS-050B"
+},
+{
+"bbox": [
+235.8,
+604.5,
+271.7,
+614.1
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#2d3748",
+"text": "TRS-075B"
+},
+{
+"bbox": [
+154.3,
+637.4,
+194.7,
+647.0
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#2d3748",
+"text": "VRH9-020B"
+},
+{
+"bbox": [
+201.6,
+628.3,
+242.1,
+637.9
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#2d3748",
+"text": "VRH9-040B"
+},
+{
+"bbox": [
+237.9,
+618.1,
+278.3,
+627.6
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#2d3748",
+"text": "VRH9-080B"
+},
+{
+"bbox": [
+326.7,
+623.9,
+367.1,
+633.5
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#2d3748",
+"text": "VRH9-120B"
+},
+{
+"bbox": [
+342.8,
+611.7,
+383.2,
+621.3
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#2d3748",
+"text": "VRH9-160B"
+},
+{
+"bbox": [
+360.3,
+599.0,
+400.8,
+608.6
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#2d3748",
+"text": "VRH9-200B"
+},
+{
+"bbox": [
+322.5,
+583.2,
+363.0,
+592.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#2d3748",
+"text": "VRH9-280B"
+},
+{
+"bbox": [
+386.7,
+583.1,
+418.1,
+592.7
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#2d3748",
+"text": "VR-400B"
+},
+{
+"bbox": [
+359.5,
+566.5,
+390.9,
+576.1
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#2d3748",
+"text": "VR-600B"
+},
+{
+"bbox": [
+459.8,
+529.6,
+495.8,
+539.2
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#2d3748",
+"text": "VR-1300B"
+},
+{
+"bbox": [
+443.8,
+506.7,
+479.7,
+516.3
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#2d3748",
+"text": "VR-2300B"
+},
+{
+"bbox": [
+432.3,
+566.5,
+468.2,
+576.1
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#2d3748",
+"text": "VRD-600B"
+},
+{
+"bbox": [
+421.9,
+537.1,
+462.3,
+546.7
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#2d3748",
+"text": "VRD-1200B"
+},
+{
+"bbox": [
+462.4,
+487.3,
+507.3,
+496.9
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#2d3748",
+"text": "PRS-2500 ¹"
+},
+{
+"bbox": [
+103.8,
+704.8,
+134.8,
+713.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.7,
+"color": "#2d3748",
+"text": "TRS series"
+},
+{
+"bbox": [
+187.4,
+704.8,
+223.0,
+713.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.7,
+"color": "#2d3748",
+"text": "VRH9 series"
+},
+{
+"bbox": [
+271.1,
+704.8,
+298.3,
+713.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.7,
+"color": "#2d3748",
+"text": "VR series"
+},
+{
+"bbox": [
+354.7,
+704.8,
+386.4,
+713.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.7,
+"color": "#2d3748",
+"text": "VRD series"
+},
+{
+"bbox": [
+438.3,
+704.8,
+508.0,
+713.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.7,
+"color": "#2d3748",
+"text": "PRS series (preliminary)"
+},
+{
+"bbox": [
+51.0,
+741.9,
+553.0,
+751.2
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#5b6675",
+"text": "Width of the field of view at the optimum working distance against regional Z repeatability, 2σ, for all eighteen models. Adjacent series overlap: most"
+},
+{
+"bbox": [
+51.0,
+751.6,
+306.5,
+761.0
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#5b6675",
+"text": "parts have two candidate models. ¹ PRS: preliminary specification, page 13."
+},
+{
+"bbox": [
+129.0,
+29.7,
+172.6,
+37.7
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#5b6675",
+"text": "T H E R A N G E"
+},
+{
+"bbox": [
+57.2,
+29.7,
+66.0,
+37.7
+],
+"font": "IBMPlexMono-Medium",
+"size": 6.2,
+"color": "#c8ff3d",
+"text": "0 1"
+},
+{
+"bbox": [
+72.9,
+29.7,
+111.5,
+37.7
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#ffffff",
+"text": "O V E R V I E W"
+}
+],
+"rects": [
+{
+"bbox": [
+0.0,
+0.0,
+612.0,
+858.8
+],
+"fill": "#f4f5f1",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+0.0,
+0.0,
+612.8,
+859.5
+],
+"fill": "#f4f5f1",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+0.0,
+0.0,
+612.0,
+858.8
+],
+"fill": "#f4f5f1",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+811.5,
+178.5,
+813.0
+],
+"fill": "#ff2d6f",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+178.5,
+811.5,
+306.0,
+813.0
+],
+"fill": "#c7ff3c",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+306.0,
+811.5,
+433.5,
+813.0
+],
+"fill": "#00e38b",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+433.5,
+811.5,
+561.0,
+813.0
+],
+"fill": "#3c59fe",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+461.2,
+561.0,
+738.0
+],
+"fill": "#ffffff",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.4,
+461.6,
+560.6,
+737.6
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.75
+},
+{
+"bbox": [
+340.5,
+57.0,
+561.0,
+204.8
+],
+"fill": "#ffffff",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+340.9,
+57.4,
+560.6,
+204.4
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.75
+},
+{
+"bbox": [
+350.2,
+99.0,
+551.2,
+99.8
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+350.2,
+128.2,
+551.2,
+129.0
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+350.2,
+149.2,
+551.2,
+150.0
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+350.2,
+178.5,
+551.2,
+179.2
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+221.2,
+146.2,
+429.0
+],
+"fill": "#ffffff",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.4,
+221.6,
+145.9,
+428.6
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.75
+},
+{
+"bbox": [
+154.5,
+221.2,
+249.8,
+429.0
+],
+"fill": "#ffffff",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+154.9,
+221.6,
+249.4,
+428.6
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.75
+},
+{
+"bbox": [
+258.8,
+221.2,
+354.0,
+429.0
+],
+"fill": "#ffffff",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+259.1,
+221.6,
+353.6,
+428.6
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.75
+},
+{
+"bbox": [
+362.2,
+221.2,
+457.5,
+429.0
+],
+"fill": "#ffffff",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+362.6,
+221.6,
+457.1,
+428.6
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.75
+},
+{
+"bbox": [
+465.8,
+221.2,
+561.0,
+429.0
+],
+"fill": "#ffffff",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+466.1,
+221.6,
+560.6,
+428.6
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.75
+},
+{
+"bbox": [
+525.8,
+342.8,
+548.2,
+351.8
+],
+"fill": "#c7ff3c",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+94.6,
+488.5,
+556.6,
+684.1
+],
+"fill": "#ffffff",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+142.5,
+488.5,
+142.5,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.85
+},
+{
+"bbox": [
+190.4,
+488.5,
+190.4,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+218.5,
+488.5,
+218.5,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+238.3,
+488.5,
+238.3,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+253.8,
+488.5,
+253.8,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+266.4,
+488.5,
+266.4,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+277.0,
+488.5,
+277.0,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+286.2,
+488.5,
+286.2,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+294.4,
+488.5,
+294.4,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+301.7,
+488.5,
+301.7,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.85
+},
+{
+"bbox": [
+349.6,
+488.5,
+349.6,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+377.6,
+488.5,
+377.6,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+397.5,
+488.5,
+397.5,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+412.9,
+488.5,
+412.9,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+425.5,
+488.5,
+425.5,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+436.2,
+488.5,
+436.2,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+445.4,
+488.5,
+445.4,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+453.5,
+488.5,
+453.5,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+460.8,
+488.5,
+460.8,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.85
+},
+{
+"bbox": [
+508.7,
+488.5,
+508.7,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+536.7,
+488.5,
+536.7,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+556.6,
+488.5,
+556.6,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+684.1,
+556.6,
+684.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+678.0,
+556.6,
+678.0
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+673.3,
+556.6,
+673.3
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+669.4,
+556.6,
+669.4
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+666.1,
+556.6,
+666.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+663.3,
+556.6,
+663.3
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+660.8,
+556.6,
+660.8
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+658.5,
+556.6,
+658.5
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.85
+},
+{
+"bbox": [
+94.6,
+643.8,
+556.6,
+643.8
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+635.2,
+556.6,
+635.2
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+629.1,
+556.6,
+629.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+624.4,
+556.6,
+624.4
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+620.5,
+556.6,
+620.5
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+617.2,
+556.6,
+617.2
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+614.4,
+556.6,
+614.4
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+611.9,
+556.6,
+611.9
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+609.6,
+556.6,
+609.6
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.85
+},
+{
+"bbox": [
+94.6,
+594.9,
+556.6,
+594.9
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+586.3,
+556.6,
+586.3
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+580.2,
+556.6,
+580.2
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+575.5,
+556.6,
+575.5
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+571.6,
+556.6,
+571.6
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+568.3,
+556.6,
+568.3
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+565.5,
+556.6,
+565.5
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+563.0,
+556.6,
+563.0
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+560.7,
+556.6,
+560.7
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.85
+},
+{
+"bbox": [
+94.6,
+546.0,
+556.6,
+546.0
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+537.4,
+556.6,
+537.4
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+531.3,
+556.6,
+531.3
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+526.6,
+556.6,
+526.6
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+522.7,
+556.6,
+522.7
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+519.4,
+556.6,
+519.4
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+516.6,
+556.6,
+516.6
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+514.1,
+556.6,
+514.1
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+511.8,
+556.6,
+511.8
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.85
+},
+{
+"bbox": [
+94.6,
+497.2,
+556.6,
+497.2
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+94.6,
+488.5,
+556.6,
+488.5
+],
+"fill": null,
+"stroke": "#d9dbd5",
+"width": 0.35
+},
+{
+"bbox": [
+51.0,
+27.0,
+119.2,
+42.0
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+}
+],
+"images": [
+{
+"bbox": [
+57.0,
+240.8,
+140.2,
+324.8
+],
+"file": "assets/pages/p02_img66.png",
+"px": [
+699,
+706
+]
+},
+{
+"bbox": [
+160.5,
+248.2,
+244.5,
+317.2
+],
+"file": "assets/pages/p02_img67.png",
+"px": [
+900,
+747
+]
+},
+{
+"bbox": [
+264.0,
+265.5,
+348.0,
+300.0
+],
+"file": "assets/pages/p02_img68.png",
+"px": [
+1800,
+736
+]
+},
+{
+"bbox": [
+368.2,
+261.0,
+451.5,
+304.5
+],
+"file": "assets/pages/p02_img69.png",
+"px": [
+900,
+468
+]
+},
+{
+"bbox": [
+471.8,
+268.5,
+555.8,
+297.0
+],
+"file": "assets/pages/p02_img70.png",
+"px": [
+2600,
+888
+]
+}
+]
+}

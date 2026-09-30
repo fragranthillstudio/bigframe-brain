@@ -1,0 +1,1184 @@
+{
+"page": 16,
+"size": [
+612,
+858.96
+],
+"text": [
+{
+"bbox": [
+51.0,
+817.2,
+307.8,
+825.2
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#5b6675",
+"text": "B I G F R A M E · P R O D U C T C A T A L O G 2 0 2 6 · E N 2 0 2 6 - 1 0 · R E V . C"
+},
+{
+"bbox": [
+551.5,
+817.2,
+560.1,
+825.2
+],
+"font": "IBMPlexMono-Medium",
+"size": 6.2,
+"color": "#2d3748",
+"text": "1 6"
+},
+{
+"bbox": [
+51.0,
+51.8,
+396.7,
+85.3
+],
+"font": "BodoniModa11pt-Regular",
+"size": 22.0,
+"color": "#2d3748",
+"text": "TridiVision: functions and editions"
+},
+{
+"bbox": [
+51.0,
+215.0,
+147.0,
+226.7
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 9.0,
+"color": "#2d3748",
+"text": "3D measurement tools"
+},
+{
+"bbox": [
+51.0,
+230.5,
+274.2,
+240.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.8,
+"color": "#5b6675",
+"text": "Height, step, flatness and coplanarity, distance and angle on point"
+},
+{
+"bbox": [
+51.0,
+241.8,
+278.7,
+251.9
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.8,
+"color": "#5b6675",
+"text": "clouds and height maps; features fitted on the cloud; multi-camera"
+},
+{
+"bbox": [
+51.0,
+252.3,
+83.9,
+262.4
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.8,
+"color": "#5b6675",
+"text": "stitching."
+},
+{
+"bbox": [
+314.6,
+215.0,
+373.5,
+226.7
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 9.0,
+"color": "#2d3748",
+"text": "Deep learning"
+},
+{
+"bbox": [
+314.6,
+230.5,
+551.7,
+240.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.8,
+"color": "#5b6675",
+"text": "Classification, semantic segmentation and object detection — models"
+},
+{
+"bbox": [
+314.6,
+241.8,
+452.5,
+251.9
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.8,
+"color": "#5b6675",
+"text": "trained in AI Training, run in AI Runtime."
+},
+{
+"bbox": [
+51.0,
+408.5,
+148.9,
+420.2
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 9.0,
+"color": "#2d3748",
+"text": "Annotation and training"
+},
+{
+"bbox": [
+51.0,
+424.0,
+289.5,
+434.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.8,
+"color": "#5b6675",
+"text": "Annotation and training from a small image set; camera, hand–eye and"
+},
+{
+"bbox": [
+51.0,
+435.3,
+219.6,
+445.4
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.8,
+"color": "#5b6675",
+"text": "multi-camera calibration on the Bigframe targets."
+},
+{
+"bbox": [
+314.6,
+408.5,
+428.7,
+420.2
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 9.0,
+"color": "#2d3748",
+"text": "Robots and communication"
+},
+{
+"bbox": [
+314.6,
+424.0,
+542.4,
+434.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.8,
+"color": "#5b6675",
+"text": "Object recognition with grasp guidance and path planning from the"
+},
+{
+"bbox": [
+314.6,
+435.3,
+508.7,
+445.4
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.8,
+"color": "#5b6675",
+"text": "point cloud; results and signals to PLCs, MES and robots."
+},
+{
+"bbox": [
+51.0,
+476.2,
+83.9,
+487.7
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.8,
+"color": "#2d3748",
+"text": "Editions"
+},
+{
+"bbox": [
+51.0,
+491.3,
+367.4,
+501.7
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#2d3748",
+"text": "Five editions on a USB hardware key; each includes everything in the edition before it."
+},
+{
+"bbox": [
+55.0,
+523.2,
+80.4,
+533.1
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 7.6,
+"color": "#2d3748",
+"text": "Edition"
+},
+{
+"bbox": [
+224.9,
+513.5,
+239.7,
+523.3
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 7.6,
+"color": "#2d3748",
+"text": "USB"
+},
+{
+"bbox": [
+224.9,
+523.2,
+237.9,
+533.1
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 7.6,
+"color": "#2d3748",
+"text": "key"
+},
+{
+"bbox": [
+258.2,
+523.2,
+320.5,
+533.1
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 7.6,
+"color": "#2d3748",
+"text": "Modules included"
+},
+{
+"bbox": [
+55.0,
+541.6,
+117.8,
+551.0
+],
+"font": "IBMPlexMono-Medium",
+"size": 7.2,
+"color": "#2d3748",
+"text": "TridiVision 2D"
+},
+{
+"bbox": [
+235.7,
+541.6,
+246.6,
+551.0
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#2d3748",
+"text": "red"
+},
+{
+"bbox": [
+258.2,
+541.6,
+374.8,
+551.0
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#2d3748",
+"text": "1D inspection; 2D positioning and"
+},
+{
+"bbox": [
+258.2,
+551.4,
+370.5,
+560.7
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#2d3748",
+"text": "measurement; image processing;"
+},
+{
+"bbox": [
+258.2,
+560.4,
+357.0,
+569.7
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#2d3748",
+"text": "defect detection; calibration;"
+},
+{
+"bbox": [
+258.2,
+570.1,
+361.2,
+579.5
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#2d3748",
+"text": "computation; communication"
+},
+{
+"bbox": [
+55.0,
+588.1,
+144.8,
+597.5
+],
+"font": "IBMPlexMono-Medium",
+"size": 7.2,
+"color": "#2d3748",
+"text": "TridiVision 3D Z-map"
+},
+{
+"bbox": [
+224.9,
+597.1,
+248.3,
+606.5
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#2d3748",
+"text": "orange"
+},
+{
+"bbox": [
+258.2,
+588.1,
+367.3,
+597.5
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#2d3748",
+"text": "everything in 2D, plus 3D Z-map"
+},
+{
+"bbox": [
+258.2,
+597.1,
+362.8,
+606.5
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#2d3748",
+"text": "positioning, measurement and"
+},
+{
+"bbox": [
+258.2,
+606.9,
+295.7,
+616.2
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#2d3748",
+"text": "processing"
+},
+{
+"bbox": [
+55.0,
+624.9,
+171.8,
+634.2
+],
+"font": "IBMPlexMono-Medium",
+"size": 7.2,
+"color": "#2d3748",
+"text": "TridiVision 3D Point Cloud"
+},
+{
+"bbox": [
+224.9,
+633.9,
+246.9,
+643.2
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#2d3748",
+"text": "yellow"
+},
+{
+"bbox": [
+258.2,
+624.9,
+367.2,
+634.2
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#2d3748",
+"text": "everything in 3D Z-map, plus 3D"
+},
+{
+"bbox": [
+258.2,
+633.9,
+383.8,
+643.2
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#2d3748",
+"text": "recognition, robot path planning and"
+},
+{
+"bbox": [
+258.2,
+643.6,
+338.5,
+653.0
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#2d3748",
+"text": "point-cloud processing"
+},
+{
+"bbox": [
+55.0,
+661.6,
+153.8,
+671.0
+],
+"font": "IBMPlexMono-Medium",
+"size": 7.2,
+"color": "#2d3748",
+"text": "TridiVision AI Runtime"
+},
+{
+"bbox": [
+224.9,
+670.6,
+243.2,
+680.0
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#2d3748",
+"text": "green"
+},
+{
+"bbox": [
+258.2,
+661.6,
+374.2,
+671.0
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#2d3748",
+"text": "everything in 3D Point Cloud, plus"
+},
+{
+"bbox": [
+258.2,
+670.6,
+338.6,
+680.0
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#2d3748",
+"text": "deep-learning inference"
+},
+{
+"bbox": [
+55.0,
+688.6,
+216.8,
+698.0
+],
+"font": "IBMPlexMono-Medium",
+"size": 7.2,
+"color": "#2d3748",
+"text": "TridiVision AI Training (all-in-one)"
+},
+{
+"bbox": [
+224.9,
+698.4,
+240.2,
+707.7
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#2d3748",
+"text": "cyan"
+},
+{
+"bbox": [
+258.2,
+688.6,
+381.8,
+698.0
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#2d3748",
+"text": "everything in AI Runtime, plus deep-"
+},
+{
+"bbox": [
+258.2,
+698.4,
+314.5,
+707.7
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.2,
+"color": "#2d3748",
+"text": "learning training"
+},
+{
+"bbox": [
+408.2,
+476.2,
+498.1,
+487.7
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.8,
+"color": "#2d3748",
+"text": "System requirements"
+},
+{
+"bbox": [
+408.2,
+491.1,
+553.6,
+501.8
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.2,
+"color": "#2d3748",
+"text": "GPU acceleration with NVIDIA CUDA; a"
+},
+{
+"bbox": [
+408.2,
+503.1,
+544.6,
+513.8
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.2,
+"color": "#2d3748",
+"text": "CoaXPress frame grabber in the host"
+},
+{
+"bbox": [
+408.2,
+514.3,
+552.8,
+525.0
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.2,
+"color": "#2d3748",
+"text": "computer for the TRS series. Operating"
+},
+{
+"bbox": [
+408.2,
+526.3,
+549.3,
+537.0
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.2,
+"color": "#2d3748",
+"text": "system, memory and GPU as stated in"
+},
+{
+"bbox": [
+408.2,
+537.6,
+556.2,
+548.3
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.2,
+"color": "#2d3748",
+"text": "the installation guide. Sample programs"
+},
+{
+"bbox": [
+408.2,
+549.6,
+542.4,
+560.3
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.2,
+"color": "#2d3748",
+"text": "for typical applications ship with the"
+},
+{
+"bbox": [
+408.2,
+560.8,
+442.7,
+571.5
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.2,
+"color": "#2d3748",
+"text": "software."
+},
+{
+"bbox": [
+60.9,
+735.4,
+180.5,
+752.1
+],
+"font": "BodoniModa11pt-Regular",
+"size": 11.0,
+"color": "#ffffff",
+"text": "See TridiVision on your"
+},
+{
+"bbox": [
+60.9,
+748.1,
+88.6,
+764.9
+],
+"font": "BodoniModa11pt-Regular",
+"size": 11.0,
+"color": "#ffffff",
+"text": "parts."
+},
+{
+"bbox": [
+219.7,
+740.7,
+316.5,
+749.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.9,
+"color": "#c9cfd8",
+"text": "Send sample images or a part to "
+},
+{
+"bbox": [
+316.4,
+740.7,
+377.3,
+749.6
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 6.9,
+"color": "#ffffff",
+"text": "info@bigframe.com"
+},
+{
+"bbox": [
+377.2,
+740.7,
+500.4,
+749.6
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.9,
+"color": "#c9cfd8",
+"text": ": we build the inspection in TridiVision and"
+},
+{
+"bbox": [
+219.7,
+750.4,
+304.8,
+759.4
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.9,
+"color": "#c9cfd8",
+"text": "show it running on your data."
+},
+{
+"bbox": [
+129.0,
+29.7,
+182.6,
+37.7
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#5b6675",
+"text": "T R I D I V I S I O N"
+},
+{
+"bbox": [
+57.2,
+29.7,
+66.0,
+37.7
+],
+"font": "IBMPlexMono-Medium",
+"size": 6.2,
+"color": "#c8ff3d",
+"text": "0 3"
+},
+{
+"bbox": [
+72.9,
+29.7,
+111.5,
+37.7
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#ffffff",
+"text": "S O F T W A R E"
+}
+],
+"rects": [
+{
+"bbox": [
+0.0,
+0.0,
+612.0,
+858.8
+],
+"fill": "#f4f5f1",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+0.0,
+0.0,
+612.8,
+859.5
+],
+"fill": "#f4f5f1",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+0.0,
+0.0,
+612.0,
+858.8
+],
+"fill": "#f4f5f1",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+811.5,
+178.5,
+813.0
+],
+"fill": "#ff2d6f",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+178.5,
+811.5,
+306.0,
+813.0
+],
+"fill": "#c7ff3c",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+306.0,
+811.5,
+433.5,
+813.0
+],
+"fill": "#00e38b",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+433.5,
+811.5,
+561.0,
+813.0
+],
+"fill": "#3c59fe",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+724.5,
+561.0,
+777.0
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+90.0,
+297.8,
+210.0
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+315.0,
+90.0,
+561.0,
+210.0
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+283.5,
+297.8,
+404.2
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+315.0,
+283.5,
+561.0,
+404.2
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+537.8,
+221.2,
+538.5
+],
+"fill": "#2d3748",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+221.2,
+537.8,
+254.2,
+538.5
+],
+"fill": "#2d3748",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+254.2,
+537.8,
+391.5,
+538.5
+],
+"fill": "#2d3748",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+583.5,
+221.2,
+584.2
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+221.2,
+583.5,
+254.2,
+584.2
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+254.2,
+583.5,
+391.5,
+584.2
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+620.2,
+221.2,
+621.0
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+221.2,
+620.2,
+254.2,
+621.0
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+254.2,
+620.2,
+391.5,
+621.0
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+657.0,
+221.2,
+657.8
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+221.2,
+657.0,
+254.2,
+657.8
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+254.2,
+657.0,
+391.5,
+657.8
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+684.8,
+221.2,
+685.5
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+221.2,
+684.8,
+254.2,
+685.5
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+254.2,
+684.8,
+391.5,
+685.5
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+711.8,
+221.2,
+712.5
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+221.2,
+711.8,
+254.2,
+712.5
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+254.2,
+711.8,
+391.5,
+712.5
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+513.0,
+731.2,
+551.2,
+769.5
+],
+"fill": "#ffffff",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+516.8,
+735.6,
+547.9,
+765.5
+],
+"fill": "#000000",
+"stroke": "#111726",
+"width": 1.25
+},
+{
+"bbox": [
+51.0,
+27.0,
+119.2,
+42.0
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+}
+],
+"images": [
+{
+"bbox": [
+51.0,
+87.8,
+297.8,
+212.2
+],
+"file": "assets/pages/p16_img235.png",
+"px": [
+774,
+390
+]
+},
+{
+"bbox": [
+315.0,
+60.8,
+561.0,
+239.2
+],
+"file": "assets/pages/p16_img236.png",
+"px": [
+1080,
+780
+]
+},
+{
+"bbox": [
+51.0,
+243.8,
+297.8,
+443.2
+],
+"file": "assets/pages/p16_img237.png",
+"px": [
+1020,
+825
+]
+},
+{
+"bbox": [
+315.0,
+222.8,
+561.0,
+464.2
+],
+"file": "assets/pages/p16_img238.png",
+"px": [
+705,
+690
+]
+}
+]
+}

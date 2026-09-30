@@ -1,0 +1,707 @@
+{
+"page": 15,
+"size": [
+612,
+858.96
+],
+"text": [
+{
+"bbox": [
+51.0,
+817.2,
+307.8,
+825.2
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#5b6675",
+"text": "B I G F R A M E · P R O D U C T C A T A L O G 2 0 2 6 · E N 2 0 2 6 - 1 0 · R E V . C"
+},
+{
+"bbox": [
+551.5,
+817.2,
+560.1,
+825.2
+],
+"font": "IBMPlexMono-Medium",
+"size": 6.2,
+"color": "#2d3748",
+"text": "1 5"
+},
+{
+"bbox": [
+51.0,
+298.3,
+499.7,
+310.0
+],
+"font": "IBMPlexSans-Regular",
+"size": 9.0,
+"color": "#2d3748",
+"text": "A graphical dataflow environment: place tools on a canvas, link their parameters, run them and read the results."
+},
+{
+"bbox": [
+51.0,
+311.0,
+529.0,
+322.7
+],
+"font": "IBMPlexSans-Regular",
+"size": 9.0,
+"color": "#2d3748",
+"text": "Standard tasks need no code; custom operators can be added for the rest. The same environment handles 2D images,"
+},
+{
+"bbox": [
+51.0,
+324.5,
+524.9,
+336.2
+],
+"font": "IBMPlexSans-Regular",
+"size": 9.0,
+"color": "#2d3748",
+"text": "height maps and point clouds, runs deep-learning models trained in its AI Training edition, builds the operator screen"
+},
+{
+"bbox": [
+51.0,
+337.3,
+516.5,
+349.0
+],
+"font": "IBMPlexSans-Regular",
+"size": 9.0,
+"color": "#2d3748",
+"text": "and drives third-party 2D and 3D cameras alongside the Bigframe camera. Results, signals and robot paths go to the"
+},
+{
+"bbox": [
+51.0,
+350.0,
+125.5,
+361.7
+],
+"font": "IBMPlexSans-Regular",
+"size": 9.0,
+"color": "#2d3748",
+"text": "PLC, MES or robot."
+},
+{
+"bbox": [
+51.0,
+605.6,
+271.2,
+614.7
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.0,
+"color": "#5b6675",
+"text": "Solder-ball inspection — every ball numbered and measured on the canvas"
+},
+{
+"bbox": [
+314.6,
+605.6,
+548.9,
+614.7
+],
+"font": "IBMPlexSans-Regular",
+"size": 7.0,
+"color": "#5b6675",
+"text": "Pin inspection — height of every pin and its pass/fail state in the operator screen"
+},
+{
+"bbox": [
+51.0,
+633.0,
+127.2,
+644.4
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.8,
+"color": "#2d3748",
+"text": "Function overview"
+},
+{
+"bbox": [
+51.0,
+655.7,
+62.2,
+666.9
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.6,
+"color": "#2d3748",
+"text": "2D"
+},
+{
+"bbox": [
+51.0,
+667.6,
+176.8,
+677.9
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#5b6675",
+"text": "Positioning, measurement, defect"
+},
+{
+"bbox": [
+51.0,
+678.8,
+200.9,
+689.2
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#5b6675",
+"text": "detection, OCR and code reading, image"
+},
+{
+"bbox": [
+51.0,
+689.3,
+137.2,
+699.7
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#5b6675",
+"text": "processing, calibration."
+},
+{
+"bbox": [
+226.8,
+655.7,
+265.7,
+666.9
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.6,
+"color": "#2d3748",
+"text": "3D Z-map"
+},
+{
+"bbox": [
+226.8,
+667.6,
+366.2,
+677.9
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#5b6675",
+"text": "Height, step, flatness and coplanarity,"
+},
+{
+"bbox": [
+226.8,
+678.8,
+382.9,
+689.2
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#5b6675",
+"text": "distance and angle on height maps; multi-"
+},
+{
+"bbox": [
+226.8,
+689.3,
+291.9,
+699.7
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#5b6675",
+"text": "camera stitching."
+},
+{
+"bbox": [
+402.5,
+655.7,
+458.7,
+666.9
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.6,
+"color": "#2d3748",
+"text": "3D point cloud"
+},
+{
+"bbox": [
+402.5,
+667.6,
+560.7,
+677.9
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#5b6675",
+"text": "Recognition and pose, robot path planning,"
+},
+{
+"bbox": [
+402.5,
+678.8,
+530.7,
+689.2
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#5b6675",
+"text": "point-cloud processing and export."
+},
+{
+"bbox": [
+51.0,
+716.4,
+103.7,
+727.6
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.6,
+"color": "#2d3748",
+"text": "Deep learning"
+},
+{
+"bbox": [
+51.0,
+728.3,
+208.7,
+738.7
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#5b6675",
+"text": "Classification, segmentation, detection; AI"
+},
+{
+"bbox": [
+51.0,
+738.8,
+188.7,
+749.2
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#5b6675",
+"text": "Runtime runs the models, AI Training"
+},
+{
+"bbox": [
+51.0,
+750.1,
+95.9,
+760.4
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#5b6675",
+"text": "trains them."
+},
+{
+"bbox": [
+226.8,
+716.4,
+286.6,
+727.6
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.6,
+"color": "#2d3748",
+"text": "Communication"
+},
+{
+"bbox": [
+226.8,
+728.3,
+370.7,
+738.7
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#5b6675",
+"text": "PLC, MES and robot interfaces; results,"
+},
+{
+"bbox": [
+226.8,
+738.8,
+314.4,
+749.2
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#5b6675",
+"text": "signals and robot paths."
+},
+{
+"bbox": [
+402.5,
+716.4,
+463.8,
+727.6
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 8.6,
+"color": "#2d3748",
+"text": "Operator screen"
+},
+{
+"bbox": [
+402.5,
+728.3,
+560.2,
+738.7
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#5b6675",
+"text": "HMI designer: build the operator screen by"
+},
+{
+"bbox": [
+402.5,
+738.8,
+455.7,
+749.2
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.0,
+"color": "#5b6675",
+"text": "drag and drop."
+},
+{
+"bbox": [
+73.7,
+82.5,
+114.1,
+91.1
+],
+"font": "IBMPlexMono-Medium",
+"size": 6.6,
+"color": "#9aa3b2",
+"text": "S O F T W A R E"
+},
+{
+"bbox": [
+73.7,
+91.5,
+179.4,
+122.0
+],
+"font": "BodoniModa11pt-Regular",
+"size": 20.0,
+"color": "#ffffff",
+"text": "TridiVision"
+},
+{
+"bbox": [
+73.7,
+126.9,
+216.4,
+138.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.6,
+"color": "#d1d5db",
+"text": "The vision software for every Bigframe"
+},
+{
+"bbox": [
+73.7,
+138.9,
+225.4,
+150.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.6,
+"color": "#d1d5db",
+"text": "camera: 2D, 3D and deep learning in one"
+},
+{
+"bbox": [
+73.7,
+150.9,
+159.3,
+162.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 8.6,
+"color": "#d1d5db",
+"text": "graphical environment."
+},
+{
+"bbox": [
+428.4,
+29.7,
+482.0,
+37.7
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#5b6675",
+"text": "T R I D I V I S I O N"
+},
+{
+"bbox": [
+499.4,
+29.7,
+508.1,
+37.7
+],
+"font": "IBMPlexMono-Medium",
+"size": 6.2,
+"color": "#c8ff3d",
+"text": "0 3"
+},
+{
+"bbox": [
+515.1,
+29.7,
+553.7,
+37.7
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.2,
+"color": "#ffffff",
+"text": "S O F T W A R E"
+}
+],
+"rects": [
+{
+"bbox": [
+0.0,
+0.0,
+612.0,
+858.8
+],
+"fill": "#f4f5f1",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+0.0,
+0.0,
+612.8,
+859.5
+],
+"fill": "#f4f5f1",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+0.0,
+0.0,
+612.0,
+858.8
+],
+"fill": "#f4f5f1",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+811.5,
+178.5,
+813.0
+],
+"fill": "#ff2d6f",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+178.5,
+811.5,
+306.0,
+813.0
+],
+"fill": "#c7ff3c",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+306.0,
+811.5,
+433.5,
+813.0
+],
+"fill": "#00e38b",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+433.5,
+811.5,
+561.0,
+813.0
+],
+"fill": "#3c59fe",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+382.5,
+297.8,
+603.0
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+315.0,
+382.5,
+561.0,
+603.0
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+647.2,
+210.0,
+648.0
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+226.5,
+647.2,
+385.5,
+648.0
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+402.8,
+647.2,
+561.0,
+648.0
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+708.0,
+210.0,
+708.8
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+226.5,
+708.0,
+385.5,
+708.8
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+402.8,
+708.0,
+561.0,
+708.8
+],
+"fill": "#c3c8c2",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+51.0,
+57.0,
+561.0,
+283.5
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+493.5,
+27.0,
+561.0,
+42.0
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+}
+],
+"images": [
+{
+"bbox": [
+37.5,
+382.5,
+311.2,
+603.0
+],
+"file": "assets/pages/p15_img231.png",
+"px": [
+738,
+594
+]
+},
+{
+"bbox": [
+277.5,
+382.5,
+598.5,
+603.0
+],
+"file": "assets/pages/p15_img232.png",
+"px": [
+1059,
+726
+]
+},
+{
+"bbox": [
+249.0,
+76.5,
+544.5,
+263.2
+],
+"file": "assets/pages/p15_img233.png",
+"px": [
+1230,
+780
+]
+}
+]
+}

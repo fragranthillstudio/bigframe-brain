@@ -1,0 +1,799 @@
+{
+"page": 1,
+"size": [
+612,
+858.96
+],
+"text": [
+{
+"bbox": [
+59.5,
+173.2,
+64.0,
+182.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#9aa3b2",
+"text": "P"
+},
+{
+"bbox": [
+66.2,
+173.2,
+70.7,
+182.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#9aa3b2",
+"text": "R"
+},
+{
+"bbox": [
+73.0,
+173.2,
+77.4,
+182.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#9aa3b2",
+"text": "O"
+},
+{
+"bbox": [
+79.7,
+173.2,
+84.1,
+182.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#9aa3b2",
+"text": "D"
+},
+{
+"bbox": [
+86.4,
+173.2,
+90.8,
+182.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#9aa3b2",
+"text": "U"
+},
+{
+"bbox": [
+93.1,
+173.2,
+97.6,
+182.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#9aa3b2",
+"text": "C"
+},
+{
+"bbox": [
+99.8,
+173.2,
+117.7,
+182.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#9aa3b2",
+"text": "T C"
+},
+{
+"bbox": [
+120.0,
+173.2,
+124.4,
+182.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#9aa3b2",
+"text": "A"
+},
+{
+"bbox": [
+126.7,
+173.2,
+131.2,
+182.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#9aa3b2",
+"text": "T"
+},
+{
+"bbox": [
+133.4,
+173.2,
+137.9,
+182.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#9aa3b2",
+"text": "A"
+},
+{
+"bbox": [
+140.2,
+173.2,
+144.6,
+182.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#9aa3b2",
+"text": "L"
+},
+{
+"bbox": [
+146.9,
+173.2,
+151.3,
+182.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#9aa3b2",
+"text": "O"
+},
+{
+"bbox": [
+153.6,
+173.2,
+171.5,
+182.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#9aa3b2",
+"text": "G 2"
+},
+{
+"bbox": [
+173.8,
+173.2,
+178.2,
+182.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#9aa3b2",
+"text": "0"
+},
+{
+"bbox": [
+180.5,
+173.2,
+184.9,
+182.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#9aa3b2",
+"text": "2"
+},
+{
+"bbox": [
+187.2,
+173.2,
+191.6,
+182.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 7.4,
+"color": "#9aa3b2",
+"text": "6"
+},
+{
+"bbox": [
+59.5,
+183.0,
+324.7,
+250.1
+],
+"font": "BodoniModa11pt-Regular",
+"size": 44.0,
+"color": "#ffffff",
+"text": "Industrial 3D"
+},
+{
+"bbox": [
+59.5,
+226.5,
+225.4,
+293.6
+],
+"font": "BodoniModa11pt-Regular",
+"size": 44.0,
+"color": "#ffffff",
+"text": "cameras"
+},
+{
+"bbox": [
+59.5,
+293.7,
+398.7,
+307.4
+],
+"font": "IBMPlexSans-Regular",
+"size": 10.5,
+"color": "#d5dae2",
+"text": "Eighteen structured-light 3D cameras in five series — fields of view from"
+},
+{
+"bbox": [
+59.5,
+308.7,
+372.9,
+322.4
+],
+"font": "IBMPlexSans-Regular",
+"size": 10.5,
+"color": "#d5dae2",
+"text": "9.8 mm to 3.6 m, for measurement, inspection and robot guidance."
+},
+{
+"bbox": [
+59.5,
+693.6,
+78.2,
+704.3
+],
+"font": "IBMPlexMono-Regular",
+"size": 8.2,
+"color": "#ffffff",
+"text": "T R S"
+},
+{
+"bbox": [
+59.5,
+709.8,
+100.8,
+719.9
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 7.8,
+"color": "#ffffff",
+"text": "Micrometer"
+},
+{
+"bbox": [
+59.5,
+720.3,
+109.7,
+730.4
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 7.8,
+"color": "#ffffff",
+"text": "measurement"
+},
+{
+"bbox": [
+59.5,
+732.5,
+134.0,
+741.4
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#9aa3b2",
+"text": "Solder balls, bumps, weld"
+},
+{
+"bbox": [
+59.5,
+741.5,
+77.8,
+750.4
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#9aa3b2",
+"text": "beads"
+},
+{
+"bbox": [
+59.5,
+750.5,
+106.7,
+759.4
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#9aa3b2",
+"text": "FOV 9.8–74 mm"
+},
+{
+"bbox": [
+160.4,
+693.6,
+186.0,
+704.3
+],
+"font": "IBMPlexMono-Regular",
+"size": 8.2,
+"color": "#ffffff",
+"text": "V R H 9"
+},
+{
+"bbox": [
+160.4,
+709.8,
+227.8,
+719.9
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 7.8,
+"color": "#ffffff",
+"text": "Fine measurement"
+},
+{
+"bbox": [
+160.4,
+721.3,
+242.5,
+730.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#9aa3b2",
+"text": "Connectors, frames, boards"
+},
+{
+"bbox": [
+160.4,
+730.3,
+209.9,
+739.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#9aa3b2",
+"text": "FOV 24–277 mm"
+},
+{
+"bbox": [
+261.3,
+693.6,
+273.1,
+704.3
+],
+"font": "IBMPlexMono-Regular",
+"size": 8.2,
+"color": "#ffffff",
+"text": "V R"
+},
+{
+"bbox": [
+261.3,
+709.8,
+349.2,
+719.9
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 7.8,
+"color": "#ffffff",
+"text": "Guidance and inspection"
+},
+{
+"bbox": [
+261.3,
+721.3,
+335.1,
+730.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#9aa3b2",
+"text": "Bins, pallets, body panels"
+},
+{
+"bbox": [
+261.3,
+730.3,
+304.0,
+739.1
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#9aa3b2",
+"text": "FOV 0.3–1.5 m"
+},
+{
+"bbox": [
+362.2,
+693.6,
+380.9,
+704.3
+],
+"font": "IBMPlexMono-Regular",
+"size": 8.2,
+"color": "#ffffff",
+"text": "V R D"
+},
+{
+"bbox": [
+362.2,
+709.8,
+450.7,
+719.9
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 7.8,
+"color": "#ffffff",
+"text": "Color stereo on the robot"
+},
+{
+"bbox": [
+362.2,
+720.3,
+376.7,
+730.4
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 7.8,
+"color": "#ffffff",
+"text": "arm"
+},
+{
+"bbox": [
+362.2,
+732.5,
+426.3,
+741.4
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#9aa3b2",
+"text": "Totes, tools, fasteners"
+},
+{
+"bbox": [
+362.2,
+741.5,
+412.4,
+750.4
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#9aa3b2",
+"text": "FOV 0.58–1.17 m"
+},
+{
+"bbox": [
+463.2,
+693.6,
+488.7,
+704.3
+],
+"font": "IBMPlexMono-Regular",
+"size": 8.2,
+"color": "#ffffff",
+"text": "P R S "
+},
+{
+"bbox": [
+498.1,
+695.7,
+511.3,
+703.8
+],
+"font": "IBMPlexMono-Medium",
+"size": 6.2,
+"color": "#111827",
+"text": "N E W"
+},
+{
+"bbox": [
+463.2,
+709.8,
+552.6,
+719.9
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 7.8,
+"color": "#ffffff",
+"text": "Large scenes from a fixed"
+},
+{
+"bbox": [
+463.2,
+720.3,
+475.2,
+730.4
+],
+"font": "IBMPlexSans-SemiBold",
+"size": 7.8,
+"color": "#ffffff",
+"text": "bar"
+},
+{
+"bbox": [
+463.2,
+732.5,
+544.5,
+741.4
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#9aa3b2",
+"text": "Pallets, vehicles, containers"
+},
+{
+"bbox": [
+463.2,
+741.5,
+505.8,
+750.4
+],
+"font": "IBMPlexSans-Regular",
+"size": 6.8,
+"color": "#9aa3b2",
+"text": "FOV 1.3–3.6 m"
+},
+{
+"bbox": [
+59.5,
+815.2,
+135.6,
+823.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.6,
+"color": "#9aa3b2",
+"text": "www.bigframe.com"
+},
+{
+"bbox": [
+461.4,
+815.2,
+551.9,
+823.8
+],
+"font": "IBMPlexMono-Regular",
+"size": 6.6,
+"color": "#9aa3b2",
+"text": "EN 2026-10 · REV. C"
+}
+],
+"rects": [
+{
+"bbox": [
+0.0,
+0.0,
+612.0,
+858.8
+],
+"fill": "#f4f5f1",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+0.0,
+0.0,
+612.8,
+859.5
+],
+"fill": "#f4f5f1",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+0.0,
+0.0,
+612.0,
+858.8
+],
+"fill": "#111726",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+59.3,
+75.0,
+92.8,
+91.8
+],
+"fill": "#ff2d6f",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+104.6,
+75.0,
+138.1,
+91.8
+],
+"fill": "#c7ff3c",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+64.3,
+95.1,
+92.8,
+111.9
+],
+"fill": "#00e38b",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+104.6,
+95.1,
+133.1,
+111.9
+],
+"fill": "#3c59fe",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+95.8,
+113.6,
+101.6,
+137.7
+],
+"fill": "#ffffff",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+263.7,
+94.3,
+285.0,
+111.9
+],
+"fill": "#ffffff",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+59.2,
+688.5,
+149.2,
+689.2
+],
+"fill": "#3c59fe",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+160.5,
+688.5,
+249.8,
+689.2
+],
+"fill": "#3c59fe",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+261.0,
+688.5,
+351.0,
+689.2
+],
+"fill": "#3c59fe",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+362.2,
+688.5,
+451.5,
+689.2
+],
+"fill": "#3c59fe",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+463.5,
+688.5,
+552.8,
+689.2
+],
+"fill": "#3c59fe",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+495.0,
+695.2,
+516.0,
+704.2
+],
+"fill": "#c7ff3c",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+59.2,
+802.5,
+183.0,
+804.8
+],
+"fill": "#ff2d6f",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+183.0,
+802.5,
+306.0,
+804.8
+],
+"fill": "#c7ff3c",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+306.0,
+802.5,
+429.8,
+804.8
+],
+"fill": "#00e38b",
+"stroke": null,
+"width": 0
+},
+{
+"bbox": [
+429.8,
+802.5,
+552.8,
+804.8
+],
+"fill": "#3c59fe",
+"stroke": null,
+"width": 0
+}
+],
+"images": [
+{
+"bbox": [
+8.2,
+303.0,
+603.8,
+666.8
+],
+"file": "assets/pages/p01_img44.png",
+"px": [
+2551,
+1559
+]
+}
+]
+}
