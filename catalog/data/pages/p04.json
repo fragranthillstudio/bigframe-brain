@@ -1,0 +1,65 @@
+{
+  "tiles": [
+    {
+      "img": "assets/pages/p04_img82.png",
+      "industry": "ind_logistics",
+      "title": "tile1_title",
+      "desc": "tile1_desc",
+      "models": [
+        "VR-600B",
+        "VR-1300B",
+        "VRD-1200B"
+      ],
+      "pos": "-21pt 0pt"
+    },
+    {
+      "scene": "prs_use_case",
+      "industry": "ind_logistics",
+      "title": "tile2_title",
+      "desc": "tile2_desc_prefix",
+      "desc_wd": "opt",
+      "caption": "tile2_caption",
+      "models": [
+        {
+          "ref": "prs.model"
+        },
+        "VR-2300B"
+      ]
+    },
+    {
+      "img": "assets/pages/p04_img84.png",
+      "industry": "ind_logistics_ecommerce",
+      "title": "tile3_title",
+      "desc": "tile3_desc",
+      "models": [
+        "VRD-600B",
+        "VRD-1200B"
+      ],
+      "pos": "-10.6pt 0pt"
+    },
+    {
+      "img": "assets/pages/p04_img85.png",
+      "industry": "ind_powertrain_machine_tending",
+      "title": "tile4_title",
+      "desc": "tile4_desc",
+      "models": [
+        "VR-600B",
+        "VRD-600B"
+      ],
+      "pos": "-11.2pt 0pt"
+    },
+    {
+      "img": "assets/pages/p04_img86.png",
+      "industry": "ind_collaborative_robots",
+      "title": "tile5_title",
+      "desc": "tile5_desc",
+      "models": [
+        "VRD-600B"
+      ],
+      "pos": "-12pt 0pt"
+    },
+    {
+      "cta": true
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "title": "PRS series: field of view and dimensions",
+  "fig_label_fov": "Field of view at the three specified working distances · illustration",
+  "scene_note_a": "Loaded Euro pallet, 1 m high, on the floor at the",
+  "scene_note_b": "far working distance; its top layer at the",
+  "scene_note_c": "optimum. Fields of view to scale, camera not to scale.",
+  "h2_fov": "Field of view by working distance <sup>1</sup>",
+  "note1_a": "Z repeatability",
+  "note1_b": "Measuring depth",
+  "note1_c": "near to far.",
+  "h2_dims": "Dimensions and mounting",
+  "kv_housing": "Housing L × W × H",
+  "kv_baseline": "Stereo baseline",
+  "caption_dims": "Preliminary specification; dimensions over the housing, connectors excluded. Dimension drawings and 3D CAD data on request.",
+  "cta_title": "Your pallet or vehicle,<br>measured before you buy.",
+  "cta_desc_a": "Send a photograph of the scene and the measurement you need to",
+  "cta_desc_b": "— we come back with the model and the working distance."
+}

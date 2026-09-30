@@ -1,0 +1,15 @@
+{
+  "hero_img": "p09_img181.png",
+  "fps_full": 1.1,
+  "fps_guidance": 4,
+  "guidance_res": "640 × 480",
+  "method_page": 22,
+  "apps": [
+    {"img": "p09_img82.png", "caption": "app1"},
+    {"img": "p09_img177.png", "caption": "app2"},
+    {"img": "p09_img77.png", "caption": "app3"},
+    {"img": "p09_img178.png", "caption": "app4"},
+    {"img": "p09_img179.png", "caption": "app5"},
+    {"img": "p09_img180.png", "caption": "app6"}
+  ]
+}

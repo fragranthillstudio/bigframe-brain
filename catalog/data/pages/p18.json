@@ -1,0 +1,42 @@
+{
+  "series": [
+    {
+      "id": "trs", "title": "trs_title", "top": 87.7, "font_size": 6.9,
+      "cols": [130.5, 94.5, 95.2, 95.3, 94.5],
+      "rows": ["wd_near", "wd_opt", "wd_far", "fov_near", "fov_opt", "fov_far", "depth", "volume", "spacing", "z", "dims", "weight"],
+      "volume_sup": null,
+      "models": {
+        "TRS-010B": {"fov_near": "9.8 × 9.8", "fov_far": "9.8 × 9.8", "vol_depth": 1},
+        "TRS-025B": {"fov_near": "25.5 × 25.5", "fov_far": "25.5 × 25.5", "vol_depth": 5},
+        "TRS-050B": {"fov_near": null, "fov_far": null, "vol_depth": 8},
+        "TRS-075B": {"fov_near": null, "fov_far": null, "vol_depth": 8}
+      },
+      "common": {
+        "points_px": "5120 × 5120",
+        "frame_rate": {"key": "frame_rate_upto", "args": ["3", "5120 × 5120"]},
+        "optical": "trs_optical", "light": "light_blue", "color": "color_no", "software": "software",
+        "power": {"v": 24, "w": 75},
+        "rows": [["points", "frame"], ["optical", "light"], ["color", "iface"], ["power", "software"]]
+      },
+      "notes": ["note_z", "note_trs"]
+    },
+    {
+      "id": "vrd", "title": "vrd_title", "top": 447, "font_size": 6.9,
+      "cols": [130.5, 184.5, 195],
+      "rows": ["wd_near", "wd_opt", "wd_far", "fov_near", "fov_opt", "fov_far", "depth", "volume", "spacing", "z"],
+      "volume_sup": "3",
+      "models": {
+        "VRD-600B": {"fov_near": "365 × 248", "fov_far": "795 × 490", "vol_depth": 300},
+        "VRD-1200B": {"fov_near": "887 × 551", "fov_far": "1538 × 974", "vol_depth": 400}
+      },
+      "common": {
+        "points_px": null,
+        "frame_rate": {"key": "frame_rate_upto_plain", "args": ["1.2"]},
+        "optical": "vrd_optical", "light": "light_blue", "color": "color_yes_rgb", "software": "software",
+        "power": {"v": 24, "w": 75},
+        "rows": [["points", "frame"], ["optical", "light"], ["color", "iface"], ["power", "software"], ["dims", "weight"]]
+      },
+      "notes": ["note_z", "note_volume"]
+    }
+  ]
+}

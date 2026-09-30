@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% set page_title = t.page_title %}
+{% block head %}
+<style>
+  body { background: var(--deep); color: #fff; }
+  .footer { display: none; }
+  .cover-eyebrow { font-family: var(--mono); font-size: 7.4pt; letter-spacing: 0.2em; color: var(--on-dark-muted); text-transform: uppercase; }
+  .cover-title { font-family: var(--serif); font-weight: 400; font-size: 44pt; line-height: 0.985; color: #fff; letter-spacing: -0.005em; }
+  .cover-lede { font-size: 10.5pt; line-height: 1.43; color: #d5dae2; }
+  .series { position: absolute; top: 688.5pt; width: 90pt; }
+  .series .rule { height: 0.75pt; background: var(--blue); }
+  .series .name { font-family: var(--mono); font-size: 8.2pt; letter-spacing: 0.2em; color: #fff; margin-top: 4.6pt; height: 11pt; line-height: 11pt; white-space: nowrap; }
+  .series .name .badge { vertical-align: 0.8pt; margin-left: 2pt; letter-spacing: 0.2em; font-size: 6.2pt; font-weight: 500; padding: 1.3pt 3pt 1.2pt 3.6pt; }
+  .series .head { font-size: 7.8pt; font-weight: 600; line-height: 1.35; color: #fff; margin-top: 5.2pt; }
+  .series .sub { font-size: 6.8pt; line-height: 1.32; color: var(--on-dark-muted); margin-top: 1pt; }
+  .cover-foot { position: absolute; left: 59.2pt; width: 493.6pt; top: 802.5pt; }
+  .cover-foot .spectrum { height: 2.3pt; display: flex; }
+  .cover-foot .spectrum i { flex: 1; display: block; }
+  .cover-foot .spectrum i:nth-child(1) { background: var(--red); }
+  .cover-foot .spectrum i:nth-child(2) { background: var(--lime); }
+  .cover-foot .spectrum i:nth-child(3) { background: var(--green); }
+  .cover-foot .spectrum i:nth-child(4) { background: var(--blue); }
+  .cover-foot .line { display: flex; justify-content: space-between; margin-top: 9.5pt;
+                      font-family: var(--mono); font-size: 6.6pt; letter-spacing: 0.2em; color: var(--on-dark-muted); }
+</style>
+{% endblock %}
+{% block header %}{% endblock %}
+
+{% block content %}
+<img src="../../../{{ d.lockup }}" class="abs" style="left:57pt; top:52pt; width:248pt;" alt="BIGFRAME">
+
+<div class="abs cover-eyebrow" style="left:59.5pt; top:172.5pt;">{{ t.eyebrow }}</div>
+<div class="abs cover-title" style="left:59.5pt; top:190pt; width:400pt;">{{ t.title|safe }}</div>
+<p class="abs cover-lede" style="left:59.5pt; top:293pt; width:352pt;">{{ t.lede }}</p>
+
+<img src="../../../{{ d.products }}" class="abs" style="left:8.2pt; top:303pt; width:595.6pt;" alt="">
+
+{% for sc in series_cards %}
+{% set x = 59.2 + loop.index0 * 101 %}
+{% set parts = sc.fov.split(' ') %}
+{% set rng = parts[1].split('–') %}
+<div class="series" style="left:{{ x }}pt;">
+  <div class="rule"></div>
+  <div class="name">{{ sc.id|upper }}{% if sc.new %}<span class="badge">{{ c.new }}</span>{% endif %}</div>
+  <div class="head">{{ t['series_' ~ sc.id ~ '_head'] }}</div>
+  <div class="sub">{{ t['series_' ~ sc.id ~ '_sub'] }}<br>
+    {%- if sc.id == 'prs' -%}
+      {{ t.fov_prefix }} {{ prs.fov_range_mm.min|m }}–{{ prs.fov_range_mm.max|m }} m
+    {%- elif parts[2] == 'mm' and rng[1]|int >= 1000 -%}
+      {{ t.fov_prefix }} {{ rng[0]|int|m }}–{{ rng[1]|int|m }} m
+    {%- else -%}
+      {{ t.fov_prefix }} {{ rng[0]|n }}–{{ rng[1]|n }} {{ parts[2] }}
+    {%- endif -%}
+  </div>
+</div>
+{% endfor %}
+
+<div class="cover-foot">
+  <div class="spectrum"><i></i><i></i><i></i><i></i></div>
+  <div class="line"><span>{{ t.website }}</span><span>{{ catalog.edition }}</span></div>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{
+  "camera_img": "p10_img68.png",
+  "camera_img_w": 68,
+  "camera_img_h": 27.8,
+  "far_fov": {
+    "VR-400B": [380, 285],
+    "VR-600B": [525, 385],
+    "VR-1300B": [1250, 940],
+    "VR-2300B": [2180, 1625]
+  },
+  "mount": {"pattern_l": 210, "pattern_w": 111, "hole_d": 6.2, "connector_spacing": 25},
+  "apps": [
+    {"img": "p10_img199.png", "caption": "app1"},
+    {"img": "p10_img200.png", "caption": "app2"}
+  ]
+}

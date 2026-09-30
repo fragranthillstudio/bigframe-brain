@@ -1,0 +1,18 @@
+{
+  "page_title": "Cover",
+  "eyebrow": "PRODUCT CATALOG 2026",
+  "title": "Industrial 3D<br>cameras",
+  "lede": "Eighteen structured-light 3D cameras in five series — fields of view from 9.8 mm to 3.6 m, for measurement, inspection and robot guidance.",
+  "fov_prefix": "FOV",
+  "series_trs_head": "Micrometer measurement",
+  "series_trs_sub": "Solder balls, bumps, weld beads",
+  "series_vrh9_head": "Fine measurement",
+  "series_vrh9_sub": "Connectors, frames, boards",
+  "series_vr_head": "Guidance and inspection",
+  "series_vr_sub": "Bins, pallets, body panels",
+  "series_vrd_head": "Color stereo on the robot arm",
+  "series_vrd_sub": "Totes, tools, fasteners",
+  "series_prs_head": "Large scenes from a fixed bar",
+  "series_prs_sub": "Pallets, vehicles, containers",
+  "website": "www.bigframe.com"
+}

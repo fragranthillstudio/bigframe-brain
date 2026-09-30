@@ -1,0 +1,15 @@
+{
+  "tiles": [
+    {"title": "tile1_title", "desc": "tile1_desc", "file": "p16_img235.png", "img_top": -2.2, "img_width": 246.8},
+    {"title": "tile2_title", "desc": "tile2_desc", "file": "p16_img236.png", "img_top": -29.2, "img_width": 246},
+    {"title": "tile3_title", "desc": "tile3_desc", "file": "p16_img237.png", "img_top": -39.7, "img_width": 246.8},
+    {"title": "tile4_title", "desc": "tile4_desc", "file": "p16_img238.png", "img_top": -60.7, "img_width": 246}
+  ],
+  "editions": [
+    {"name": "ed_2d", "key": "key_red", "color": "#e11c5c", "modules": "ed_2d_modules"},
+    {"name": "ed_zmap", "key": "key_orange", "color": "#d97705", "modules": "ed_zmap_modules"},
+    {"name": "ed_cloud", "key": "key_yellow", "color": "#c3a000", "modules": "ed_cloud_modules"},
+    {"name": "ed_runtime", "key": "key_green", "color": "#00a76a", "modules": "ed_runtime_modules"},
+    {"name": "ed_training", "key": "key_blue", "color": "#3149d6", "modules": "ed_training_modules"}
+  ]
+}

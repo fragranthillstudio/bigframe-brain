@@ -1,0 +1,6 @@
+{
+  "lockup": "assets/pages/p01_lockup.png",
+  "products": "assets/pages/p01_products.png",
+  "products_source": "assets/pages/p01_img44.png",
+  "products_script": "build/cover_composite.py"
+}

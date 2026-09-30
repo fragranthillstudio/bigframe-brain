@@ -1,0 +1,15 @@
+{
+  "hero_image": "p15_img233.png",
+  "screenshots": [
+    {"file": "p15_img231.png", "caption": "caption_fig1", "left": -13.5, "width": 273.7},
+    {"file": "p15_img232.png", "caption": "caption_fig2", "left": -37.5, "width": 321}
+  ],
+  "functions": [
+    {"title": "fn_2d_title", "desc": "fn_2d_desc"},
+    {"title": "fn_zmap_title", "desc": "fn_zmap_desc"},
+    {"title": "fn_cloud_title", "desc": "fn_cloud_desc"},
+    {"title": "fn_dl_title", "desc": "fn_dl_desc"},
+    {"title": "fn_comm_title", "desc": "fn_comm_desc"},
+    {"title": "fn_hmi_title", "desc": "fn_hmi_desc"}
+  ]
+}

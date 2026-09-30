@@ -1,0 +1,20 @@
+{
+  "title": "All models",
+  "lede": "The figures that decide the choice, in catalog order. Full specifications on pages 18 to 20; definitions and the repeatability method on page 22.",
+  "th_wd_range": "Working distance near–far (mm)",
+  "th_opt_wd": "Optimum WD (mm)",
+  "th_depth": "Measuring depth (mm)",
+  "th_points": "Points per frame",
+  "th_dims": "L × W × H (mm)",
+  "th_weight_kg": "Weight (kg)",
+  "note1": "Regional 2σ on a ceramic reference plate; the largest value found at the near, optimum and far working distance; method on page 22.",
+  "note2": "TRS-050B and TRS-075B: near and far working distances on request; measuring depth 8 mm.",
+  "note3": "PRS: preliminary specification; Z repeatability method and points per frame stated at launch.",
+  "h2_select": "Selecting a model",
+  "select_1": "Choose a <b>field of view</b> that covers the part with margin at the optimum working distance.",
+  "select_2": "Choose a <b>point spacing</b> of one tenth of the smallest feature or finer.",
+  "select_3": "Choose a <b>Z repeatability</b> of one tenth of the tolerance or better; a gauge study on the part decides.",
+  "ask_title": "Which model? Ask us.",
+  "ask_desc_a": "Send a photograph of the part, the feature and its tolerance to",
+  "ask_desc_b": "We come back with the model and the working distance, and say what the camera will and will not resolve."
+}

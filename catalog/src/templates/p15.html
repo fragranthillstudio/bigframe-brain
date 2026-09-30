@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% set page_title = t.page_title %}
+{% block header %}
+<div class="tab right">
+  <div class="box"><span class="num">03</span><span>{{ t.section }}</span></div>
+  <span class="crumb">{{ t.crumb }}</span>
+</div>
+{% endblock %}
+
+{% block head %}<style>
+  .shot { position:absolute; top:382.5pt; height:220.5pt; background:var(--deep); overflow:hidden; }
+  .shot img { position:absolute; top:0; height:100%; }
+  .fn { position:absolute; width:510pt; display:grid; grid-template-columns:159pt 159pt 158.2pt; column-gap:16.5pt; row-gap:7.2pt; }
+  .fn .f { border-top:0.75pt solid var(--rule-strong); padding-top:7.4pt; }
+  .fn .f b { display:block; font-size:8.6pt; font-weight:600; line-height:1.3; }
+  .fn .f p { font-size:8pt; line-height:1.36; color:var(--ink-muted); margin-top:1.2pt; padding-right:4pt; }
+</style>{% endblock %}
+
+{% block content %}
+<!-- hero -->
+<div class="abs panel-dark" style="left:51pt; top:57pt; width:510pt; height:226.5pt;">
+  <div class="eyebrow abs" style="left:22.7pt; top:25.6pt;">{{ t.eyebrow }}</div>
+  <div class="serif abs" style="left:22.7pt; top:37.5pt; font-size:20pt; line-height:1.2; color:#fff;">{{ t.title }}</div>
+  <p class="abs" style="left:22.7pt; top:69.6pt; width:162pt; font-size:8.6pt; line-height:1.395; color:var(--on-dark);">{{ t.hero_desc|safe }}</p>
+  <img src="../../../assets/pages/{{ d.hero_image }}" class="abs" style="left:198pt; top:19.5pt; width:295.5pt;" alt="">
+</div>
+
+<p class="abs" style="left:51pt; top:298.6pt; width:484pt; font-size:9pt; line-height:1.43;">{{ t.intro|safe }}</p>
+
+<!-- screenshots -->
+{% for s in d.screenshots %}
+<div class="shot" style="left:{{ 51 if loop.first else 315 }}pt; width:{{ 246.8 if loop.first else 246 }}pt;">
+  <img src="../../../assets/pages/{{ s.file }}" style="left:{{ s.left }}pt; width:{{ s.width }}pt;" alt="">
+</div>
+<p class="abs" style="left:{{ 51 if loop.first else 314.6 }}pt; top:605.8pt; width:262pt; font-size:7pt; line-height:1.3; color:var(--ink-muted);">{{ t[s.caption]|safe }}</p>
+{% endfor %}
+
+<!-- function overview -->
+<h2 class="abs" style="left:51pt; top:633pt;">{{ t.functions_title }}</h2>
+<div class="fn" style="left:51pt; top:647.2pt;">
+  {% for f in d.functions %}
+  <div class="f"><b>{{ t[f.title]|safe }}</b><p>{{ t[f.desc]|safe }}</p></div>
+  {% endfor %}
+</div>
+{% endblock %}

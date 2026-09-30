@@ -1,0 +1,19 @@
+{
+  "title": "The range at a glance",
+  "crumb": "The range",
+  "lede": "Eighteen structured-light 3D cameras in five series, with fields of view from 9.8 mm to 3.6 m. One software platform, TridiVision, across the range. Every figure is stated the same way: field of view at the near, optimum and far working distance, point spacing at the optimum, Z repeatability as the regional 2σ value (definitions and method, page 22).",
+  "contents_label": "CONTENTS",
+  "toc1_name": "Overview",
+  "toc1_desc": "The range · applications",
+  "toc2_name": "Cameras",
+  "toc2_desc": "TRS · VRH9 · VR · VRD · PRS, two pages each",
+  "toc3_name": "Software",
+  "toc3_desc": "TridiVision",
+  "toc4_name": "Technical data",
+  "toc4_desc": "All models · series tables · accessories · definitions",
+  "toc5_name": "Company",
+  "toc5_desc": "Bigframe · contact",
+  "h2_scatter": "Field of view against Z repeatability",
+  "caption_scatter": "Width of the field of view at the optimum working distance against regional Z repeatability, 2σ, for all eighteen models. Adjacent series overlap: most parts have two candidate models.",
+  "caption_note": "PRS: preliminary specification, page"
+}

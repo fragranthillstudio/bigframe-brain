@@ -1,0 +1,72 @@
+{
+  "tiles": [
+    {
+      "img": "assets/pages/p03_img72.png",
+      "industry": "ind_electronics",
+      "title": "tile1_title",
+      "desc": "tile1_desc",
+      "models": [
+        "TRS-010B",
+        "TRS-025B",
+        "VRH9-020B"
+      ],
+      "pos": "0pt -3pt"
+    },
+    {
+      "img": "assets/pages/p03_img73.png",
+      "industry": "ind_semiconductor",
+      "title": "tile2_title",
+      "desc": "tile2_desc",
+      "models": [
+        "TRS-010B",
+        "TRS-025B"
+      ],
+      "pos": "0pt -42.8pt"
+    },
+    {
+      "img": "assets/pages/p03_img74.png",
+      "industry": "ind_ev_battery",
+      "title": "tile3_title",
+      "desc": "tile3_desc",
+      "models": [
+        "TRS-050B",
+        "TRS-075B",
+        "VRH9-080B"
+      ],
+      "pos": "0pt -12.8pt"
+    },
+    {
+      "img": "assets/pages/p03_img75.png",
+      "industry": "ind_consumer_electronics",
+      "title": "tile4_title",
+      "desc": "tile4_desc",
+      "models": [
+        "VRH9-020B",
+        "VRH9-040B"
+      ],
+      "pos": "-11.2pt 0pt"
+    },
+    {
+      "img": "assets/pages/p03_img76.png",
+      "industry": "ind_consumer_electronics",
+      "title": "tile5_title",
+      "desc": "tile5_desc",
+      "models": [
+        "VRH9-080B",
+        "VRH9-120B"
+      ],
+      "pos": "-12.8pt 0pt"
+    },
+    {
+      "img": "assets/pages/p09_img77.png",
+      "industry": "ind_automotive_body",
+      "title": "tile6_title",
+      "desc": "tile6_desc",
+      "models": [
+        "VR-600B",
+        "VR-1300B"
+      ],
+      "pos": "-55.4pt 0pt"
+    }
+  ]
+}

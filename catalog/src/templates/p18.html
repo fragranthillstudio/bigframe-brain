@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% set page_title = t.title %}
+{% set section_num = "04" %}{% set section_name = t.section %}{% set crumb = t.crumb %}
+{% block head %}{% include "spec_tables.css.html" %}{% endblock %}
+{% block content %}
+<h1 class="title s19">{{ t.title }}</h1>
+{% include "spec_tables.html" %}
+{% endblock %}

@@ -1,0 +1,47 @@
+{
+  "series": [
+    {
+      "id": "vrh9", "title": "vrh9_title", "top": 93, "font_size": 6.3,
+      "cols": [102, 58.5, 58.5, 57.8, 58.4, 58.6, 58.4, 57.8],
+      "rows": ["wd_near", "wd_opt", "wd_far", "fov_near", "fov_opt", "fov_far", "depth", "spacing", "z"],
+      "volume_sup": null,
+      "models": {
+        "VRH9-020B": {"fov_near": "24.1 × 12.4", "fov_far": "24.6 × 12.6"},
+        "VRH9-040B": {"fov_near": "47 × 24", "fov_far": "49.5 × 25.5"},
+        "VRH9-080B": {"fov_near": "79 × 40", "fov_far": "84 × 43"},
+        "VRH9-120B": {"fov_near": "120 × 61.5", "fov_far": "132 × 67.5"},
+        "VRH9-160B": {"fov_near": "151 × 77", "fov_far": "167 × 85"},
+        "VRH9-200B": {"fov_near": "190 × 98", "fov_far": "220 × 112"},
+        "VRH9-280B": {"fov_near": "251 × 129", "fov_far": "302 × 155"}
+      },
+      "common": {
+        "points_px": "4200 × 2160",
+        "frame_rate": {"key": "frame_rate_two", "args": ["1.1", "4200 × 2160", "6.6", "640 × 480"]},
+        "optical": "vrh9_optical", "light": "light_blue", "color": "color_no", "software": "software",
+        "power": {"v": 24, "w": 75},
+        "rows": [["points", "frame"], ["optical", "light"], ["color", "iface"], ["power", "software"], ["dims", "weight"]]
+      },
+      "notes": ["note_z"]
+    },
+    {
+      "id": "vr", "title": "vr_title", "top": 423, "font_size": 6.9,
+      "cols": [130.5, 90.7, 90.8, 91.5, 106.5],
+      "rows": ["wd_near", "wd_opt", "wd_far", "fov_near", "fov_opt", "fov_far", "depth", "volume", "spacing", "z"],
+      "volume_sup": "2",
+      "models": {
+        "VR-400B": {"fov_near": "215 × 160", "fov_far": "380 × 285", "vol_depth": 150},
+        "VR-600B": {"fov_near": "300 × 225", "fov_far": "525 × 385", "vol_depth": 200},
+        "VR-1300B": {"fov_near": "530 × 395", "fov_far": "1250 × 940", "vol_depth": 700},
+        "VR-2300B": {"fov_near": "1100 × 820", "fov_far": "2180 × 1625", "vol_depth": 1200}
+      },
+      "common": {
+        "points_px": null,
+        "frame_rate": {"key": "frame_rate_full", "args": ["1.1", "4", "640 × 480"]},
+        "optical": "vr_optical", "light": "light_blue", "color": "color_no", "software": "software",
+        "power": {"v": 24, "w": 75},
+        "rows": [["points", "frame"], ["optical", "light"], ["color", "iface"], ["power", "software"], ["dims", "weight"]]
+      },
+      "notes": ["note_z", "note_volume"]
+    }
+  ]
+}

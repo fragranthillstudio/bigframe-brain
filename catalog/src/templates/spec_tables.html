@@ -1,0 +1,65 @@
+{# Two series spec tables with a "common to all models" card and footnotes; driven by d.series (pages 18, 19). #}
+{% for s in d.series %}
+{% set ms = models|selectattr('series', 'equalto', s.id)|list %}
+{% set m0 = ms[0] %}
+<div class="abs" style="left:51pt; top:{{ s.top }}pt; width:510pt;">
+  <h2>{{ t[s.title] }}</h2>
+  <table class="st{% if s.font_size < 6.5 %} s63{% endif %}" style="margin-top:1.7pt; font-size:{{ s.font_size }}pt;">
+    <colgroup>{% for w in s.cols %}<col style="width:{{ w }}pt">{% endfor %}</colgroup>
+    <thead><tr><th>{{ t.th_model }}</th>{% for m in ms %}<th>{{ m.model }}{% if m.note %} <sup>{{ m.note|replace('²','2')|replace('³','3') }}</sup>{% endif %}</th>{% endfor %}</tr></thead>
+    <tbody>
+    {% for row in s.rows %}
+      <tr>
+        <td>{{ t['row_' ~ row]|safe }}{% if row == 'volume' and s.volume_sup %} <sup>{{ s.volume_sup }}</sup>{% endif %}</td>
+        {% for m in ms %}{% set pm = s.models[m.model] %}{% set nf = m.wd.split('–') %}
+        <td>
+          {%- if row == 'wd_near' %}{{ nf[0]|n if nf|length == 2 else t.dash }}
+          {%- elif row == 'wd_opt' %}{{ m.opt|n }}
+          {%- elif row == 'wd_far' %}{{ nf[1]|n if nf|length == 2 else t.dash }}
+          {%- elif row == 'fov_near' %}{{ pm.fov_near|n if pm.fov_near else t.dash }}
+          {%- elif row == 'fov_opt' %}{{ m.fov|n }}
+          {%- elif row == 'fov_far' %}{{ pm.fov_far|n if pm.fov_far else t.dash }}
+          {%- elif row == 'depth' %}{{ m.depth|n }}
+          {%- elif row == 'volume' %}{{ m.fov|n }} × {{ pm.vol_depth|n }}
+          {%- elif row == 'spacing' %}{{ m.spacing|n }}
+          {%- elif row == 'z' %}{{ m.z|n }}
+          {%- elif row == 'dims' %}{{ m.dims|n }}
+          {%- elif row == 'weight' %}{{ m.weight|n }}
+          {%- endif -%}
+        </td>
+        {% endfor %}
+      </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+
+  {% set c = s.common %}
+  {% macro kv(id) -%}
+    {%- if id == 'points' %}{{ m0.points }}{% if c.points_px %} ({{ c.points_px }}){% endif %}
+    {%- elif id == 'frame' %}{{ t[c.frame_rate.key]|format(*c.frame_rate.args) }}
+    {%- elif id == 'optical' %}{{ t[c.optical] }}
+    {%- elif id == 'light' %}{{ t[c.light] }}
+    {%- elif id == 'color' %}{{ t[c.color] }}
+    {%- elif id == 'iface' %}{{ t.iface_gige if m0.iface == 'GigE' else m0.iface }}
+    {%- elif id == 'power' %}{{ t.power|format(c.power.v|n, c.power.w|n) }}
+    {%- elif id == 'software' %}{{ t[c.software] }}
+    {%- elif id == 'dims' %}{{ m0.dims|n }}
+    {%- elif id == 'weight' %}{{ m0.weight|n }}
+    {%- endif -%}
+  {%- endmacro %}
+  <div class="card common">
+    <div class="eyebrow">{{ t.common_eyebrow }}</div>
+    <table class="kv2">
+      <colgroup><col style="width:96.3pt"><col style="width:141.5pt"><col style="width:17.2pt"><col style="width:96.4pt"><col style="width:140.6pt"></colgroup>
+      {% for pair in c.rows %}
+      <tr>
+        <td class="l">{{ t['kv_' ~ pair[0]] }}</td><td class="v">{{ kv(pair[0]) }}</td>
+        <td class="g"></td>
+        <td class="l">{{ t['kv_' ~ pair[1]] }}</td><td class="v">{{ kv(pair[1]) }}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+  <p class="snote">{% for k in s.notes %}{{ t[k]|safe }} {% endfor %}</p>
+</div>
+{% endfor %}

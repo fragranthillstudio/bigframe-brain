@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+{% set page_title = t.page_title %}
+{% block head %}<style>
+  .hero-text { position: absolute; left: 51pt; top: 82.4pt; width: 215pt; }
+  .hero-text .eyebrow { color: #9aa3b2; font-weight: 500; }
+  .hero-text .h { font-family: var(--serif); font-size: 19pt; line-height: 20.3pt; color: #fff; margin-top: 4.6pt; }
+  .hero-text .lede-d { font-size: 8.8pt; line-height: 12pt; color: var(--on-dark); margin-top: 9.6pt; }
+  .stats.vr { gap: 14.3pt; }
+  .stats.vr .stat { border-top-width: 0.8pt; padding-top: 4.2pt; }
+  table.data.glance th { font-size: 6.9pt; padding: 3pt 4pt 3.4pt 4.5pt; border-bottom: 0.8pt solid var(--ink); }
+  table.data.glance td { font-size: 7pt; padding: 3.75pt 4pt 3.65pt 4.5pt; border-bottom: 0.75pt solid var(--rule-strong); }
+  .apps { position: absolute; left: 51pt; width: 510pt; display: grid; grid-template-columns: repeat(3, 164.2pt); column-gap: 8.7pt; row-gap: 0; grid-auto-rows: 132pt; }
+  .apps .tile { background: var(--deep); overflow: hidden; }
+  .apps .tile img { display: block; width: 100%; height: 100%; object-fit: cover; }
+  .apps .cap { margin-top: 3.8pt; font-size: 7pt; line-height: 9.7pt; color: var(--ink-muted); }
+</style>{% endblock %}
+{% block header %}
+<div class="tab right on-dark">
+  <div class="box"><span class="num">{{ t.section_num }}</span><span>{{ t.section_name }}</span></div>
+  <span class="crumb">{{ t.crumb }}</span>
+</div>
+{% endblock %}
+
+{% block content %}
+{% set vr = models|selectattr('series', 'equalto', 'vr')|list %}
+{% set first = vr[0] %}{% set last = vr[-1] %}
+{% set wd_near = first.wd.split('–')[0]|int %}{% set wd_far = last.wd.split('–')[1]|int %}
+{% set z_min = vr|map(attribute='z')|min %}{% set sp_min = vr|map(attribute='spacing')|map('int')|min %}
+
+<!-- hero -->
+<div class="abs panel-dark glow" style="left:8.2pt; top:8.2pt; width:595.6pt; height:238.6pt;"></div>
+<div class="hero-text">
+  <div class="eyebrow">{{ t.eyebrow }}</div>
+  <div class="h">{{ t.title|safe }}</div>
+  <p class="lede-d">{{ t.lede }}</p>
+</div>
+<img src="../../../assets/pages/{{ d.hero_img }}" class="abs" style="left:300.8pt; top:22.5pt; width:260.2pt;" alt="">
+
+<!-- stat trio -->
+<div class="stats vr" style="top:258pt;">
+  <div class="stat">
+    <div class="v">{{ first.fov_w|n }}–{{ last.fov_w|n }} mm</div>
+    <div class="l">{{ t.stat1_label }}</div>
+    <div class="d">{{ t.stat1_desc_a }} {{ wd_near|n }} {{ t.stat1_desc_b }} {{ wd_far|m }} {{ t.stat1_desc_c }} {{ first.weight|n }} {{ t.stat1_desc_d }}</div>
+  </div>
+  <div class="stat">
+    <div class="v">{{ first.points.split(' ')[0]|n }} {{ t.million }}</div>
+    <div class="l">{{ t.stat2_label }}</div>
+    <div class="d">{{ d.fps_full|n }} {{ t.stat2_desc_a }} {{ d.fps_guidance|n }} {{ t.stat2_desc_b }} {{ d.guidance_res }} {{ t.stat2_desc_c }}</div>
+  </div>
+  <div class="stat">
+    <div class="v">{{ t.from }} {{ z_min|n }} µm</div>
+    <div class="l">{{ t.stat3_label }}</div>
+    <div class="d">{{ t.stat3_desc_a }} {{ d.method_page }}. {{ t.stat3_desc_b }} {{ sp_min|n }} µm.</div>
+  </div>
+</div>
+<p class="abs body" style="left:51pt; top:325pt; width:435pt;">{{ t.body }}</p>
+
+<!-- models at a glance -->
+<h2 class="abs" style="left:51pt; top:361pt;">{{ t.glance }}</h2>
+<div class="abs" style="left:51pt; top:376.5pt; width:510pt;">
+  <table class="data glance">
+    <thead><tr>
+      <th style="width:68.2pt">{{ t.th_model }}</th><th style="width:100.6pt">{{ t.th_fov }}</th><th style="width:126pt">{{ t.th_wd }}</th>
+      <th style="width:71.2pt">{{ t.th_depth }}</th><th style="width:68.2pt">{{ t.th_spacing }}</th><th>{{ t.th_z|safe }}</th>
+    </tr></thead>
+    <tbody>
+    {% for m in vr %}{% set wd = m.wd.split('–') %}
+      <tr><td class="model">{{ m.model }}</td><td>{{ m.fov|n }}</td><td>{{ wd[0]|n }} / {{ m.opt|n }} / {{ wd[1]|n }}</td>
+          <td>{{ m.depth|n }}</td><td>{{ m.spacing|n }}</td><td>{{ m.z|n }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  <p class="note" style="margin-top:3.6pt;">{{ t.footnote|safe }}</p>
+</div>
+
+<!-- applications -->
+<h2 class="abs" style="left:51pt; top:495.3pt;">{{ t.applications }}</h2>
+<div class="apps" style="top:510.8pt;">
+  {% for a in d.apps %}
+  <div>
+    <div class="tile" style="height:101.2pt;"><img src="../../../assets/pages/{{ a.img }}" alt=""></div>
+    <p class="cap">{{ t[a.caption] }}</p>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}

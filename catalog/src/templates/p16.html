@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+{% set page_title = t.title %}
+{% set section_num = "03" %}{% set section_name = t.section %}{% set crumb = t.crumb %}
+
+{% block head %}<style>
+  .tile { position:absolute; width:246.8pt; }
+  .tile .pic { height:120pt; background:var(--deep); overflow:hidden; position:relative; }
+  .tile .pic img { position:absolute; left:0; }
+  .tile h2 { font-size:9pt; margin-top:5pt; }
+  .tile.r2 h2 { margin-top:3.5pt; }
+  .tile p { font-size:7.8pt; line-height:1.4; color:var(--ink-muted); margin-top:4.2pt; }
+  table.ed th { font-size:7.6pt; font-weight:600; text-align:left; vertical-align:bottom; padding:3pt 4pt 4.2pt 4pt;
+                border-bottom:0.75pt solid var(--ink); line-height:1.3; }
+  table.ed td { font-size:7.2pt; line-height:1.32; padding:3.5pt 4pt 3.6pt 4pt; border-bottom:0.75pt solid var(--rule-strong); vertical-align:top; }
+  table.ed td.name { font-family:var(--mono); font-weight:500; white-space:nowrap; }
+  table.ed td.key { padding-left:3.7pt; padding-right:4.3pt; }
+  table.ed td.key i { display:inline-block; width:6pt; height:6pt; border-radius:50%; margin-right:4.8pt; vertical-align:-0.6pt; }
+  .cta .t { font-size:11pt; width:166pt; padding-left:9.9pt; padding-right:16pt; }
+  .cta .d { font-size:6.9pt; line-height:1.41; padding-right:0; }
+  .cta .qr { width:38.2pt; height:38.2pt; margin-right:9.8pt; padding:3.8pt; }
+</style>{% endblock %}
+
+{% block content %}
+<h1 class="title">{{ t.title }}</h1>
+
+{% for x in d.tiles %}
+<div class="tile{{ " r2" if loop.index > 2 else "" }}" style="left:{{ 51 if loop.index is odd else 315 }}pt; top:{{ 90 if loop.index <= 2 else 283.5 }}pt; width:{{ 246.8 if loop.index is odd else 246 }}pt;">
+  <div class="pic" style="height:{{ 120 if loop.index <= 2 else 120.7 }}pt;"><img src="../../../assets/pages/{{ x.file }}" style="top:{{ x.img_top }}pt; width:{{ x.img_width }}pt;" alt=""></div>
+  <h2>{{ t[x.title]|safe }}</h2>
+  <p>{{ t[x.desc]|safe }}</p>
+</div>
+{% endfor %}
+
+<!-- editions -->
+<div class="abs" style="left:51pt; top:476.2pt; width:340.5pt;">
+  <h2>{{ t.editions_title }}</h2>
+  <p style="font-size:8pt; line-height:1.3; margin-top:4.6pt;">{{ t.editions_lede|safe }}</p>
+  <table class="ed" style="margin-top:9pt;">
+    <thead><tr><th style="width:170.2pt">{{ t.th_edition }}</th><th style="width:33pt; padding-left:3.7pt; padding-right:0;">{{ t.th_key|safe }}</th><th>{{ t.th_modules }}</th></tr></thead>
+    <tbody>
+    {% for e in d.editions %}
+      <tr><td class="name">{{ t[e.name] }}</td><td class="key"><i style="background:{{ e.color }}"></i>{{ t[e.key] }}</td><td>{{ t[e.modules]|safe }}</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<!-- system requirements -->
+<div class="abs" style="left:408.2pt; top:476.2pt; width:152.8pt;">
+  <h2>{{ t.sysreq_title }}</h2>
+  <p style="font-size:8.2pt; line-height:1.42; margin-top:3.5pt;">{{ t.sysreq_text|safe }}</p>
+</div>
+
+<!-- CTA -->
+<div class="cta" style="top:724.5pt; height:52.5pt;">
+  <div class="t">{{ t.cta_title|safe }}</div>
+  <div class="d">{{ t.cta_desc_prefix }}<b>{{ t.cta_email }}</b>{{ t.cta_desc_suffix|safe }}</div>
+  <div class="qr">{{ qr_svg|safe }}</div>
+</div>
+{% endblock %}

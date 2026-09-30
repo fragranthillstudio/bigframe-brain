@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% set page_title = t.title %}
+{% block header %}
+<div class="tab right">
+  <div class="box"><span class="num">04</span><span>{{ t.section }}</span></div>
+  <span class="crumb">{{ t.crumb }}</span>
+</div>
+{% endblock %}
+{% block head %}{% include "spec_tables.css.html" %}{% endblock %}
+{% block content %}
+<h1 class="title s19">{{ t.title }}</h1>
+{% include "spec_tables.html" %}
+{% endblock %}

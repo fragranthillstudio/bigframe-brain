@@ -2,6 +2,26 @@
   "common": {
     "footer": "BIGFRAME · PRODUCT CATALOG 2026 · EN 2026-10 · REV. C",
     "new": "NEW",
-    "page": "Page"
+    "page": "Page",
+    "sec_overview": "Overview",
+    "sec_cameras": "Cameras",
+    "sec_technical": "Technical data",
+    "prs_series": "PRS series",
+    "crumb_data_by_series": "Data by series",
+    "to": "to",
+    "at": "at",
+    "th_model": "Model",
+    "th_wd_mm": "WD (mm)",
+    "th_fov_mm": "Field of view (mm)",
+    "th_spacing_um": "XY point spacing (µm)",
+    "th_fov_opt_mm": "Field of view at optimum WD (mm)",
+    "th_wd_nof_mm": "Working distance near / optimum / far (mm)",
+    "th_z2s_um": "Z repeatability 2σ (µm)",
+    "mounting": "Mounting",
+    "weight": "Weight",
+    "interface": "Interface",
+    "email": "info@bigframe.com",
+    "prelim_final": "Preliminary specification; final data sheet at launch.",
+    "z_method_launch": "method to be stated at launch."
   }
 }
