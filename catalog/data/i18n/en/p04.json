@@ -1,7 +1,6 @@
 {
   "page_title": "Robot guidance and picking",
   "section_num": "01",
-  "section_name": "Overview",
   "crumb": "Applications",
   "title": "Robot guidance and picking",
   "lede": "Position and pose of parts in bins, totes and on pallets, from one stationary capture. Point clouds and color images from Bigframe application cases; the depalletizing scene is a rendering.",

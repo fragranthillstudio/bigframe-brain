@@ -14,7 +14,7 @@
   table.acc td { font-family:var(--mono); font-size:6.9pt; line-height:9pt; padding:3.375pt 3pt 3.375pt 3.7pt;
                  border-bottom:0.75pt solid var(--rule-strong); vertical-align:top; }
   table.acc td.name { font-family:var(--sans); font-weight:500; white-space:nowrap; }
-  table.acc td.ser { white-space:nowrap; padding-right:0; }
+  table.cb td { white-space:nowrap; padding-right:0; }
   table.tg td { font-size:6.8pt; vertical-align:middle; padding-top:3pt; padding-bottom:3pt; white-space:nowrap; }
   table.tg td.pic { padding:2.6pt 0 2.65pt 3.7pt; }
   table.tg td.pic .card { width:51pt; padding:2.25pt; }
@@ -34,12 +34,12 @@
 <!-- cables -->
 <div class="abs" style="left:51pt; top:89.2pt; width:294.8pt;">
   <h2>{{ t.cables_title }}</h2>
-  <table class="acc" style="margin-top:2.5pt;">
+  <table class="acc cb" style="margin-top:2.5pt;">
     <colgroup><col style="width:84pt"><col style="width:154.5pt"><col style="width:56.3pt"></colgroup>
     <thead><tr><th>{{ t.th_cable }}</th><th>{{ t.th_desc }}</th><th>{{ t.th_series }}</th></tr></thead>
     <tbody>
     {% for c in d.cables %}
-      <tr><td class="name">{{ c.name }}, {{ t.len|format(c.len_m|n) }}</td><td>{{ t[c.desc] }}, {{ t.len|format(c.len_m|n) }}</td><td class="ser">{{ c.series|join(', ') }}</td></tr>
+      <tr><td class="name">{{ c.name }}, {{ t.len|format(c.len_m|n) }}</td><td>{{ t[c.desc] }}, {{ t.len|format(c.len_m|n) }}</td><td>{{ c.series|join(', ') }}</td></tr>
     {% endfor %}
     </tbody>
   </table>
@@ -58,7 +58,7 @@
 <div class="abs" style="left:51pt; top:330.7pt; width:510pt;">
   <h2>{{ t.targets_title }}</h2>
   <p style="font-size:8pt; line-height:1.45; margin-top:2.9pt; width:484pt;">{{ t.targets_lede|safe }}</p>
-  <table class="acc tg" style="margin-top:6.5pt;">
+  <table class="acc tg" style="margin-top:5pt;">
     <colgroup><col style="width:124.5pt"><col style="width:58.5pt"><col style="width:43.5pt"><col style="width:52.5pt"><col style="width:25.5pt"><col style="width:33.7pt"><col style="width:33.8pt"><col style="width:33.8pt"><col style="width:104.2pt"></colgroup>
     <thead><tr>
       <th>{{ t.th_model }}</th><th>{{ t.th_pattern }}</th><th>{{ t.th_tolerance|safe }}</th><th>{{ t.th_size }}</th><th>{{ t.th_array }}</th>
