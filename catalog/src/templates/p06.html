@@ -1,0 +1,75 @@
+{% extends "base.html" %}
+{% set page_title = t.title %}
+{% set section_num = t.tab_num %}{% set section_name = t.tab_section %}{% set crumb = t.crumb %}
+
+{% block head %}
+<style>
+  .col { position:absolute; top:92pt; width:122.8pt; height:262pt; text-align:center; }
+  .col .name { font-size:8.5pt; font-weight:600; line-height:1.3; }
+  .col img.cam { position:absolute; top:15pt; width:61.1pt; }
+  .col svg { position:absolute; left:0; top:60.2pt; }
+  .col .lbl { position:absolute; left:-20pt; right:-20pt; top:226pt; font-family:var(--mono); font-size:6.7pt; line-height:1.4; white-space:nowrap; }
+  .col .lbl .dp { color:var(--ink-faint); }
+  table.kv2 td { font-size:6.9pt; line-height:1.3; padding:0.9pt 0; vertical-align:top; }
+  table.kv2 td:first-child { color:var(--ink-muted); width:61.7pt; }
+  table.kv2 td:last-child { font-family:var(--mono); }
+  .tile { position:absolute; background:var(--deep); overflow:hidden; }
+  .tile img { position:absolute; left:0; width:100%; }
+</style>
+{% endblock %}
+
+{% block content %}
+{% set ms = models|selectattr('series', 'equalto', d.series)|list %}
+{% set first = ms[0] %}{% set last = ms[-1] %}
+{% set shown = (ms|selectattr('model', 'equalto', d.shown_model)|list)[0] %}
+{% set weights = ms|map(attribute='weight')|map('float')|list %}
+{% set wds = [] %}{% for m in ms %}{% set _ = wds.extend([figures.model_wd(m)[0], figures.model_wd(m)[2]]) %}{% endfor %}
+<h1 class="title">{{ t.title }}</h1>
+
+<!-- FOV cones, one column per model -->
+{% for m in ms %}
+{% set wd = figures.model_wd(m) %}
+<div class="col" style="left:{{ 51 + loop.index0 * 129.3 }}pt;">
+  <div class="name">{{ m.model }}</div>
+  <img class="cam" src="../../../assets/pages/{{ d.camera_img }}" style="left:{{ 61.4 + 6 - 30.55 }}pt;" alt="">
+  {{ figures.fov_cone_svg(m, W=122.8, cone_h=147.4, wd_size=6.4, wd_label=t.wd, uid=loop.index|string)|safe }}
+  <div class="lbl">
+    <div>{{ t.wd }} {% if '–' in m.wd %}{{ figures.fmt_n(wd[0])|n }}–{{ figures.fmt_n(wd[2])|n }} {{ t.mm }}{% else %}{{ figures.fmt_n(wd[1])|n }} {{ t.mm }} {{ t.opt_suffix }}{% endif %}</div>
+    <div>{{ t.fov }} {{ m.fov|n }} {{ t.mm }}</div>
+    <div class="dp">{{ t.depth }} {{ m.depth|n }} {{ t.mm }}</div>
+  </div>
+</div>
+{% endfor %}
+<p class="abs caption" style="left:51pt; top:353pt; width:510pt;">{{ t.caption_cones }}</p>
+
+<!-- dimensions card -->
+<div class="abs card" style="left:51pt; top:384.8pt; width:510pt; height:172.4pt;"></div>
+<div class="abs" style="left:60pt; top:410pt; width:240pt;">{{ figures.trs_dimensions_svg(d.housing, {'front': t.front, 'face': t.face})|safe }}</div>
+<div class="abs" style="left:306.9pt; top:390.5pt; width:245pt;">
+  <h2 style="font-size:8pt;">{{ t.h2_dims }}</h2>
+  <table class="kv2" style="margin-top:3.6pt;">
+    <tr><td>{{ t.kv_housing }}</td><td>{{ first.dims|n }} mm ({{ first.model }}) {{ t.to }} {{ last.dims|n }} mm ({{ last.model }})</td></tr>
+    <tr><td>{{ t.kv_weight }}</td><td>{{ figures.fmt_n(((weights|min) * 10 + 0.5)|int / 10)|n }} {{ t.to }} {{ figures.fmt_n(weights|max)|n }} kg</td></tr>
+    <tr><td>{{ t.kv_interface }}</td><td>{{ t.v_interface }}</td></tr>
+    <tr><td>{{ t.kv_mounting }}</td><td>{{ t.v_mounting }}</td></tr>
+  </table>
+  <p class="caption" style="margin-top:4pt; width:236pt;">{{ shown.model }} {{ t.caption_dims_a }} {{ figures.fmt_n(wds|min)|n }} {{ t.to }} {{ figures.fmt_n(wds|max)|n }} {{ t.caption_dims_b }}</p>
+</div>
+
+<!-- four projection directions -->
+<h2 class="abs" style="left:51pt; top:567.5pt;">{{ t.h2_four }}</h2>
+{% for il in d.illustrations %}
+{% set x = 51 + loop.index0 * 259.5 %}
+<div class="tile" style="left:{{ x }}pt; top:582.8pt; width:250.5pt; height:120pt;">
+  <img src="../../../assets/pages/{{ il.img }}" style="top:-11.3pt; height:142.5pt;" alt="">
+</div>
+<p class="abs caption" style="left:{{ x }}pt; top:704.6pt; width:250.5pt; font-size:7pt; line-height:1.3;">{{ t[il.caption] }}</p>
+{% endfor %}
+
+<!-- CTA -->
+<div class="cta" style="top:735.8pt; height:43.4pt;">
+  <div class="t">{{ t.cta_title|safe }}</div>
+  <div class="d">{{ t.cta_text|safe }}</div>
+  <div class="qr">{{ qr_svg|safe }}</div>
+</div>
+{% endblock %}

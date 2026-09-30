@@ -1,0 +1,10 @@
+{
+  "series": "trs",
+  "camera_img": "p06_img66.png",
+  "shown_model": "TRS-010B",
+  "housing": {"l": 230, "w": 230, "h": 250, "body_h": 186, "face": 144},
+  "illustrations": [
+    {"img": "p06_img136.png", "caption": "cap_one"},
+    {"img": "p06_img137.png", "caption": "cap_four"}
+  ]
+}

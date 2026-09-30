@@ -1,0 +1,33 @@
+{
+  "series": "vrh9",
+  "camera_img": "p08_img67.png",
+  "housing": {
+    "l": 190,
+    "w": 140,
+    "h": 60,
+    "pattern_l": 180,
+    "pattern_w": 130,
+    "hole_d": 6.2
+  },
+  "far_fov": {
+    "VRH9-020B": "24.6 \u00d7 12.6",
+    "VRH9-040B": "49.5 \u00d7 25.5",
+    "VRH9-080B": "84 \u00d7 43",
+    "VRH9-120B": "132 \u00d7 67.5",
+    "VRH9-160B": "167 \u00d7 85",
+    "VRH9-200B": "220 \u00d7 112",
+    "VRH9-280B": "302 \u00d7 155"
+  },
+  "apps": [
+    {
+      "img": "p08_img174.png",
+      "caption": "app1",
+      "pos": "50.0% 50%"
+    },
+    {
+      "img": "p08_img94.png",
+      "caption": "app2",
+      "pos": "49.6% 50%"
+    }
+  ]
+}

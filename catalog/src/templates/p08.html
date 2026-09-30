@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% set page_title = t.title %}
+{% set section_num = t.tab_num %}{% set section_name = t.tab_section %}{% set crumb = t.crumb %}
+
+{% block head %}
+<style>
+  .col { position:absolute; top:92.8pt; width:67.1pt; height:140pt; text-align:center; }
+  .col .name { font-size:7.9pt; font-weight:600; line-height:1.3; }
+  .col img.cam { position:absolute; top:14.2pt; width:24.9pt; }
+  .col svg { position:absolute; left:0; top:20.5pt; }
+  .col .lbl { position:absolute; left:-20pt; right:-20pt; top:102pt; font-family:var(--mono); font-size:5.8pt; line-height:1.466; white-space:nowrap; }
+  .col .lbl .dp { color:var(--ink-faint); }
+  table.kv2 td { font-size:6.9pt; line-height:1.3; padding:0.9pt 0; vertical-align:top; }
+  table.kv2 td:first-child { color:var(--ink-muted); width:61.7pt; }
+  table.kv2 td:last-child { font-family:var(--mono); }
+  .tile { position:absolute; background:var(--deep); overflow:hidden; }
+  .tile img { display:block; width:100%; height:100%; object-fit:cover; }
+</style>
+{% endblock %}
+
+{% block content %}
+{% set ms = models|selectattr('series', 'equalto', d.series)|list %}
+{% set first = ms[0] %}
+{% set h = d.housing %}
+<h1 class="title">{{ t.title }}</h1>
+
+<!-- FOV cones, one column per model -->
+{% for m in ms %}
+{% set wd = figures.model_wd(m) %}
+<div class="col" style="left:{{ 51 + loop.index0 * 73.85 }}pt;">
+  <div class="name">{{ m.model }}</div>
+  <img class="cam" src="../../../assets/pages/{{ d.camera_img }}" style="left:{{ 33.55 + 9 - 12.45 }}pt;" alt="">
+  {{ figures.fov_cone_svg(m, W=67.1, cone_h=63.1, cx=42.55, wd_size=5.5, wd_label=t.wd, uid=loop.index|string)|safe }}
+  <div class="lbl">
+    <div>{{ t.wd }} {{ figures.fmt_n(wd[0])|n }}–{{ figures.fmt_n(wd[2])|n }} {{ t.mm }}</div>
+    <div>{{ t.opt }} {{ m.fov|n }} {{ t.mm }}</div>
+    <div>{{ t.far }} {{ d.far_fov[m.model]|n }} {{ t.mm }}</div>
+    <div class="dp">{{ t.depth }} {{ m.depth|n }} {{ t.mm }}</div>
+  </div>
+</div>
+{% endfor %}
+<p class="abs caption" style="left:51pt; top:235.3pt; width:510pt;">{{ t.caption_cones }}</p>
+
+<!-- dimensions card -->
+<div class="abs card" style="left:51pt; top:267.8pt; width:510pt; height:177.7pt;"></div>
+<div class="abs" style="left:55pt; top:270pt; width:240pt;">{{ figures.vrh9_dimensions_svg(h, {'mounting': t.mounting_face, 'back': t.back, 'face': t.face, 'through': t.through})|safe }}</div>
+<div class="abs" style="left:306.9pt; top:273.5pt; width:245pt;">
+  <h2 style="font-size:8pt;">{{ t.h2_dims }}</h2>
+  <table class="kv2" style="margin-top:3.6pt;">
+    <tr><td>{{ t.kv_housing }}</td><td>{{ first.dims|n }} mm</td></tr>
+    <tr><td>{{ t.kv_weight }}</td><td>{{ first.weight|n }} kg</td></tr>
+    <tr><td>{{ t.kv_interface }}</td><td>{{ t.v_interface }}</td></tr>
+    <tr><td>{{ t.kv_mounting }}</td><td>{{ t.v_mounting_a }} {{ h.hole_d|n }} {{ t.v_mounting_b }} {{ h.pattern_l|n }} × {{ h.pattern_w|n }} {{ t.v_mounting_c }}</td></tr>
+  </table>
+  <p class="caption" style="margin-top:4pt; width:240pt;">{{ t.caption_dims }}</p>
+</div>
+
+<!-- applications -->
+<h2 class="abs" style="left:51pt; top:455.5pt;">{{ t.h2_apps }}</h2>
+{% for a in d.apps %}
+{% set x = 51 + loop.index0 * 259.5 %}
+<div class="tile" style="left:{{ x }}pt; top:471pt; width:250.5pt; height:213pt;">
+  <img src="../../../assets/pages/{{ a.img }}" style="object-position:{{ a.pos }};" alt="">
+</div>
+<p class="abs caption" style="left:{{ x }}pt; top:685.9pt; width:250.5pt; font-size:7pt; line-height:1.3;">{{ t[a.caption] }}</p>
+{% endfor %}
+
+<!-- CTA -->
+<div class="cta" style="top:725.2pt; height:44.3pt;">
+  <div class="t">{{ t.cta_title|safe }}</div>
+  <div class="d">{{ t.cta_text|safe }}</div>
+  <div class="qr">{{ qr_svg|safe }}</div>
+</div>
+{% endblock %}
