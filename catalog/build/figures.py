@@ -183,12 +183,17 @@ def fov_scene_svg(prs: dict, img_href: str, W: float = 510, H: float = 363) -> s
 
 
 # ------------------------------------------------- page 13: PRS in use scene
-def use_case_svg(prs: dict, img_href: str, W: float = 283, H: float = 200) -> str:
+def use_case_svg(prs: dict, img_href: str, W: float = 283, H: float = 200, compact: bool = False) -> str:
+    """The PRS over a loaded Euro pallet; compact=True is the small applications tile (page 4)."""
     opt = prs["by_wd"][1]
     far = prs["by_wd"][-1]
-    s = 150 / opt["fov_w"]
-    sz = 118 / far["wd"]
-    sc = Scene(cx=118, cy=56, s=s, sz=sz)
+    if compact:
+        s, sz, sc = 108 / opt["fov_w"], 84 / far["wd"], None
+        sc = Scene(cx=150, cy=34, s=s, sz=sz)
+    else:
+        s = 150 / opt["fov_w"]
+        sz = 118 / far["wd"]
+        sc = Scene(cx=118, cy=56, s=s, sz=sz)
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}pt" height="{H}pt">']
     out.append('<defs><linearGradient id="beam2" x1="0" y1="0" x2="0" y2="1">'
                '<stop offset="0" stop-color="#3d5afe" stop-opacity="0.34"/>'
@@ -201,7 +206,10 @@ def use_case_svg(prs: dict, img_href: str, W: float = 283, H: float = 200) -> st
     out.append(_poly(r, fill=LIME, fill_opacity=0.10, stroke=LIME, stroke_width=1.0, stroke_linejoin="round"))
     for c in r:
         out.append(_line(apex, c, stroke="#ffffff", stroke_width=0.4, stroke_opacity=0.5))
-    out.append(camera_image(img_href, cx=apex[0] + 5, y_top=apex[1] - 36, width=140, aspect=2.2))
+    out.append(camera_image(img_href, cx=apex[0] + 5, y_top=apex[1] - (26 if compact else 36), width=(100 if compact else 140), aspect=2.2))
+    if compact:
+        out.append("</svg>")
+        return "".join(out)
     # WD dimension at the right edge
     x = 262
     out.append(_line((x, apex[1]), (x, r[1][1]), stroke=ON_DARK, stroke_width=0.5))

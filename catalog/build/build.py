@@ -117,11 +117,11 @@ def patch_cover(doc: pymupdf.Document) -> None:
 
 def render_scene_png(data: dict) -> Path:
     """The depalletizing tile on page 4: the use-case scene on the dark ground, 1087 × 591 px."""
-    svg = figures.use_case_svg(data["prs"], "../../assets/prs-2500b.png", W=283, H=154)
+    svg = figures.use_case_svg(data["prs"], "../../assets/prs-2500b.png", W=283, H=154, compact=True)
     html = (SRC / "rendered" / "scene-p04.html")
     html.write_text('<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="../catalog.css">'
                     '<body style="background:#111827;width:283pt;height:154pt;overflow:hidden">'
-                    '<div class="fig-label" style="position:absolute;left:8.5pt;top:8pt">Depalletizing · illustration</div>'
+                    '<div class="fig-label" style="position:absolute;left:28pt;top:8pt">PRS over a Euro pallet · illustration</div>'
                     + svg + '</body>')
     out = RENDER / "scene-p04.png"
     with sync_playwright() as pw:
